@@ -1,2 +1,2 @@
 # nuffalo-jill
-Repository for VTK Electoral Team Nufallo Jill
+Repository for VTK Electoral Team Nuffalo Jill
