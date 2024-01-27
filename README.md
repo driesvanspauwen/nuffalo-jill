@@ -3,7 +3,10 @@ Repository for VTK Electoral Team Nuffalo Jill
 
 # Installation
 ### Requirements
-- NodeJS and NPM, NPM is included in the NodeJS installation (https://nodejs.org/en)
+- NodeJS and npm, npm is included in the NodeJS installation (https://nodejs.org/en)
+    - Note: The server framework (Strapi) is only supported for certain versions of NodeJS, make sure that you install a supported version (see the prerequisites at https://docs.strapi.io/dev-docs/quick-start)
+- Python (https://www.python.org/downloads/)
+
 
 ### Installation guide
 To install server and client dependencies, run 
