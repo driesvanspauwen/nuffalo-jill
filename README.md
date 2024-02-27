@@ -1,7 +1,7 @@
 # nuffalo-jill
 A repository for the website of Nuffalo Jill, an electoral team for the VTK elections.
 
-The website is built with a Strapi backend running on top of NodeJS. Strapi provides an admin panel that we use to create objects such as events in the election week or scores that players obtain in our game. The Strapi framework comes with a SQLite database. For the frontend, React is used.
+The website is built with a Strapi backend and Next.js frontend. Strapi provides an admin panel that we use to create objects such as events in the election week or scores that players obtain in our game. The Strapi framework comes with a SQLite database.
 
 # Installation
 ### Requirements
@@ -17,15 +17,10 @@ npm --prefix server install
 npm --prefix client install
 ```
 
-Run the server and client respectively with
-```bash
-npm --prefix server start
-npm --prefix client start
-```
-
-The server can also be run in other modes, for example the developer mode which automatically restarts the server upon code changes:
+To run the server and client in development mode respectively, use
 ```bash
 npm --prefix server run strapi develop
+npm --prefix client run dev
 ```
-(See https://docs.strapi.io/dev-docs/cli for a full guide on the CLI)
+(See https://docs.strapi.io/dev-docs/cli for a full guide on the CLI of Strapi, where you can find other running modes)
 
