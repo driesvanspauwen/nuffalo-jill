@@ -17,10 +17,21 @@ npm --prefix server install
 npm --prefix client install
 ```
 
-To run the server and client in development mode respectively, use
+# Server
+To run the server in development mode, use
 ```bash
 npm --prefix server run strapi develop
-npm --prefix client run dev
 ```
 (See https://docs.strapi.io/dev-docs/cli for a full guide on the CLI of Strapi, where you can find other running modes)
 
+# Client
+The client is a Next.js app that is installed with the following options:
+- Typescript: no
+- ESLint: yes
+- Tailwind CSS: no
+- App Router: yes
+
+To run the client in development mode, use
+```bash
+npm --prefix client run dev
+```
