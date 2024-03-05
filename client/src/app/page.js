@@ -7,7 +7,6 @@ export default function Index() {
     <>
       <NavBar />
       <LandingPage />
-      <LandingPage />
     </>
   );
 }

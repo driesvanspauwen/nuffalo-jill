@@ -3,13 +3,13 @@
 import { ChakraProvider } from '@chakra-ui/react';
 import { AppRouterCacheProvider } from '@mui/material-nextjs/v13-appRouter';
 import { ThemeProvider } from '@mui/material/styles';
-import theme from '../ui/themes/theme';
+import globalTheme from '../ui/themes/global-theme';
 
 export function Providers({ children }) {
   return (
     // <ChakraProvider>
       <AppRouterCacheProvider>
-        <ThemeProvider theme={theme}>
+        <ThemeProvider theme={globalTheme}>
           {children}
         </ThemeProvider>
       </AppRouterCacheProvider>

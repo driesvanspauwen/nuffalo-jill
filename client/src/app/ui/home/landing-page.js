@@ -1,12 +1,17 @@
 'use client'
 
 import React from 'react';
-import { ThemeProvider, createTheme } from '@mui/material/styles';
+import { Typography } from '@mui/material';
+import { alexBrushFont } from '../themes/global-theme'
 import Paper from '@mui/material/Paper'
+import { ThemeProvider, createTheme } from '@mui/material/styles';
 
 export default function LandingPage() {
 
   const landingPageTheme = createTheme({
+    typography: {
+      fontFamily: alexBrushFont.style.fontFamily,
+    },
     components: {
       MuiPaper: {
         styleOverrides: {
@@ -25,10 +30,14 @@ export default function LandingPage() {
       },
     },
   });
-  
+
   return (
     <ThemeProvider theme={landingPageTheme}>
-      <Paper></Paper>
+      <Paper>
+        <Typography variant="h3">
+          Test
+        </Typography>
+      </Paper>
     </ThemeProvider>
   );
 }
