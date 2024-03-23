@@ -1,9 +1,0 @@
-@font-face {
-  font-family: 'Buffalo';
-  src: url('/fonts/buffalo/BuffaloInline2Grunge.otf') format('opentype');
-}
-
-.buffaloFont {
-  font-family: 'Buffalo', sans-serif;
-  font-size: 100px;
-}
