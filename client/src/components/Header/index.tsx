@@ -13,13 +13,14 @@ const Header = () => {
     setNavbarOpen(!navbarOpen);
   };
 
-  // Sticky Navbar
-  const [sticky, setSticky] = useState(false);
+  // Dynamic Navbar
+  const [dynamic, setDynamic] = useState(true);
   const handleStickyNavbar = () => {
     if (window.scrollY >= 80) {
-      setSticky(true);
+      setDynamic(true);
     } else {
-      setSticky(false);
+      // set to false for dynamic Navbar
+      setDynamic(true);
     }
   };
   useEffect(() => {
@@ -42,18 +43,19 @@ const Header = () => {
     <>
       <header
         className={`header left-0 top-0 z-40 flex w-full items-center ${
-          sticky
-            ? "dark:bg-gray-dark dark:shadow-sticky-dark fixed z-[9999] bg-white !bg-opacity-80 shadow-sticky backdrop-blur-sm transition"
+          dynamic
+            ? "fixed z-[9999] !bg-opacity-80 shadow-sticky backdrop-blur-sm transition"
             : "invisible absolute bg-transparent"
         }`}
       >
         <div className="container">
           <div className="relative -mx-4 flex items-center justify-between">
             <div className="w-60 max-w-full px-4 xl:mr-12">
-              <Link
+              Logo
+              {/* <Link
                 href="/"
                 className={`header-logo block w-full ${
-                  sticky ? "py-5 lg:py-2" : "py-8"
+                  dynamic ? "py-5 lg:py-2" : "py-8"
                 } `}
               >
                 <Image
@@ -70,7 +72,7 @@ const Header = () => {
                   height={30}
                   className="hidden w-full dark:block"
                 />
-              </Link>
+              </Link> */}
             </div>
             <div className="flex w-full items-center justify-between px-4">
               <div>
@@ -105,7 +107,7 @@ const Header = () => {
                       : "invisible top-[120%] opacity-0"
                   }`}
                 >
-                  <ul className={`block lg:flex lg:space-x-12 ${sticky ? "" : "invisible"}`}>
+                  <ul className={`block lg:flex lg:space-x-12 ${dynamic ? "" : "invisible"}`}>
                     {menuData.map((menuItem, index) => (
                       <li key={index} className="group relative">
                         {menuItem.path ? (
@@ -116,7 +118,7 @@ const Header = () => {
                                 ? "text-primary dark:text-white"
                                 : "text-dark hover:text-primary dark:text-white/70 dark:hover:text-white"
                             } ${
-                              sticky
+                              dynamic
                                 ? ""
                                 : "invisible"
                             }`}
@@ -127,7 +129,7 @@ const Header = () => {
                           <>
                             <p
                               onClick={() => handleSubmenu(index)}
-                              className={`flex cursor-pointer items-center justify-between py-2 text-base text-dark group-hover:text-primary dark:text-white/70 dark:group-hover:text-white lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 ${sticky ? "" : "invisible"}`}
+                              className={`flex cursor-pointer items-center justify-between py-2 text-base text-dark group-hover:text-primary dark:text-white/70 dark:group-hover:text-white lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 ${dynamic ? "" : "invisible"}`}
                             >
                               {menuItem.title}
                               <span className="pl-3">
@@ -144,13 +146,13 @@ const Header = () => {
                             <div
                               className={`submenu relative left-0 top-full rounded-sm bg-white transition-[top] duration-300 group-hover:opacity-100 dark:bg-dark lg:invisible lg:absolute lg:top-[110%] lg:block lg:w-[250px] lg:p-4 lg:opacity-0 lg:shadow-lg lg:group-hover:visible lg:group-hover:top-full ${
                                 openIndex === index ? "block" : "hidden"
-                              } ${sticky ? "" : "invisible"}`}
+                              } ${dynamic ? "" : "invisible"}`}
                             >
                               {menuItem.submenu.map((submenuItem, index) => (
                                 <Link
                                   href={submenuItem.path}
                                   key={index}
-                                  className={`block rounded py-2.5 text-sm text-dark hover:text-primary dark:text-white/70 dark:hover:text-white lg:px-3 ${sticky ? "" : "invisible"}`}
+                                  className={`block rounded py-2.5 text-sm text-dark hover:text-primary dark:text-white/70 dark:hover:text-white lg:px-3 ${dynamic ? "" : "invisible"}`}
                                 >
                                   {submenuItem.title}
                                 </Link>
@@ -169,12 +171,6 @@ const Header = () => {
                   className="hidden px-7 py-3 text-base font-medium text-dark hover:opacity-70 dark:text-white md:block"
                 >
                   Sign In
-                </Link>
-                <Link
-                  href="/signup"
-                  className="ease-in-up shadow-btn hover:shadow-btn-hover hidden rounded-sm bg-primary px-8 py-3 text-base font-medium text-white transition duration-300 hover:bg-opacity-90 md:block md:px-9 lg:px-6 xl:px-9"
-                >
-                  Sign Up
                 </Link>
                 <div>
                   <ThemeToggler />
