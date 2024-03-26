@@ -17,6 +17,11 @@ npm --prefix server install
 npm --prefix client install
 ```
 
+For the Strapi server, you have to generate secret keys with
+```bash
+node server/generateKeys.js
+```
+
 # Server
 To run the server in development mode, use
 ```bash
