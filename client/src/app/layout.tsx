@@ -27,7 +27,7 @@ export default function RootLayout({
       */}
       <head />
 
-      <body className={`bg-[#FCFCFC] dark:bg-black ${libreFranklin.className}`}>
+      <body className={`parchmentBackground nakaraFont`}>
         <Providers>
           <Header />
           {children}

@@ -5,10 +5,19 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Nakara';
+  src: url('/fonts/nakara/NakaraRough.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'AkaPosse';
+  src: url('/fonts/posse/akaPosse.ttf') format('truetype');
+}
+
 @layer base {
   body {
-    font-family: "Libre Franklin", sans-serif;
-    font-optical-sizing: auto;
+    
   }
 }
 
@@ -32,4 +41,15 @@
   input#checkboxLabel:checked ~ .box span {
     @apply opacity-100;
   }
+}
+
+.nakaraFont {
+  font-family: 'AkaPosse', sans-serif;
+  font-optical-sizing: auto;
+  font-size: 2rem;
+}
+
+.parchmentBackground {
+  background-color: #f5eac8;
+  background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.1) 25%, transparent 25%, transparent 75%, rgba(0, 0, 0, 0.1) 75%, rgba(0, 0, 0, 0.1) ), linear-gradient(45deg, rgba(0, 0, 0, 0.1) 25%, transparent 25%, transparent 75%, rgba(0, 0, 0, 0.1) 75%, rgba(0, 0, 0, 0.1) );
 }

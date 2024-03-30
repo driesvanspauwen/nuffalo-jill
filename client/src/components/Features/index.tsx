@@ -1,22 +1,28 @@
 import SectionTitle from "../Common/SectionTitle";
-import SingleFeature from "./SingleFeature";
-import featuresData from "./featuresData";
+import SingleGoal from "./SingleGoal";
+import goalsData from "./goalsData";
 
-const Features = () => {
+const Goals = () => {
   return (
     <>
-      <section id="features" className="py-16 md:py-20 lg:py-28">
+      <section id="goals" className="py-16 md:py-20 lg:py-28">
         <div className="container">
           <SectionTitle
-            title="Main Features"
-            paragraph="There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
+            title="Main Goals"
+            paragraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
             center
+            size="text-5xl lg:text-6xl"
           />
 
-          <div className="grid grid-cols-1 gap-x-8 gap-y-14 md:grid-cols-2 lg:grid-cols-3">
-            {featuresData.map((feature) => (
-              <SingleFeature key={feature.id} feature={feature} />
-            ))}
+          {/* Center the grid of three columns and spread out over the whole width */}
+          <div className="flex justify-center w-full">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-14 w-full max-w-7xl">
+              {goalsData.map((goal, index) => (
+                <div key={goal.id} className="flex justify-center">
+                  <SingleGoal goal={goal} />
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
@@ -24,4 +30,4 @@ const Features = () => {
   );
 };
 
-export default Features;
+export default Goals;
