@@ -98,7 +98,7 @@ const Header = () => {
                     }`}
                   />
                 </button>
-                
+
                 <nav
                   id="navbarCollapse"
                   className={`navbar absolute right-0 z-30 w-[250px] rounded border-[.5px] border-body-color/50 bg-white px-6 py-4 duration-300 dark:border-body-color/20 dark:bg-dark lg:visible lg:static lg:w-auto lg:border-none lg:!bg-transparent lg:p-0 lg:opacity-100 ${
@@ -107,7 +107,9 @@ const Header = () => {
                       : "invisible top-[120%] opacity-0"
                   }`}
                 >
-                  <ul className={`block lg:flex lg:space-x-12 ${dynamic ? "" : "invisible"}`}>
+                  <ul
+                    className={`block lg:flex lg:space-x-12 ${dynamic ? "" : "invisible"}`}
+                  >
                     {menuData.map((menuItem, index) => (
                       <li key={index} className="group relative">
                         {menuItem.path ? (
@@ -117,11 +119,7 @@ const Header = () => {
                               usePathName === menuItem.path
                                 ? "text-primary dark:text-white"
                                 : "text-dark hover:text-primary dark:text-white/70 dark:hover:text-white"
-                            } ${
-                              dynamic
-                                ? ""
-                                : "invisible"
-                            }`}
+                            } ${dynamic ? "" : "invisible"}`}
                           >
                             {menuItem.title}
                           </Link>
