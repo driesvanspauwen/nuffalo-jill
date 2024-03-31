@@ -19,7 +19,7 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <>
+    <div style={{ cursor: "url('/client/public/images/cursor/revolver.png'), auto" }}>
       <ScrollUp />
       <Hero />
       <Features />
@@ -31,6 +31,6 @@ export default function Home() {
       <Pricing />
       <Blog />
       <Contact />
-    </>
+    </div>
   );
 }
