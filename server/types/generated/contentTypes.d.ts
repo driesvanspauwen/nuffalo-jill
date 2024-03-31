@@ -367,7 +367,8 @@ export interface ApiEventEvent extends Schema.CollectionType {
   info: {
     singularName: 'event';
     pluralName: 'events';
-    displayName: 'Event';
+    displayName: 'events';
+    description: '';
   };
   options: {
     draftAndPublish: true;

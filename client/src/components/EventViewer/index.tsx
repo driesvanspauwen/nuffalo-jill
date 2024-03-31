@@ -2,8 +2,9 @@
 import { useState } from "react";
 import SectionTitle from "../Common/SectionTitle";
 import EventBox from "./EventBox";
-
-const Schedule = () => {
+import { fetcher } from '../../lib/api'
+ 
+const Schedule = ( {events} ) => {
   const [isMonthly, setIsMonthly] = useState(true);
 
   return (
@@ -103,3 +104,15 @@ const Schedule = () => {
 };
 
 export default Schedule;
+
+export async function getStaticProps() {
+  const eventsResponse = await fetcher('$(process.env.NEXT_PUBLIC_STRAPI_URL)/event')
+  console.log(eventsResponse);
+  return {
+    props: {
+      events: eventsResponse
+    }
+  }
+
+}
+
