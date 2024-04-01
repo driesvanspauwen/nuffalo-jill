@@ -12,15 +12,12 @@ const Hero = () => {
         <div className="container">
           <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4">
-              <div className="text-center">
-              <h1 className={`${styles.buffaloFont} -mt-32 text-3xl leading-tight sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight`}>
-                  Nuffalo Jill
+              <div className="text-center space-y-8">
+                <h1 className={`${styles.buffaloFont} text-brown-light -mt-32 leading-tight sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl`}>
+                  Nuffalo Jill 
                 </h1>
-                <p className="mb-12 text-base !leading-relaxed text-body-color dark:text-body-color-dark sm:text-lg md:text-xl">
-                  
-                </p>
-                <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
-                  Something here.
+                <div className="flex flex-col items-center justify-center">
+                  <p>Something here.</p>
                 </div>
               </div>
             </div>
