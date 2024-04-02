@@ -62,6 +62,7 @@ module.exports = {
           light: "#7D351F",
         },
         sand: "#F5D290",
+        sky: "#DFBFA3",
       },
 
       boxShadow: {
