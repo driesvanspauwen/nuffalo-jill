@@ -1,17 +1,9 @@
-import AboutSectionOne from "@/components/About/AboutSectionOne";
-import AboutSectionTwo from "@/components/About/AboutSectionTwo";
-import Blog from "@/components/Blog";
-import Brands from "@/components/Brands";
-import ScrollUp from "@/components/Common/ScrollUp";
-import Contact from "@/components/Contact";
 import Goals from "@/components/Goals";
-import Hero from "@/components/Hero";
 import EventViewer from "@/components/EventViewer";
-import Testimonials from "@/components/Testimonials";
 import Video from "@/components/Video";
-import { Metadata } from "next";
 import styles from "@/components/HomeContentWrapper/styles.module.css";
 
+// Used to wrap home page content under the same background image
 export default function HomeContentWrapper() {
     return (
         <>
