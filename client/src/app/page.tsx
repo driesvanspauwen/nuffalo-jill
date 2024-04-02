@@ -22,9 +22,9 @@ export default function Home() {
     <>
       <ScrollUp />
       <Hero />
+      <Video />
       <Goals />
       <EventViewer />
-      <Video />
       <Brands />
       <AboutSectionOne />
       <AboutSectionTwo />
