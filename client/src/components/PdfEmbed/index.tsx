@@ -20,7 +20,7 @@ function PdfEmbed() {
     return (
         <div>
 
-            <Document file="test.pdf" onLoadSuccess={onDocumentLoadSuccess}>
+            <Document file="/ploegboekje/Ploegboekje.pdf" onLoadSuccess={onDocumentLoadSuccess}>
                 <Page pageNumber={pageNumber} />
             </Document>
             <p>
