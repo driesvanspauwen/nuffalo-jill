@@ -1,15 +1,15 @@
-import { Ploeglid_entry } from "@/types/ploeglid_entry";
+import { PloeglidEntry } from "@/types/ploeglidEntry";
 import Image from "next/image";
 import Link from "next/link";
 
-const SingleBlog = ({ ploeglid }: { ploeglid: Ploeglid_entry }) => {
+const SinglePloeglid = ({ ploeglid }: { ploeglid: PloeglidEntry }) => {
   const { title, image, post, g5, g5_post } = ploeglid;
   return (
     <>
-      <div className="group relative overflow-hidden rounded-sm bg-white shadow-one duration-300 hover:shadow-two dark:bg-dark dark:hover:shadow-gray-dark">
+      <div className="group relative overflow-hidden rounded-sm bg-white shadow-one duration-300 hover:shadow-two dark:bg-dark dark:hover:shadow-gray-dark text-center">
         <Link
           href="/blog-details"
-          className="relative block aspect-[37/22] w-full"
+          className="relative block aspect-[4/5] w-full"
         >
           <Image src={image} alt="image" fill />
         </Link>
@@ -22,6 +22,11 @@ const SingleBlog = ({ ploeglid }: { ploeglid: Ploeglid_entry }) => {
               {title}
             </Link>
           </h3>
+          {g5 && ( // If showTitle is true, render the title
+              <p className="text-base font-medium text-body-color dark:border-white dark:border-opacity-10">
+                {g5_post}
+              </p>
+          )}
 
         </div>
       </div>
@@ -29,4 +34,4 @@ const SingleBlog = ({ ploeglid }: { ploeglid: Ploeglid_entry }) => {
   );
 };
 
-export default SingleBlog;
+export default SinglePloeglid;

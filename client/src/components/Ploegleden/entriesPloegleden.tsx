@@ -1,11 +1,11 @@
-import { Ploeglid_entry } from "@/types/ploeglid_entry";
+import { PloeglidEntry } from "@/types/ploeglidEntry";
 
-const entriesPloegleden: Ploeglid_entry[] = [
+const entriesPloegleden: PloeglidEntry[] = [
   {
     id: 1,
     title: "Hugo Van Nuffel",
-    image: "/images/blog/blog-01.jpg",
-    post: "G5",
+    image: "/images/ploegleden/placeholder-person-icon.png",
+    post: "Kandidaat Groep 5",
     g5: true,
     g5_post: "Kandidaat praeses"
   },
@@ -13,7 +13,7 @@ const entriesPloegleden: Ploeglid_entry[] = [
     id: 2,
     title: "Lisa Corten",
     image: "/images/blog/blog-01.jpg",
-    post: "G5",
+    post: "Kandidaat Groep 5",
     g5: true,
     g5_post: "Kandidaat vice-praeses",
   },
@@ -21,7 +21,7 @@ const entriesPloegleden: Ploeglid_entry[] = [
     id: 3,
     title: "Robbe Serry",
     image: "/images/blog/blog-01.jpg",
-    post: "G5",
+    post: "Kandidaat Groep 5",
     g5: true,
     g5_post: "Kandidaat beheerder"
   },
@@ -29,7 +29,7 @@ const entriesPloegleden: Ploeglid_entry[] = [
     id: 4,
     title: "Charlotte Severnys",
     image: "/images/blog/blog-01.jpg",
-    post: "G5",
+    post: "Kandidaat Groep 5",
     g5: true,
     g5_post: "Kandidaat beheerder"
   },
@@ -37,7 +37,7 @@ const entriesPloegleden: Ploeglid_entry[] = [
     id: 5,
     title: "Ian Mertens",
     image: "/images/blog/blog-01.jpg",
-    post: "G5",
+    post: "Kandidaat Groep 5",
     g5: true,
     g5_post: "Kandidaat secretaris"
   },

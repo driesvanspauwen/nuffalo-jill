@@ -1,4 +1,4 @@
-export type Ploeglid_entry = {
+export type PloeglidEntry = {
     id: number;
     title: string;
     image: string;
