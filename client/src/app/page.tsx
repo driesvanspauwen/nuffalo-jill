@@ -9,6 +9,7 @@ import Hero from "@/components/Hero";
 import EventViewer from "@/components/EventViewer";
 import Testimonials from "@/components/Testimonials";
 import Video from "@/components/Video";
+import HomeContentWrapper from "@/components/HomeContentWrapper";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -22,9 +23,7 @@ export default function Home() {
     <>
       <ScrollUp />
       <Hero />
-      <Video />
-      <Goals />
-      <EventViewer />
+      <HomeContentWrapper />
       <Brands />
       <AboutSectionOne />
       <AboutSectionTwo />

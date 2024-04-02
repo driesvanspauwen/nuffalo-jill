@@ -10,7 +10,9 @@ const Video = () => {
   const [isOpen, setOpen] = useState(false);
 
   return (
-    <section className="relative z-10 py-16 md:py-20 lg:py-28">
+    <section
+        className="bg-[url(/images/parchment2.jpg)] bg-cover bg-center bg-repeat flex z-10 py-16 md:py-20 lg:py-28"
+    >
       <div id="about" className="container">
         <SectionTitle
             title="About us"
@@ -71,7 +73,6 @@ const Video = () => {
           onClose={() => setOpen(false)}
       />
 
-      {/*<div className="absolute bottom-0 left-0 right-0 z-[-1] h-full w-full bg-sky bg-cover bg-center bg-no-repeat"></div>*/}
     </section>
   );
 };
