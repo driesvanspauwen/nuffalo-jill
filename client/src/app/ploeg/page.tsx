@@ -24,21 +24,34 @@ const Ploeg = () => {
         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius eros eget sapien consectetur ultrices. Ut quis dapibus libero."
       />
 
-      <section className="pb-[120px] pt-[120px]">
-        <div className="container">
-          <h2 className="pb-[40px]">Kandidaat Groep 5</h2>
-          <div className="-mx-6 flex flex-wrap justify-center">
-            {entriesPloegleden.filter(x => (x.post==="Kandidaat Groep 5")).map((singlePloeglid) => (
-              <div
-                key={singlePloeglid.id}
-                className="w-full px-4 md:w-2/3 lg:w-1/2 xl:w-1/3"
-              >
-                <SinglePloeglid ploeglid={singlePloeglid} />
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+        <section className="pb-[120px] pt-[120px] pl-[10%] pr-[10%]">
+            <div className="container pb-[120px]">
+                <h2 className="pb-[40px] text-center">Kandidaat Groep 5</h2>
+                <div className="-mx-6 flex flex-wrap justify-center">
+                    {entriesPloegleden.filter(x => (x.post === "Kandidaat Groep 5")).map((singlePloeglid) => (
+                        <div
+                            key={singlePloeglid.id}
+                            className="w-full px-4 md:w-2/3 lg:w-1/2 xl:w-1/3 pl-[2%] pr-[2%] pb-[30px]"
+                        >
+                            <SinglePloeglid ploeglid={singlePloeglid}/>
+                        </div>
+                    ))}
+                </div>
+            </div>
+            <div className="container pb-[120px]">
+                <h2 className="pb-[40px] text-center">Digitaal</h2>
+                <div className="-mx-6 flex flex-wrap justify-center">
+                    {entriesPloegleden.filter(x => (x.post === "Digitaal")).map((singlePloeglid) => (
+                        <div
+                            key={singlePloeglid.id}
+                            className="w-full px-4 md:w-2/3 lg:w-1/2 xl:w-1/3 pl-[2%] pr-[2%] pb-[30px]"
+                        >
+                            <SinglePloeglid ploeglid={singlePloeglid}/>
+                        </div>
+                    ))}
+                </div>
+            </div>
+        </section>
     </>
   );
 };
