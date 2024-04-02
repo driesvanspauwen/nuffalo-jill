@@ -1,5 +1,8 @@
-import Image from "next/image";
+// use client
+import { useEffect, useState } from 'react';
+import Image from "next/image"; // Ensure Image is used if imported
 import SectionTitle from "../Common/SectionTitle";
+import styles from "./compass.module.css";
 
 const checkIcon = (
   <svg width="16" height="13" viewBox="0 0 16 13" className="fill-current">
@@ -7,69 +10,86 @@ const checkIcon = (
   </svg>
 );
 
+// Assuming calcDegreeToPoint function is defined elsewhere
+
 const AboutSectionOne = () => {
-  const List = ({ text }) => (
-    <p className="mb-5 flex items-center text-lg font-medium text-body-color">
-      <span className="mr-4 flex h-[30px] w-[30px] items-center justify-center rounded-md bg-primary bg-opacity-10 text-primary">
-        {checkIcon}
-      </span>
-      {text}
-    </p>
-  );
+  // const [pointDegree, setPointDegree] = useState(undefined);
+
+  // useEffect(() => {
+  //   const isIOS = navigator.userAgent.match(/(iPod|iPhone|iPad)/) && navigator.userAgent.match(/AppleWebKit/);
+  //   const startBtn = document.querySelector(".start-btn");
+
+  //   const handler = (e) => {
+  //     const compass = e.webkitCompassHeading || Math.abs(e.alpha - 360);
+  //     const compassCircle = document.querySelector(".compass-circle") as HTMLElement;
+  //     if (compassCircle) {
+  //       compassCircle.style.transform = `translate(-50%, -50%) rotate(${-compass}deg)`;
+  //     }
+  //   };
+
+  //   const startCompass = () => {
+  //     if (typeof DeviceOrientationEvent !== 'undefined' && typeof (DeviceOrientationEvent as any).requestPermission === 'function') {
+  //       (DeviceOrientationEvent as any).requestPermission().then((response: any) => {
+  //         if (response === 'granted') {
+  //           window.addEventListener('deviceorientation', handler);
+  //         } else {
+  //           alert("Permission has to be allowed!");
+  //         }
+  //       }).catch(() => alert("Device Orientation not supported or permission not granted"));
+  //     } else {
+  //       window.addEventListener("deviceorientationabsolute", handler, true);
+  //     }
+  //   };
+
+  //   startBtn?.addEventListener("click", startCompass);
+
+  //   navigator.geolocation.getCurrentPosition((position) => {
+  //     const { latitude, longitude } = position.coords;
+  //     const degree = calcDegreeToPoint(latitude, longitude);
+  //     setPointDegree(degree >= 0 ? degree : degree + 360);
+  //   }, console.error);
+
+  //   return () => {
+  //     window.removeEventListener('deviceorientation', handler);
+  //     window.removeEventListener('deviceorientationabsolute', handler);
+  //     startBtn?.removeEventListener("click", startCompass);
+  //   };
+  // }, []);
 
   return (
-    <section id="about" className="pt-16 md:pt-20 lg:pt-28">
+    <section id="about" className={styles.section}>
       <div className="container">
-        <div className="border-b border-body-color/[.15] pb-16 dark:border-white/[.15] md:pb-20 lg:pb-28">
-          <div className="-mx-4 flex flex-wrap items-center">
-            <div className="w-full px-4 lg:w-1/2">
-              <SectionTitle
-                title="Crafted for Startup, SaaS and Business Sites."
-                paragraph="The main ‘thrust’ is to focus on educating attendees on how to best protect highly vulnerable business applications with interactive panel discussions and roundtables."
-                mb="44px"
-              />
-
-              <div
-                className="mb-12 max-w-[570px] lg:mb-0"
-                data-wow-delay=".15s"
-              >
-                <div className="mx-[-12px] flex flex-wrap">
-                  <div className="w-full px-3 sm:w-1/2 lg:w-full xl:w-1/2">
-                    <List text="Premium quality" />
-                    <List text="Tailwind CSS" />
-                    <List text="Use for lifetime" />
-                  </div>
-
-                  <div className="w-full px-3 sm:w-1/2 lg:w-full xl:w-1/2">
-                    <List text="Next.js" />
-                    <List text="Rich documentation" />
-                    <List text="Developer friendly" />
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="w-full px-4 lg:w-1/2">
-              <div className="relative mx-auto aspect-[25/24] max-w-[500px] lg:mr-0">
-                <Image
-                  src="/images/about/about-image.svg"
-                  alt="about-image"
-                  fill
-                  className="mx-auto max-w-full drop-shadow-three dark:hidden dark:drop-shadow-none lg:mr-0"
-                />
-                <Image
-                  src="/images/about/about-image-dark.svg"
-                  alt="about-image"
-                  fill
-                  className="mx-auto hidden max-w-full drop-shadow-three dark:block dark:drop-shadow-none lg:mr-0"
-                />
-              </div>
-            </div>
+        <SectionTitle title="About Us" />
+        <div className={styles.compassContainer}>
+          <div className="compass">
+            <div className="arrow"></div>
+            <div className="compass-circle"></div>
+            <div className="my-point"></div>
           </div>
+          <button className="start-btn">Start Compass</button>
         </div>
       </div>
     </section>
   );
 };
+function calcDegreeToPoint(latitude, longitude) {
+  // Qibla geolocation
+  const point = {
+    lat: 21.422487,
+    lng: 39.826206
+  };
+  const phiK = (point.lat * Math.PI) / 180.0;
+      const lambdaK = (point.lng * Math.PI) / 180.0;
+      const phi = (latitude * Math.PI) / 180.0;
+      const lambda = (longitude * Math.PI) / 180.0;
+      const psi =
+        (180.0 / Math.PI) *
+        Math.atan2(
+          Math.sin(lambdaK - lambda),
+          Math.cos(phi) * Math.tan(phiK) -
+            Math.sin(phi) * Math.cos(lambdaK - lambda)
+        );
+      return Math.round(psi);
+}
 
 export default AboutSectionOne;
