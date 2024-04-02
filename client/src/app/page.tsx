@@ -18,7 +18,10 @@ export default function Home() {
   return (
     <>
       <ScrollUp />
-      <Hero />
+      <Hero
+        title = "Nuffalo Jill"
+        subtitle="Something here."
+      />
       <HomeContentWrapper />
       <AboutSectionOne />
       <AboutSectionTwo />

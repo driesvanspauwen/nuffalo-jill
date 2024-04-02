@@ -3,7 +3,7 @@ import { PloeglidEntry } from "@/types/ploeglidEntry";
 const entriesPloegleden: PloeglidEntry[] = [
   {
     id: 1,
-    title: "Hugo Van Nuffel",
+    name: "Hugo Van Nuffel",
     image: "/images/ploegleden/placeholder-person-icon.png",
     post: "Kandidaat Groep 5",
     g5: true,
@@ -11,7 +11,7 @@ const entriesPloegleden: PloeglidEntry[] = [
   },
   {
     id: 2,
-    title: "Lisa Corten",
+    name: "Lisa Corten",
     image: "/images/ploegleden/placeholder-person-icon.png",
     post: "Kandidaat Groep 5",
     g5: true,
@@ -19,7 +19,7 @@ const entriesPloegleden: PloeglidEntry[] = [
   },
   {
     id: 3,
-    title: "Robbe Serry",
+    name: "Robbe Serry",
     image: "/images/ploegleden/placeholder-person-icon.png",
     post: "Kandidaat Groep 5",
     g5: true,
@@ -27,7 +27,7 @@ const entriesPloegleden: PloeglidEntry[] = [
   },
   {
     id: 4,
-    title: "Charlotte Severnys",
+    name: "Charlotte Severnys",
     image: "/images/ploegleden/placeholder-person-icon.png",
     post: "Kandidaat Groep 5",
     g5: true,
@@ -35,7 +35,7 @@ const entriesPloegleden: PloeglidEntry[] = [
   },
   {
     id: 5,
-    title: "Ian Mertens",
+    name: "Ian Mertens",
     image: "/images/ploegleden/placeholder-person-icon.png",
     post: "Kandidaat Groep 5",
     g5: true,
@@ -43,7 +43,7 @@ const entriesPloegleden: PloeglidEntry[] = [
   },
   {
     id: 6,
-    title: "Dries Vanspauwen",
+    name: "Dries Vanspauwen",
     image: "/images/ploegleden/placeholder-person-icon.png",
     post: "Digitaal",
     g5: false,
@@ -51,7 +51,7 @@ const entriesPloegleden: PloeglidEntry[] = [
   },
   {
     id: 7,
-    title: "Annemerel Bobbaers",
+    name: "Annemerel Bobbaers",
     image: "/images/ploegleden/placeholder-person-icon.png",
     post: "Digitaal",
     g5: false,
@@ -59,7 +59,7 @@ const entriesPloegleden: PloeglidEntry[] = [
   },
   {
     id: 8,
-    title: "Tiddo Nees",
+    name: "Tiddo Nees",
     image: "/images/ploegleden/placeholder-person-icon.png",
     post: "Digitaal",
     g5: false,
@@ -67,7 +67,7 @@ const entriesPloegleden: PloeglidEntry[] = [
   },
   {
     id: 9,
-    title: "Tobias de Clercq",
+    name: "Tobias de Clercq",
     image: "/images/ploegleden/placeholder-person-icon.png",
     post: "Digitaal",
     g5: false,
@@ -75,7 +75,7 @@ const entriesPloegleden: PloeglidEntry[] = [
   },
   {
     id: 10,
-    title: "Jarne Plessers",
+    name: "Jarne Plessers",
     image: "/images/ploegleden/placeholder-person-icon.png",
     post: "Digitaal",
     g5: false,
@@ -83,7 +83,7 @@ const entriesPloegleden: PloeglidEntry[] = [
   },
   {
     id: 11,
-    title: "Rémi Mentens",
+    name: "Rémi Mentens",
     image: "/images/ploegleden/placeholder-person-icon.png",
     post: "Digitaal",
     g5: false,
@@ -91,7 +91,7 @@ const entriesPloegleden: PloeglidEntry[] = [
   },
   {
     id: 12,
-    title: "Maarten Haine",
+    name: "Maarten Haine",
     image: "/images/ploegleden/placeholder-person-icon.png",
     post: "Digitaal",
     g5: false,

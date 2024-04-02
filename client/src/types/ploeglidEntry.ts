@@ -1,6 +1,6 @@
 export type PloeglidEntry = {
     id: number;
-    title: string;
+    name: string;
     image: string;
     post: string;
     g5: boolean;
