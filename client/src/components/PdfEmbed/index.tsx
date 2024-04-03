@@ -1,24 +1,32 @@
-import React, {useMemo, useState} from "react";
-import {Document, Page, pdfjs} from "react-pdf";
-import 'react-pdf/dist/Page/AnnotationLayer.css';
-import 'react-pdf/dist/Page/TextLayer.css';
+import React, {useState, useRef, useEffect, useCallback} from "react";
+import { Document, Page, pdfjs } from "react-pdf";
+import "react-pdf/dist/Page/AnnotationLayer.css";
+import "react-pdf/dist/Page/TextLayer.css";
 
-
-pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`
-
+pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 export default function PdfEmbed(props) {
     const [numPages, setNumPages] = useState(null);
-    const [pageNumber, setPageNumber] = useState(1); //setting 1 to show fisrt page
+    const [pageNumber, setPageNumber] = useState(1); //setting 1 to show first page
+    const canvasRef = useRef(null);
+
+    useEffect(() => {
+        if (canvasRef.current) {
+            canvasRef.current.canvas.willReadFrequently = true;
+        }
+    }, []);
 
     function onDocumentLoadSuccess({ numPages }) {
         setNumPages(numPages);
         setPageNumber(1);
     }
 
-    function changePage(offset) {
-        setPageNumber(prevPageNumber => prevPageNumber + offset);
-    }
+    const changePage = useCallback(
+        (offset) => {
+            setPageNumber((prevPageNumber) => prevPageNumber + offset);
+        },
+        [setPageNumber]
+    );
 
     function previousPage() {
         changePage(-1);
@@ -28,26 +36,15 @@ export default function PdfEmbed(props) {
         changePage(1);
     }
 
-    const options = useMemo(
-        () => ({
-            cMapUrl: "cmaps/",
-            cMapPacked: true,
-        }),
-        []
-    );
+    const { pdf } = props;
 
-
-
-    return (
+    const PDF =  (
         <>
-
             <Document
                 file="ploegboekje/DonLupo.pdf"
                 onLoadSuccess={onDocumentLoadSuccess}
-                options={options}
-                canvasContext={{ willReadFrequently: true }}
             >
-                <Page pageNumber={pageNumber} />
+                <Page pageNumber={pageNumber} canvasRef={canvasRef} />
             </Document>
             <div>
                 <p>
@@ -66,4 +63,6 @@ export default function PdfEmbed(props) {
             </div>
         </>
     );
+
+    return PDF;
 }
