@@ -13,22 +13,40 @@ const SinglePloeglid = ({ ploeglid }: { ploeglid: PloeglidEntry }) => {
         >
           <Image src={image} alt="image" fill />
         </Link>
-        <div className="p-6 sm:p-8 md:px-6 md:py-2 lg:p-8 xl:px-5 xl:py-8 2xl:p-4">
-          <h3>
-            <Link
-              href="/blog-details"
-              className="mb-2 block text-xl font-bold text-black hover:text-primary dark:text-white dark:hover:text-primary sm:text-2xl"
-            >
-              {name}
-            </Link>
-          </h3>
-          {g5 && ( // If showTitle is true, render the title
-              <p className="text-base font-medium text-body-color dark:border-white dark:border-opacity-10">
-                {g5_post}
-              </p>
-          )}
 
-        </div>
+        {g5 ? ( // Als ploeglid deel is van g5, printen we de g5_post
+              <div className="flex flex-col justify-center h-[17vh] lg:h-[13vh]">
+                <div
+                    className="p-6 sm:p-8 md:px-6 md:py-2 lg:p-8 xl:px-5 xl:py-8 2xl:p-4">
+                  <h3>
+                    <Link
+                        href="/blog-details"
+                        className="mb-2 block text-xl font-bold text-black hover:text-primary dark:text-white dark:hover:text-primary sm:text-2xl"
+                    >
+                      {name}
+                    </Link>
+                  </h3>
+                  <p className="text-base font-medium text-body-color dark:border-white dark:border-opacity-10">
+                    {g5_post}
+                  </p>
+                </div>
+              </div>
+        ) : (
+            <div className="flex flex-col justify-center h-[10vh] lg:h-[12vh]">
+              <div className="p-6 sm:p-8 md:px-6 md:py-2 lg:p-8 xl:px-5 xl:py-8 2xl:p-4">
+                <h3>
+                  <Link
+                      href="/blog-details"
+                      className="mb-2 block text-xl font-bold text-black hover:text-primary dark:text-white dark:hover:text-primary sm:text-2xl"
+                  >
+                    {name}
+                  </Link>
+                </h3>
+              </div>
+            </div>
+        )}
+
+
       </div>
     </>
   );

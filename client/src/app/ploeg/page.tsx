@@ -30,7 +30,7 @@ const Ploeg = () => {
           <section className="pb-[100px] pt-[100px]">
               <div className="container pb-[50px] pl-[10%] pr-[10%]">
                   <h2 className="pb-[40px] text-center">Kandidaat Groep 5</h2>
-                  <div className="-mx-6 flex flex-wrap justify-center">
+                  <div className="-mx-6 flex flex-wrap justify-center" style={{alignItems: 'stretch'}}>
                       {entriesPloegleden.filter(x => (x.post === "Kandidaat Groep 5")).map((singlePloeglid) => (
                           <div
                               key={singlePloeglid.id}
@@ -41,8 +41,26 @@ const Ploeg = () => {
                       ))}
                   </div>
               </div>
-              
-              <div className="w-full bg-white h-0.5"></div>{/* White line */}
+
+              <div className="w-full bg-white h-0.5"></div>
+              {/* White line */}
+
+              <div className="container pb-[50px] pt-[50px] pl-[10%] pr-[10%]">
+                  <h2 className="pb-[40px] text-center">Catering</h2>
+                  <div className="-mx-6 flex flex-wrap justify-center">
+                      {entriesPloegleden.filter(x => (x.post === "Catering")).map((singlePloeglid) => (
+                          <div
+                              key={singlePloeglid.id}
+                              className="w-1/2 px-4 lg:w-1/3 xl:w-1/4 pl-[2%] pr-[2%] pb-[30px]"
+                          >
+                              <SinglePloeglid ploeglid={singlePloeglid}/>
+                          </div>
+                      ))}
+                  </div>
+              </div>
+
+              <div className="w-full bg-white h-0.5"></div>
+              {/* White line */}
 
               <div className="container pb-[50px] pt-[50px] pl-[10%] pr-[10%]">
                   <h2 className="pb-[40px] text-center">Digitaal</h2>
@@ -57,6 +75,126 @@ const Ploeg = () => {
                       ))}
                   </div>
               </div>
+
+              <div className="w-full bg-white h-0.5"></div>
+              {/* White line */}
+
+              <div className="container pb-[50px] pt-[50px] pl-[10%] pr-[10%]">
+                  <h2 className="pb-[40px] text-center">Evenementen</h2>
+                  <div className="-mx-6 flex flex-wrap justify-center">
+                      {entriesPloegleden.filter(x => (x.post === "Evenementen")).map((singlePloeglid) => (
+                          <div
+                              key={singlePloeglid.id}
+                              className="w-1/2 px-4 lg:w-1/3 xl:w-1/4 pl-[2%] pr-[2%] pb-[30px]"
+                          >
+                              <SinglePloeglid ploeglid={singlePloeglid}/>
+                          </div>
+                      ))}
+                  </div>
+              </div>
+
+              <div className="w-full bg-white h-0.5"></div>
+              {/* White line */}
+
+              <div className="container pb-[50px] pt-[50px] pl-[10%] pr-[10%]">
+                  <h2 className="pb-[40px] text-center">Locatie</h2>
+                  <div className="-mx-6 flex flex-wrap justify-center">
+                      {entriesPloegleden.filter(x => (x.post === "Locatie")).map((singlePloeglid) => (
+                          <div
+                              key={singlePloeglid.id}
+                              className="w-1/2 px-4 lg:w-1/3 xl:w-1/4 pl-[2%] pr-[2%] pb-[30px]"
+                          >
+                              <SinglePloeglid ploeglid={singlePloeglid}/>
+                          </div>
+                      ))}
+                  </div>
+              </div>
+
+              <div className="w-full bg-white h-0.5"></div>
+              {/* White line */}
+
+              <div className="container pb-[50px] pt-[50px] pl-[10%] pr-[10%]">
+                  <h2 className="pb-[40px] text-center">Marketing</h2>
+                  <div className="-mx-6 flex flex-wrap justify-center">
+                      {entriesPloegleden.filter(x => (x.post === "Marketing")).map((singlePloeglid) => (
+                          <div
+                              key={singlePloeglid.id}
+                              className="w-1/2 px-4 lg:w-1/3 xl:w-1/4 pl-[2%] pr-[2%] pb-[30px]"
+                          >
+                              <SinglePloeglid ploeglid={singlePloeglid}/>
+                          </div>
+                      ))}
+                  </div>
+              </div>
+
+              <div className="w-full bg-white h-0.5"></div>
+              {/* White line */}
+
+              <div className="container pb-[50px] pt-[50px] pl-[10%] pr-[10%]">
+                  <h2 className="pb-[40px] text-center">Natura</h2>
+                  <div className="-mx-6 flex flex-wrap justify-center">
+                      {entriesPloegleden.filter(x => (x.post === "Natura")).map((singlePloeglid) => (
+                          <div
+                              key={singlePloeglid.id}
+                              className="w-1/2 px-4 lg:w-1/3 xl:w-1/4 pl-[2%] pr-[2%] pb-[30px]"
+                          >
+                              <SinglePloeglid ploeglid={singlePloeglid}/>
+                          </div>
+                      ))}
+                  </div>
+              </div>
+
+              <div className="w-full bg-white h-0.5"></div>
+              {/* White line */}
+
+              <div className="container pb-[50px] pt-[50px] pl-[10%] pr-[10%]">
+                  <h2 className="pb-[40px] text-center">Pre</h2>
+                  <div className="-mx-6 flex flex-wrap justify-center">
+                      {entriesPloegleden.filter(x => (x.post === "Pre")).map((singlePloeglid) => (
+                          <div
+                              key={singlePloeglid.id}
+                              className="w-1/2 px-4 lg:w-1/3 xl:w-1/4 pl-[2%] pr-[2%] pb-[30px]"
+                          >
+                              <SinglePloeglid ploeglid={singlePloeglid}/>
+                          </div>
+                      ))}
+                  </div>
+              </div>
+
+              <div className="w-full bg-white h-0.5"></div>
+              {/* White line */}
+
+              <div className="container pb-[50px] pt-[50px] pl-[10%] pr-[10%]">
+                  <h2 className="pb-[40px] text-center">Sponsoring</h2>
+                  <div className="-mx-6 flex flex-wrap justify-center">
+                      {entriesPloegleden.filter(x => (x.post === "Sponsoring")).map((singlePloeglid) => (
+                          <div
+                              key={singlePloeglid.id}
+                              className="w-1/2 px-4 lg:w-1/3 xl:w-1/4 pl-[2%] pr-[2%] pb-[30px]"
+                          >
+                              <SinglePloeglid ploeglid={singlePloeglid}/>
+                          </div>
+                      ))}
+                  </div>
+              </div>
+
+              <div className="w-full bg-white h-0.5"></div>
+              {/* White line */}
+
+              <div className="container pb-[50px] pt-[50px] pl-[10%] pr-[10%]">
+                  <h2 className="pb-[40px] text-center">Standpunten</h2>
+                  <div className="-mx-6 flex flex-wrap justify-center">
+                      {entriesPloegleden.filter(x => (x.post === "Standpunten")).map((singlePloeglid) => (
+                          <div
+                              key={singlePloeglid.id}
+                              className="w-1/2 px-4 lg:w-1/3 xl:w-1/4 pl-[2%] pr-[2%] pb-[30px]"
+                          >
+                              <SinglePloeglid ploeglid={singlePloeglid}/>
+                          </div>
+                      ))}
+                  </div>
+              </div>
+              
           </section>
       </div>
   );
