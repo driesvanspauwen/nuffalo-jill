@@ -41,8 +41,10 @@ const Ploeg = () => {
                       ))}
                   </div>
               </div>
+              
               <div className="w-full bg-white h-0.5"></div>{/* White line */}
-              <div className="container pb-[50px] pt-[50px]">
+
+              <div className="container pb-[50px] pt-[50px] pl-[10%] pr-[10%]">
                   <h2 className="pb-[40px] text-center">Digitaal</h2>
                   <div className="-mx-6 flex flex-wrap justify-center">
                       {entriesPloegleden.filter(x => (x.post === "Digitaal")).map((singlePloeglid) => (
