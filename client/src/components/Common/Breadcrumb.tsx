@@ -3,9 +3,11 @@ import Link from "next/link";
 const Breadcrumb = ({
   pageName,
   description,
+                      center,
 }: {
   pageName: string;
   description: string;
+  center?: boolean;
 }) => {
   return (
     <>
