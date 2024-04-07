@@ -2,6 +2,7 @@ import Goals from "@/components/Goals";
 import EventViewer from "@/components/EventViewer";
 import Video from "@/components/Video";
 import styles from "@/components/HomeContentWrapper/styles.module.css";
+import Catering from "@/components/Catering";
 
 // Used to wrap home page content under the same background image
 export default function HomeContentWrapper() {
@@ -14,6 +15,7 @@ export default function HomeContentWrapper() {
                 <Goals/>
                 <EventViewer/>
                 <div className={styles.fadeTop}></div>
+                <Catering />
             </div>
         </>
     );
