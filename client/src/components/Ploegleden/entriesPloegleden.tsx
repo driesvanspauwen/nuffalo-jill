@@ -372,7 +372,7 @@ const entriesPloegleden: PloeglidEntry[] = [
     g5_post: ""
   },{
     id: 46,
-    name: "Lowie Kwinten",
+    name: "Kwinten Lowie",
     image: "/images/ploegleden/placeholder-person-icon.png",
     post: "Locatie",
     g5: false,
