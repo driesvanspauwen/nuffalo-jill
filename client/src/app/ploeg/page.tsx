@@ -25,6 +25,7 @@ const Ploeg = () => {
           <Hero
               title="Ontmoet de ploeg"
               subtitle="Hier komt een super mega coole foto van ploeg"
+              backgroundImage="/images/hero/homepage-background.jpg"
           />
 
           <section className="pb-[100px] pt-[100px]">

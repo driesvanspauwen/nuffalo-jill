@@ -21,6 +21,7 @@ export default function Home() {
       <Hero
         title = "Nuffalo Jill"
         subtitle="Something here."
+        backgroundImage="/images/hero/homepage-background.jpg"
       />
       <HomeContentWrapper />
       <AboutSectionOne />
