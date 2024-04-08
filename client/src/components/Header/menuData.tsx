@@ -10,7 +10,7 @@ const menuData: Menu[] = [
   {
     id: 2,
     title: "WHO WE ARE",
-    path: "about",
+    path: "video",
     newTab: false,
   },
   {
