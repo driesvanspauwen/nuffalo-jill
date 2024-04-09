@@ -362,75 +362,35 @@ export interface AdminTransferTokenPermission extends Schema.CollectionType {
   };
 }
 
-export interface ApiEventEvent extends Schema.CollectionType {
-  collectionName: 'events';
+export interface ApiPlayerPlayer extends Schema.CollectionType {
+  collectionName: 'players';
   info: {
-    singularName: 'event';
-    pluralName: 'events';
-    displayName: 'events';
-    description: '';
+    singularName: 'player';
+    pluralName: 'players';
+    displayName: 'player';
   };
   options: {
     draftAndPublish: true;
   };
-  pluginOptions: {
-    i18n: {
-      localized: true;
-    };
-  };
   attributes: {
-    Name: Attribute.String &
-      Attribute.Required &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    Description: Attribute.Text &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    StartDatetime: Attribute.DateTime &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    EndDatetime: Attribute.DateTime &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    Image: Attribute.Media &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
+    username: Attribute.String;
+    email: Attribute.String;
+    score: Attribute.Integer;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
-      'api::event.event',
+      'api::player.player',
       'oneToOne',
       'admin::user'
     > &
       Attribute.Private;
     updatedBy: Attribute.Relation<
-      'api::event.event',
+      'api::player.player',
       'oneToOne',
       'admin::user'
     > &
       Attribute.Private;
-    localizations: Attribute.Relation<
-      'api::event.event',
-      'oneToMany',
-      'api::event.event'
-    >;
-    locale: Attribute.String;
   };
 }
 
@@ -712,7 +672,7 @@ declare module '@strapi/types' {
       'admin::api-token-permission': AdminApiTokenPermission;
       'admin::transfer-token': AdminTransferToken;
       'admin::transfer-token-permission': AdminTransferTokenPermission;
-      'api::event.event': ApiEventEvent;
+      'api::player.player': ApiPlayerPlayer;
       'plugin::upload.file': PluginUploadFile;
       'plugin::upload.folder': PluginUploadFolder;
       'plugin::content-releases.release': PluginContentReleasesRelease;
