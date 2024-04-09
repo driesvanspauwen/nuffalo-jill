@@ -11,6 +11,11 @@
 }
 
 @font-face {
+  font-family: 'Playbill';
+  src: url('/fonts/playbill/Playbill.ttf') format('truetype');
+}
+
+@font-face {
   font-family: 'AkaPosse';
   src: url('/fonts/posse/akaPosse.ttf') format('truetype');
 }
@@ -37,10 +42,17 @@
   }
 }
 
-.nakaraFont {
+.akaPosseFont {
   font-family: 'AkaPosse', sans-serif;
   font-optical-sizing: auto;
   font-size: 2rem;
+}
+
+.playbillFont {
+  font-family: 'Playbill', sans-serif;
+  font-optical-sizing: auto;
+  font-size: 3rem;
+  letter-spacing: 0.05em;
 }
 
 .parchmentBackground {

@@ -27,7 +27,7 @@ export default function RootLayout({
       */}
       <head />
 
-      <body className={`parchmentBackground nakaraFont`}>
+      <body className={`parchmentBackground akaPosseFont`}>
         <Providers>
           <Header />
           {children}

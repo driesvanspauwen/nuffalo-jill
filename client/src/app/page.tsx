@@ -24,11 +24,7 @@ export default function Home() {
         backgroundImage="/images/hero/homepage-background.jpg"
       />
       <HomeContentWrapper />
-      <AboutSectionOne />
       <AboutSectionTwo />
-      <Testimonials />
-      <Blog />
-      <Contact />
     </>
   );
 }
