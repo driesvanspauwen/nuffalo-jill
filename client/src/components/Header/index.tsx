@@ -1,12 +1,9 @@
-"use client";
-import Image from "next/image";
 //import Link from "next/link";
-import { Link } from 'react-scroll';
-import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
+import {Link} from 'react-scroll';
+import {usePathname} from "next/navigation";
+import {useEffect, useState} from "react";
 import ThemeToggler from "./ThemeToggler";
 import menuData from "./menuData";
-import styles from './styles.module.css';
 
 
 const Header = () => {
@@ -39,6 +36,11 @@ const Header = () => {
       setOpenIndex(index);
     }
   };
+
+  function isHomePage(): boolean{
+    const pathname: string = window.location.pathname;
+    return pathname === '/'
+  }
 
   const usePathName = usePathname();
 
@@ -106,21 +108,32 @@ const Header = () => {
                   >
                     {menuData.map((menuItem, index) => (
                         <li key={index} className="group relative max-w-1/8">
-                          <Link
-                              className={`flex py-2 text-base lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 ${
-                                  isScrolled
-                                      ? "text-sky hover:text-sky"
-                                      : "text-brown-dark hover:text-brown-medium"
-                              }`}
-                              to={menuItem.path}
-                              href={menuItem.path}
-                              spy={true}
-                              smooth={true}
-                              offset={-70}
-                              duration={500}
-                          >
-                            {menuItem.title}
-                          </Link>
+                          {isHomePage() ?
+                              <Link
+                                  className={`flex py-2 text-base lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 ${
+                                      isScrolled
+                                          ? "text-sky hover:text-sky"
+                                          : "text-brown-dark hover:text-brown-medium"
+                                  }`}
+                                  to={isHomePage() ? menuItem.path : "/"}
+                                  href={isHomePage() ? menuItem.path : "/"}
+                                  spy={true}
+                                  smooth={true}
+                                  offset={-70}
+                                  duration={500}
+                              >
+                                {menuItem.title}
+                              </Link>
+                              :
+                              <a href={"/"}
+                                 className={`flex py-2 text-base lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 ${
+                                     isScrolled
+                                         ? "text-sky hover:text-sky"
+                                         : "text-brown-dark hover:text-brown-medium"
+                                 }`}
+                              >{menuItem.title}</a>
+                          }
+
                         </li>
                     ))}
                   </ul>
