@@ -22,7 +22,7 @@ const SectionTitle = ({
             className={`w-full ${center ? "mx-auto text-center" : ""}`}
             style={{ maxWidth: width, marginBottom: mb }}
         >
-          <h2 className={`mb-4 font-bold !leading-tight text-black dark:text-${titleColor} ${size} uppercase`}>
+          <h2 className={`mb-4 font-bold !leading-tight text-${titleColor} ${size} uppercase`}>
             {title}
           </h2>
           <p className="text-base !leading-relaxed text-body-color md:text-lg">
