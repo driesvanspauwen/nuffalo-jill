@@ -1,10 +1,10 @@
 "use client";
 import { useState } from "react";
 import SectionTitle from "../Common/SectionTitle";
-import EventBox from "./EventBox";
-import { fetcher } from '../../lib/api'
- 
-const Schedule = ( {events} ) => {
+import DayBox from "./DayBox";
+import { fetcher } from "../../lib/api";
+
+const Schedule = ({ events }) => {
   const [isMonthly, setIsMonthly] = useState(true);
 
   return (
@@ -18,30 +18,9 @@ const Schedule = ( {events} ) => {
         />
 
         <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
-          <EventBox
-            packageName="Woensdag"
-            price={isMonthly ? "40" : "120"}
-            duration={isMonthly ? "mo" : "yr"}
-            subtitle="Lorem ipsum dolor sit amet adiscing elit Mauris egestas enim."
-          >
-            Events
-          </EventBox>
-          <EventBox
-            packageName="Donderdag"
-            price={isMonthly ? "399" : "789"}
-            duration={isMonthly ? "mo" : "yr"}
-            subtitle="Lorem ipsum dolor sit amet adiscing elit Mauris egestas enim."
-          >
-            Events
-          </EventBox>
-          <EventBox
-            packageName="Vrijdag"
-            price={isMonthly ? "589" : "999"}
-            duration={isMonthly ? "mo" : "yr"}
-            subtitle="Lorem ipsum dolor sit amet adiscing elit Mauris egestas enim."
-          >
-            Hallo ik ben maarten
-          </EventBox>
+          <DayBox packageName="Woensdag">Events</DayBox>
+          <DayBox packageName="Donderdag">Events</DayBox>
+          <DayBox packageName="Vrijdag">Hallo ik ben maarten</DayBox>
         </div>
       </div>
     </section>
@@ -51,13 +30,13 @@ const Schedule = ( {events} ) => {
 export default Schedule;
 
 export async function getStaticProps() {
-  const eventsResponse = await fetcher('$(process.env.NEXT_PUBLIC_STRAPI_URL)/event')
+  const eventsResponse = await fetcher(
+    "$(process.env.NEXT_PUBLIC_STRAPI_URL)/event",
+  );
   console.log(eventsResponse);
   return {
     props: {
-      events: eventsResponse
-    }
-  }
-
+      events: eventsResponse,
+    },
+  };
 }
-
