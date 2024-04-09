@@ -1,11 +1,10 @@
 "use client";
 import { useState } from "react";
-import SectionTitle from "../Common/SectionTitle";
 import DayBox from "./DayBox";
 import { fetcher } from "../../lib/api";
-import Image from 'next/image';
-import Link from 'next/link'
-import bierdrinken_banner from "./banners/bierdrinken_1_baner.webp";
+import Image from "next/image";
+import Link from "next/link";
+import SectionTitle from "../Common/SectionTitle";
 
 const Schedule = () => {
   const [isMonthly, setIsMonthly] = useState(true);
@@ -13,12 +12,7 @@ const Schedule = () => {
   return (
     <section id="events" className="relative z-10 py-16 md:py-20 lg:py-28">
       <div className="container">
-        <SectionTitle
-          title="Events"
-          paragraph="This is an overview of VTK Kiesweek events."
-          center
-          width="665px"
-        />
+        <SectionTitle title="Week" center width="665px" />
 
         <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
           <DayBox packageName="Woensdag">
@@ -31,8 +25,8 @@ const Schedule = () => {
                 alt="Screenshots of the dashboard project showing desktop version"
               />
             </Link>
-            
-            <div style={{ marginTop: '30px' }}></div>
+
+            <div style={{ marginTop: "30px" }}></div>
 
             <Link href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUIcmlja3JvbGw%3D">
               <Image
@@ -44,7 +38,7 @@ const Schedule = () => {
               />
             </Link>
           </DayBox>
-          
+
           <DayBox packageName="Donderdag">Events</DayBox>
           <DayBox packageName="Vrijdag">Hallo ik ben maarten</DayBox>
         </div>
