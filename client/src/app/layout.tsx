@@ -28,7 +28,7 @@ export default function RootLayout({
             if (element) {
                 element.scrollIntoView({ behavior: 'instant', block: 'start', inline: 'nearest' });
                 // You can adjust the vertical offset by adding a specific value to the top
-                window.scrollBy(0, -100); // Adjust the value (-100 in this case) to your desired offset
+                window.scrollBy(0, -80); // Adjust the value (-100 in this case) to your desired offset
             }
         }
     }, []);

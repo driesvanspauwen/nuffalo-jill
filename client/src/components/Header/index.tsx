@@ -119,7 +119,7 @@ const Header = () => {
                                   href={menuItem.path}
                                   spy={true}
                                   smooth={true}
-                                  offset={-100}
+                                  offset={-80}
                                   duration={500}
                               >
                                 {menuItem.title}
