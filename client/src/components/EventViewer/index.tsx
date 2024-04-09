@@ -6,7 +6,7 @@ import { fetcher } from "../../lib/api";
 import Image from 'next/image';
 import bierdrinken_banner from "./banners/bierdrinken_1_baner.webp";
 
-const Schedule = ({ events }) => {
+const Schedule = () => {
   const [isMonthly, setIsMonthly] = useState(true);
 
   return (
@@ -28,9 +28,7 @@ const Schedule = ({ events }) => {
               className="hidden md:block"
               alt="Screenshots of the dashboard project showing desktop version"
             />
-
             <div style={{ marginTop: '30px' }}></div>
-
             <Image
               src="/images/banners/Fakfeestje.png"
               width={1000}
