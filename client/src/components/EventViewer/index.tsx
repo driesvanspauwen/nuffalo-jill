@@ -3,6 +3,7 @@ import { useState } from "react";
 import SectionTitle from "../Common/SectionTitle";
 import DayBox from "./DayBox";
 import { fetcher } from "../../lib/api";
+import bierdrinken_banner from "./banners/bierdrinken_1_baner.webp";
 
 const Schedule = ({ events }) => {
   const [isMonthly, setIsMonthly] = useState(true);
@@ -18,7 +19,9 @@ const Schedule = ({ events }) => {
         />
 
         <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
-          <DayBox packageName="Woensdag">Events</DayBox>
+          <DayBox packageName="Woensdag">
+            <img src={bierdrinken_banner} alt="Event Image" />
+          </DayBox>
           <DayBox packageName="Donderdag">Events</DayBox>
           <DayBox packageName="Vrijdag">Hallo ik ben maarten</DayBox>
         </div>
