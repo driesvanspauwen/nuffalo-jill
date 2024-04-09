@@ -1,4 +1,4 @@
-//import Link from "next/link";
+import LinkNjs from "next/link";
 import {Link} from 'react-scroll';
 import {usePathname} from "next/navigation";
 import {useEffect, useState} from "react";
@@ -115,8 +115,8 @@ const Header = () => {
                                           ? "text-sky hover:text-sky"
                                           : "text-brown-dark hover:text-brown-medium"
                                   }`}
-                                  to={isHomePage() ? menuItem.path : "/"}
-                                  href={isHomePage() ? menuItem.path : "/"}
+                                  to={menuItem.path}
+                                  href={menuItem.path}
                                   spy={true}
                                   smooth={true}
                                   offset={-70}
@@ -125,7 +125,7 @@ const Header = () => {
                                 {menuItem.title}
                               </Link>
                               :
-                              <a href={"/"}
+                              <a href={`/#${menuItem.path}`}
                                  className={`flex py-2 text-base lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 ${
                                      isScrolled
                                          ? "text-sky hover:text-sky"

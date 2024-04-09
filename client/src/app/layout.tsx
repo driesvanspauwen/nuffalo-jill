@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect } from 'react';
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import ScrollToTop from "@/components/ScrollToTop";
@@ -19,6 +20,18 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+    useEffect(() => {
+        // This useEffect runs once when the component mounts
+        // It checks if there is a hash in the URL and scrolls to that element if it exists
+        if (window.location.hash) {
+            const element = document.querySelector(window.location.hash);
+            if (element) {
+                element.scrollIntoView({ behavior: 'instant' });
+            }
+        }
+    }, []);
+
+
   return (
     <html suppressHydrationWarning lang="en">
       {/*
