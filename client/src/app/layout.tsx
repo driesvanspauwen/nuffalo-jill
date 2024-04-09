@@ -1,5 +1,8 @@
 "use client";
 
+// For monitoring speed on vercel deployment
+import { SpeedInsights } from "@vercel/speed-insights/next"
+
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import ScrollToTop from "@/components/ScrollToTop";
@@ -30,7 +33,8 @@ export default function RootLayout({
       <body className={`parchmentBackground akaPosseFont`}>
         <Providers>
           <Header />
-          {children}
+            {children}
+            <SpeedInsights />
           <Footer />
           <ScrollToTop />
         </Providers>
