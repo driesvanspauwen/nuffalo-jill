@@ -12,7 +12,7 @@ const Video = () => {
   return (
     <>
       <section
-          className="bg-brown-dark bg-cover bg-center bg-repeat flex z-10 py-16 md:py-20 lg:py-28"
+          className="bg-brown-dark bg-cover bg-center bg-repeat min-h-screen flex z-10 py-16 md:py-20 lg:py-28"
       >
         <div id="video" className="container">
           <SectionTitle
@@ -23,10 +23,10 @@ const Video = () => {
               titleColor="sky"
           />
 
-          <div className="-mx-4 mt-20 flex flex-wrap">
+          <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4">
               <div
-                  className="mx-auto max-w-[1000px] overflow-hidden rounded-md"
+                  className="mx-auto max-w-[770px] overflow-hidden rounded-md"
                   data-wow-delay=".15s"
               >
                 <div className="relative aspect-[77/40] items-center justify-center">
@@ -54,7 +54,7 @@ const Video = () => {
             </div>
           </div>
 
-        <div className="mb-2 mt-20 mx-auto text-center">
+        <div className="mb-2 mt-5 mx-auto text-center">
             <div className="flex justify-center items-center">
               <a href="ploeg"
                  className="bg-sky mb-3 mr-3 inline-flex items-center justify-center rounded-sm px-4 py-2 text-lg text-black duration-300 hover:bg-primary hover:text-sky">
