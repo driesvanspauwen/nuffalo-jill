@@ -16,7 +16,7 @@ return (
             <div className="-mx-4 flex flex-wrap">
                 <div className="w-full px-4">
                 <div className="text-center space-y-8">
-                    <h1 className={`text-brown-medium -mt-32 leading-tight sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl`}>
+                    <h1 className={`${styles.buffaloFont} text-brown-medium -mt-32 leading-tight sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl`}>
                         {title}
                     </h1>
                     <div className="flex flex-col items-center justify-center">
