@@ -19,7 +19,7 @@ export default function Home() {
     <>
       <ScrollUp />
       <Hero
-        title = "Nuffalo Jill"
+        title = "NUFFALO JILL"
         subtitle="Something here."
         backgroundImage="/images/hero/homepage-background.jpg"
       />

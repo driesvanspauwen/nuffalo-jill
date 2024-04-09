@@ -12,21 +12,21 @@ const Video = () => {
   return (
     <>
       <section
-          className="bg-[url(/images/parchment2.jpg)] bg-cover bg-center bg-repeat flex z-10 py-16 md:py-20 lg:py-28"
+          className="bg-brown-dark bg-cover bg-center bg-repeat flex z-10 py-16 md:py-20 lg:py-28"
       >
         <div id="video" className="container">
           <SectionTitle
-              title="About us"
-              paragraph="There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
+              title="WHO WE ARE"
+              paragraph=""
               center
               mb="30px"
-              titleColor="white"
+              titleColor="sky"
           />
 
-          <div className="-mx-4 flex flex-wrap">
+          <div className="-mx-4 mt-20 flex flex-wrap">
             <div className="w-full px-4">
               <div
-                  className="mx-auto max-w-[770px] overflow-hidden rounded-md"
+                  className="mx-auto max-w-[1000px] overflow-hidden rounded-md"
                   data-wow-delay=".15s"
               >
                 <div className="relative aspect-[77/40] items-center justify-center">
@@ -44,7 +44,8 @@ const Video = () => {
                           className="fill-current"
                       >
                         <path
-                            d="M15.5 8.13397C16.1667 8.51888 16.1667 9.48112 15.5 9.86602L2 17.6603C1.33333 18.0452 0.499999 17.564 0.499999 16.7942L0.5 1.20577C0.5 0.43597 1.33333 -0.0451549 2 0.339745L15.5 8.13397Z"/>
+                            d="M15.5 8.13397C16.1667 8.51888 16.1667 9.48112 15.5 9.86602L2 17.6603C1.33333 18.0452 0.499999 17.564 0.499999 16.7942L0.5 1.20577C0.5 0.43597 1.33333 -0.0451549 2 0.339745L15.5 8.13397Z"
+                        />
                       </svg>
                     </button>
                   </div>
@@ -53,14 +54,14 @@ const Video = () => {
             </div>
           </div>
 
-        <div className="mb-2 mt-5 mx-auto text-center">
+        <div className="mb-2 mt-20 mx-auto text-center">
             <div className="flex justify-center items-center">
               <a href="ploeg"
-                 className="bg-gray-light mb-3 mr-3 inline-flex items-center justify-center rounded-sm px-4 py-2 text-sm text-black duration-300 hover:bg-primary hover:text-white dark:bg-[#2C303B] dark:text-white dark:hover:bg-primary">
-                Ontdek de ploeg</a>
+                 className="bg-sky mb-3 mr-3 inline-flex items-center justify-center rounded-sm px-4 py-2 text-lg text-black duration-300 hover:bg-primary hover:text-sky">
+                DISCOVER THE TEAM</a>
               <a href="ploegboekje"
-                 className="bg-gray-light mb-3 mr-3 inline-flex items-center justify-center rounded-sm px-4 py-2 text-sm text-black duration-300 hover:bg-primary hover:text-white dark:bg-[#2C303B] dark:text-white dark:hover:bg-primary">
-                Lees het ploegboekje</a>
+                 className="bg-sky mb-3 mr-3 inline-flex items-center justify-center rounded-sm px-4 py-2 text-lg text-black duration-300 hover:bg-primary hover:text-sky">
+                READ THE TEAM MAGAZINE</a>
             </div>
           </div>
         </div>
