@@ -121,25 +121,25 @@ const Header = () => {
                                         : "text-brown-dark hover:text-brown-medium"
                                 }`}
                                 onClick={(e) => {
-                                  {window.location.pathname === "/" ? e.preventDefault() : void(0)}
-                                  setTimeout(() => {
-                                    {
-                                      window.location.pathname === "/"
-                                      ?
+                                  {if(window.location.pathname === "/") {
+                                    e.preventDefault()
+                                    setTimeout(() => {
                                       document.getElementById(menuItem.path) &&
                                       document
                                           .getElementById(menuItem.path)
                                           .scrollIntoView({ behavior: "smooth", block: "end"
                                           })
-                                      :
-                                      document.getElementById(menuItem.path) &&
-                                      document
-                                          .getElementById(menuItem.path)
-                                          .scrollIntoView({ behavior: "instant", block: "end"
-                                          })
-                                    }
-                                  }, 50)
-                                }}
+                                    }, 50)
+                                    }else {
+                                      setTimeout(() => {
+                                        document.getElementById(menuItem.path) &&
+                                        document
+                                            .getElementById(menuItem.path)
+                                            .scrollIntoView({ behavior: "instant", block: "end"
+                                            })
+                                      }, 30)
+                                  }
+                                }}}
                             >
                             {menuItem.title}
                           </Link>
