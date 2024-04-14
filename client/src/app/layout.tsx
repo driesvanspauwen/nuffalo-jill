@@ -20,20 +20,6 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-    useEffect(() => {
-        // This useEffect runs once when the component mounts
-        // It checks if there is a hash in the URL and scrolls to that element if it exists
-        if (window.location.hash) {
-            const element = document.querySelector(window.location.hash);
-            if (element) {
-                element.scrollIntoView({ behavior: 'instant', block: 'start', inline: 'nearest' });
-                // You can adjust the vertical offset by adding a specific value to the top
-                window.scrollBy(0, -80); // Adjust the value (-100 in this case) to your desired offset
-            }
-        }
-    }, []);
-
-
   return (
     <html suppressHydrationWarning lang="en">
       {/*

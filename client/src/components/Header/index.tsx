@@ -1,9 +1,11 @@
-import LinkNjs from "next/link";
-import {Link} from 'react-scroll';
+import Link from "next/link";
+//import {Link} from 'react-scroll';
 import {usePathname} from "next/navigation";
 import {useEffect, useState} from "react";
 import ThemeToggler from "./ThemeToggler";
 import menuData from "./menuData";
+import { Link as RouterLink } from 'react-router-dom';
+import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
 
 
 const Header = () => {
@@ -36,11 +38,6 @@ const Header = () => {
       setOpenIndex(index);
     }
   };
-
-  function isHomePage(): boolean{
-    const pathname: string = window.location.pathname;
-    return pathname === '/'
-  }
 
   const usePathName = usePathname();
 
@@ -108,32 +105,44 @@ const Header = () => {
                   >
                     {menuData.map((menuItem, index) => (
                         <li key={index} className="group relative max-w-1/8">
-                          {isHomePage() ?
-                              <Link
-                                  className={`flex py-2 text-base lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 ${
-                                      isScrolled
-                                          ? "text-sky hover:text-sky"
-                                          : "text-brown-dark hover:text-brown-medium"
-                                  }`}
-                                  to={menuItem.path}
-                                  href={menuItem.path}
-                                  spy={true}
-                                  smooth={true}
-                                  offset={-80}
-                                  duration={500}
-                              >
-                                {menuItem.title}
-                              </Link>
-                              :
-                              <a href={`/#${menuItem.path}`}
-                                 className={`flex py-2 text-base lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 ${
-                                     isScrolled
-                                         ? "text-sky hover:text-sky"
-                                         : "text-brown-dark hover:text-brown-medium"
-                                 }`}
-                              >{menuItem.title}</a>
-                          }
-
+                          {/*<Link href= {`/#${menuItem.path}`}
+                                className={`flex py-2 text-base lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 ${
+                                    isScrolled
+                                        ? "text-sky hover:text-sky"
+                                        : "text-brown-dark hover:text-brown-medium"
+                                }`}
+                          >
+                            {menuItem.title}
+                          </Link>*/}
+                          <Link href="/"
+                                className={`flex py-2 text-base lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 ${
+                                    isScrolled
+                                        ? "text-sky hover:text-sky"
+                                        : "text-brown-dark hover:text-brown-medium"
+                                }`}
+                                onClick={(e) => {
+                                  {window.location.pathname === "/" ? e.preventDefault() : void(0)}
+                                  setTimeout(() => {
+                                    {
+                                      window.location.pathname === "/"
+                                      ?
+                                      document.getElementById(menuItem.path) &&
+                                      document
+                                          .getElementById(menuItem.path)
+                                          .scrollIntoView({ behavior: "smooth", block: "end"
+                                          })
+                                      :
+                                      document.getElementById(menuItem.path) &&
+                                      document
+                                          .getElementById(menuItem.path)
+                                          .scrollIntoView({ behavior: "instant", block: "end"
+                                          })
+                                    }
+                                  }, 50)
+                                }}
+                            >
+                            {menuItem.title}
+                          </Link>
                         </li>
                     ))}
                   </ul>
