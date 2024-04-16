@@ -137,7 +137,7 @@ const Header = () => {
                                             .getElementById(menuItem.path)
                                             .scrollIntoView({ behavior: "instant", block: "end"
                                             })
-                                      }, 50)
+                                      }, 100)
                                   }
                                 }}}
                             >

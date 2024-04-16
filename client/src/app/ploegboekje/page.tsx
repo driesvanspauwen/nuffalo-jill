@@ -4,23 +4,23 @@ const Ploegboekje = () => {
       <div
           className="z-0 bg-[url(/images/home-content-wrapper/parchment.jpg)] bg-cover bg-center relative"
       >
-          <section className="pb-[120px] pt-[100px]">
-              <div className="container">
-                  <div className="w-full -mx-4 flex justify-center"> {/* Centering the content */}
-                      <div className="w-full px-4">
+          <section className="pb-[120px] pt-[100px] mx-auto">
+              <div className="container mx-auto">
+                  <div className="w-full -mx-4"> {/* Centering the content */}
+                      <div className="w-full mx-auto px-4">
                           <div>
-                              <div className="w-full flex justify-center"> {/* Centering the embed element */}
+                              <div className="w-full mx-auto flex justify-center"> {/* Centering the embed element */}
                                   <embed
-                                      className="hidden md:block"
+                                      className="hidden mx-auto md:block"
                                       style={{
-                                          width: '1600px',
-                                          height: '1000px',
+                                          width: '90vw',
+                                          height: '90vh',
                                       }}
                                       type='application/pdf'
-                                      src="/ploegboekje/DonLupo.pdf"
+                                      src="/ploegboekje/ploegboekje_nuffalo_jill.pdf"
                                   />
                               </div>
-                              <a className="flex md:hidden justify-center mb-5 text-center" href="/ploegboekje/Ploegboekje.pdf"><u>Download
+                              <a className="flex md:hidden justify-center mb-5 text-center text-brown-medium" href="/ploegboekje/ploegboekje_nuffalo_jill.pdf"><u>Download
                                   het ploegboekje!</u></a>
                           </div>
                       </div>
