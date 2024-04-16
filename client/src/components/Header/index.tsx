@@ -128,14 +128,18 @@ const Header = () => {
                 </nav>
               </div>
             </div>
-            <div className="w-1/8 justify-end pr-16 lg:pr-0">
+            <div className="justify-end pr-16 lg:pr-0">
               {/*<Link
                   href="/signin"
                   className="hidden px-7 py-3 text-base font-medium text-dark hover:opacity-70 dark:text-white md:block"
                 >
                   Sign In
                 </Link>*/}
-              <LocaleSwitcher/>
+              <LocaleSwitcher styling={`flex py-2 text-base lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 uppercase ${
+                  isScrolled
+                      ? "text-sky hover:text-sky"
+                      : "text-brown-dark hover:text-brown-medium"
+              }`} />
             </div>
           </div>
         </div>
