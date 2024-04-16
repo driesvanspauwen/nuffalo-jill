@@ -22,7 +22,7 @@ const goalsData: Goal[] = [
     ]
   },
   {
-    id: 1,
+    id: 2,
     icon: (
       <svg width="40" height="41" viewBox="0 0 40 41" className="fill-current">
         <path
@@ -41,7 +41,7 @@ const goalsData: Goal[] = [
     ]
   },
   {
-    id: 1,
+    id: 3,
     icon: (
       <svg width="40" height="41" viewBox="0 0 40 41" className="fill-current">
         <path
