@@ -16,6 +16,7 @@ const Video = () => {
           className="bg-brown-dark bg-cover bg-center bg-repeat flex z-10 py-16 md:py-20 lg:py-28"
       >
         <div  id="video" className="mt-[1vh] container">
+          <div className={window.innerWidth < 500 ? "mt-[75px]" : ""}></div>
           <SectionTitle
               title="WHO WE ARE"
               paragraph=""
