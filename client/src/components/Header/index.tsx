@@ -7,6 +7,7 @@ import { useEffect, useState } from "react";
 import ThemeToggler from "./ThemeToggler";
 import menuData from "./menuData";
 import styles from './styles.module.css';
+import LocaleSwitcher from "@/components/LocaleSwitcher/LocaleSwitcher";
 
 
 const Header = () => {
@@ -134,7 +135,7 @@ const Header = () => {
                 >
                   Sign In
                 </Link>*/}
-              <ThemeToggler/>
+              <LocaleSwitcher/>
             </div>
           </div>
         </div>

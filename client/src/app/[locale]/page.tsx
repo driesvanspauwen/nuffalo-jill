@@ -3,7 +3,6 @@ import ScrollUp from "@/components/Common/ScrollUp";
 import Hero from "@/components/Hero";
 import HomeContentWrapper from "@/components/HomeContentWrapper";
 import { Metadata } from "next";
-import { getDictionary } from "@/lib/dictionaries"
 import {getTranslations} from 'next-intl/server';
 import {unstable_setRequestLocale} from 'next-intl/server';
 
