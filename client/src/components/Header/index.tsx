@@ -118,26 +118,42 @@ const Header = () => {
                                 className={`flex py-2 text-base lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 ${
                                     isScrolled
                                         ? "text-sky hover:text-sky"
-                                        : "text-brown-dark hover:text-brown-medium"
+                                        : (window.innerWidth < 500 ? "text-sky hover:text-sky" : "text-brown-dark hover:text-brown-medium")
                                 }`}
                                 onClick={(e) => {
                                   {if(window.location.pathname === "/") {
                                     e.preventDefault()
                                     setTimeout(() => {
-                                      document.getElementById(menuItem.path) &&
-                                      document
-                                          .getElementById(menuItem.path)
-                                          .scrollIntoView({ behavior: "smooth", block: "end"
-                                          })
+                                      (window.innerWidth < 500 ?
+                                          document.getElementById(menuItem.path) &&
+                                          document
+                                              .getElementById(menuItem.path)
+                                              .scrollIntoView({ behavior: "smooth", block: "start",
+                                              })
+                                          :
+                                          document.getElementById(menuItem.path) &&
+                                          document
+                                              .getElementById(menuItem.path)
+                                              .scrollIntoView({ behavior: "smooth", block: "end",
+                                              })
+                                      )
                                     }, 50)
                                     }else {
-                                      setTimeout(() => {
-                                        document.getElementById(menuItem.path) &&
-                                        document
-                                            .getElementById(menuItem.path)
-                                            .scrollIntoView({ behavior: "instant", block: "end"
-                                            })
-                                      }, 100)
+                                    setTimeout(() => {
+                                      (window.innerWidth < 500 ?
+                                              document.getElementById(menuItem.path) &&
+                                              document
+                                                  .getElementById(menuItem.path)
+                                                  .scrollIntoView({ behavior: "smooth", block: "start",
+                                                  })
+                                              :
+                                              document.getElementById(menuItem.path) &&
+                                              document
+                                                  .getElementById(menuItem.path)
+                                                  .scrollIntoView({ behavior: "smooth", block: "end",
+                                                  })
+                                      )
+                                    }, 100)
                                   }
                                 }}}
                             >
