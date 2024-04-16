@@ -4,21 +4,26 @@ import Hero from "@/components/Hero";
 import HomeContentWrapper from "@/components/HomeContentWrapper";
 import { Metadata } from "next";
 import { getDictionary } from "@/lib/dictionaries"
+import {getTranslations} from 'next-intl/server';
+import {unstable_setRequestLocale} from 'next-intl/server';
+
 
 export const metadata: Metadata = {
   title: "Electoral Team Nuffalo Jill",
   description: "This is the website for Nuffalo Jill, an electoral team for Vlaamse Technische Kring Leuven",
 };
 
-export default async function Home({ params: { lang } }) {
-    const dict = await getDictionary(lang)
+export default async function Home({ params: { locale } }) {
+
+    unstable_setRequestLocale(locale);
+    const t = await getTranslations('Hero');
 
     return (
     <>
         <ScrollUp />
         <Hero
-            title = {dict.hero.title}
-            subtitle= {dict.hero.subtitle}
+            title = {t('title')}
+            subtitle= {t('subtitle')}
             backgroundImage="/images/hero/homepage-background.jpg"
         />
         <HomeContentWrapper />
