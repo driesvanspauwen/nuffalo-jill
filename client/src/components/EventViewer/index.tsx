@@ -21,30 +21,32 @@ const Schedule = () => {
           />
         </div>
 
-        <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-x-8 md:grid-cols-2 lg:grid-cols-3 mt-20">
           <DayBox packageName="Woensdag">
-            <Link href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUIcmlja3JvbGw%3D">
-              <Image
-                src="/images/banners/Fakfeestje.png"
-                width={1000}
-                height={760}
-                className="hidden md:block"
-                alt="Screenshots of the dashboard project showing desktop version"
-              />
-            </Link>
-
-            <div style={{ marginTop: "30px" }}></div>
-
-            <Link href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUIcmlja3JvbGw%3D">
-              <Image
-                src="/images/banners/Fakfeestje.png"
-                width={1000}
-                height={760}
-                className="hidden md:block"
-                alt="Screenshots of the dashboard project showing desktop version"
-              />
-            </Link>
+            <div className="mb-8">
+              <Link href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUIcmlja3JvbGw%3D" className="block aspect-w-16 aspect-h-9 rounded-lg overflow-hidden">
+                <Image
+                    src="/images/banners/Fakfeestje.png"
+                    width={1000}
+                    height={760}
+                    className="relative mt-8"
+                    alt="Screenshots of the dashboard project showing desktop version"
+                />
+              </Link>
+            </div>
+            <div className="mb-8">
+              <Link href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUIcmlja3JvbGw%3D" className="block aspect-w-16 aspect-h-9 rounded-lg overflow-hidden">
+                <Image
+                    src="/images/banners/Fakfeestje.png"
+                    width={1000}
+                    height={760}
+                    className="relative mt-8"
+                    alt="Screenshots of the dashboard project showing desktop version"
+                />
+              </Link>
+            </div>
           </DayBox>
+
 
           <DayBox packageName="Donderdag">Events</DayBox>
           <DayBox packageName="Vrijdag">Hallo ik ben maarten</DayBox>

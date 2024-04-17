@@ -62,6 +62,7 @@ module.exports = {
           light: "#7D351F",
         },
         sky: "#DFBFA3",
+        offwhite: "#FFEDD5" // tailwind orange-100
       },
 
 

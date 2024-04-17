@@ -3,7 +3,7 @@ const SectionTitle = ({
   paragraph,
   width = "570px",
   center,
-  mb = "100px",
+  mb = "0px",
   size = "text-4xl lg:text-5xl",
   titleColor = "white" // Dit field bepaald de default tekstkleur voor alle h2 titels,
                         // voor specifieke kleuren zie client/tailwind.config.js
@@ -22,7 +22,7 @@ const SectionTitle = ({
             className={`w-full ${center ? "mx-auto text-center" : ""}`}
             style={{ maxWidth: width, marginBottom: mb }}
         >
-          <h2 className={`mb-4 font-bold !leading-tight text-${titleColor} ${size} uppercase`}>
+          <h2 className={`font-bold !leading-tight text-${titleColor} ${size} uppercase`}>
             {title}
           </h2>
           <p className="text-base !leading-relaxed text-body-color md:text-lg">
