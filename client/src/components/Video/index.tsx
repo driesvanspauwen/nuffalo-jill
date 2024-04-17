@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/link";
+import { Link } from "@/navigation"
 import Image from "next/image";
 import { useState } from "react";
 import SectionTitle from "../Common/SectionTitle";
@@ -58,10 +58,10 @@ const Video = () => {
 
         <div className="mb-2 mt-10 mx-auto text-center">
             <div className="flex justify-center items-center">
-              <Link href = "ploeg"
+              <Link href = "/ploeg"
                     className="bg-sky mb-3 mr-3 inline-flex items-center justify-center rounded-sm px-4 py-2 text-lg text-black duration-300 hover:bg-primary hover:text-sky">
                 DISCOVER THE TEAM</Link>
-              <Link href="ploegboekje"
+              <Link href = "/ploegboekje"
                  className="bg-sky mb-3 mr-3 inline-flex items-center justify-center rounded-sm px-4 py-2 text-lg text-black duration-300 hover:bg-primary hover:text-sky">
                 READ THE TEAM MAGAZINE</Link>
             </div>

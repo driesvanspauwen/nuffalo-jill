@@ -1,41 +1,23 @@
-"use client";
-
 const Ploegboekje = () => {
-  return (
-    <div className="relative z-0 bg-[url(/images/home-content-wrapper/parchment.jpg)] bg-cover bg-center">
-      <section className="pb-[120px] pt-[100px]">
-        <div className="container">
-          <div className="-mx-4 flex w-full justify-center">
-            {" "}
-            {/* Centering the content */}
-            <div className="w-full px-4">
-              <div>
-                <div className="flex w-full justify-center">
-                  {" "}
-                  {/* Centering the embed element */}
-                  <embed
-                    className="hidden md:block"
-                    style={{
-                      width: "1600px",
-                      height: "1000px",
-                    }}
-                    type="application/pdf"
-                    src="/ploegboekje/DonLupo.pdf"
-                  />
+    return (
+        <div className="z-0 bg-[url(/images/home-content-wrapper/parchment.jpg)] bg-cover bg-center relative">
+            <section className="flex justify-center items-center">
+                <div className="container mx-auto mx-4 mt-20 mb-32 hidden md:block w-full h-[90vh]"> {/* Adjusted container styles */}
+                    <embed
+                        style={{
+                            width: '100%',
+                            height: '100%',
+                        }}
+                        type='application/pdf'
+                        src="/ploegboekje/ploegboekje_nuffalo_jill.pdf"
+                    />
                 </div>
-                <a
-                  className="mb-5 flex justify-center text-center md:hidden"
-                  href="/ploegboekje/Ploegboekje.pdf"
-                >
-                  <u>Download het ploegboekje!</u>
+                <a className="flex px-4 py-32 md:hidden justify-center mb-5 text-center" href="/ploegboekje/Ploegboekje.pdf">
+                    <u>Download het ploegboekje!</u>
                 </a>
-              </div>
-            </div>
-          </div>
+            </section>
         </div>
-      </section>
-    </div>
-  );
+    );
 };
 
 export default Ploegboekje;

@@ -4,8 +4,7 @@ export const locales = ['en', 'nl'] as const;
 
 export const pathnames = {
     '/': '/',
+    '/ploeg' : '/ploeg',
 } satisfies Pathnames<typeof locales>;
 
 export const localePrefix = undefined;
-
-export type AppPathnames = keyof typeof pathnames;
