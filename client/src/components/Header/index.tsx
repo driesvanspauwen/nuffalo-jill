@@ -1,9 +1,6 @@
-"use client";
-import Image from "next/image";
-//import Link from "next/link";
-import { Link } from 'react-scroll';
-import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
+import Link from "next/link";
+import {usePathname} from "next/navigation";
+import {useEffect, useState} from "react";
 import ThemeToggler from "./ThemeToggler";
 import menuData from "./menuData";
 import styles from './styles.module.css';
@@ -54,20 +51,6 @@ const Header = () => {
           <div className="relative -mx-4 flex items-center justify-between">
             <div className="w-1/8 brown-dark">
               Logo
-              {/*<Link
-              href="/"
-              className={`header-logo block w-full ${
-                dynamic ? "py-5 lg:py-2" : "py-8"
-              } `}
-              >
-                <Image
-                  src="/images/header/logo.png"
-                  alt="logo"
-                  width={140}
-                  height={30}
-                  className="w-full dark:hidden"
-                />
-              </Link>*/}
             </div>
             <div className="flex max-w-full items-center justify-center px-4">
               <div>
@@ -107,19 +90,49 @@ const Header = () => {
                   >
                     {menuData.map((menuItem, index) => (
                         <li key={index} className="group relative max-w-1/8">
-                          <Link
-                              className={`flex py-2 text-base lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 ${
-                                  isScrolled
-                                      ? "text-sky hover:text-sky"
-                                      : "text-brown-dark hover:text-brown-medium"
-                              }`}
-                              to={menuItem.path}
-                              href={menuItem.path}
-                              spy={true}
-                              smooth={true}
-                              offset={-70}
-                              duration={500}
-                          >
+                          <Link href="/"
+                                className={`flex py-2 text-base lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 ${
+                                    isScrolled
+                                        ? "text-sky hover:text-sky"
+                                        : (window.innerWidth < 500 ? "text-sky hover:text-sky" : "text-brown-dark hover:text-brown-medium")
+                                }`}
+                                onClick={(e) => {
+                                  {if(window.location.pathname === "/") {
+                                    e.preventDefault()
+                                    setTimeout(() => {
+                                      (window.innerWidth < 500 ?
+                                          document.getElementById(menuItem.path) &&
+                                          document
+                                              .getElementById(menuItem.path)
+                                              .scrollIntoView({ behavior: "smooth", block: "start",
+                                              })
+                                          :
+                                          document.getElementById(menuItem.path) &&
+                                          document
+                                              .getElementById(menuItem.path)
+                                              .scrollIntoView({ behavior: "smooth", block: "end",
+                                              })
+                                      )
+                                    }, 50)
+                                    }else {
+                                    setTimeout(() => {
+                                      (window.innerWidth < 500 ?
+                                              document.getElementById(menuItem.path) &&
+                                              document
+                                                  .getElementById(menuItem.path)
+                                                  .scrollIntoView({ behavior: "smooth", block: "start",
+                                                  })
+                                              :
+                                              document.getElementById(menuItem.path) &&
+                                              document
+                                                  .getElementById(menuItem.path)
+                                                  .scrollIntoView({ behavior: "smooth", block: "end",
+                                                  })
+                                      )
+                                    }, 100)
+                                  }
+                                }}}
+                            >
                             {menuItem.title}
                           </Link>
                         </li>

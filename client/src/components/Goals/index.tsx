@@ -5,8 +5,8 @@ import goalsData from "./goalsData";
 const Goals = () => {
   return (
     <>
-      <section className="py-16 md:py-20 lg:py-28">
-        <div id="goals" className="container">
+      <section id="goals" className="mt-20 py-16 md:py-20 lg:py-28">
+        <div className="container">
           <SectionTitle
               title="WHAT WE STAND FOR"
               paragraph=""
