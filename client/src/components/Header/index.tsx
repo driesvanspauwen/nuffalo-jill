@@ -1,11 +1,8 @@
 import Link from "next/link";
-//import {Link} from 'react-scroll';
 import {usePathname} from "next/navigation";
 import {useEffect, useState} from "react";
 import ThemeToggler from "./ThemeToggler";
 import menuData from "./menuData";
-import { Link as RouterLink } from 'react-router-dom';
-import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
 
 
 const Header = () => {
@@ -52,20 +49,6 @@ const Header = () => {
           <div className="relative -mx-4 flex items-center justify-between">
             <div className="w-1/8 brown-dark">
               Logo
-              {/*<Link
-              href="/"
-              className={`header-logo block w-full ${
-                dynamic ? "py-5 lg:py-2" : "py-8"
-              } `}
-              >
-                <Image
-                  src="/images/header/logo.png"
-                  alt="logo"
-                  width={140}
-                  height={30}
-                  className="w-full dark:hidden"
-                />
-              </Link>*/}
             </div>
             <div className="flex max-w-full items-center justify-center px-4">
               <div>
@@ -105,15 +88,6 @@ const Header = () => {
                   >
                     {menuData.map((menuItem, index) => (
                         <li key={index} className="group relative max-w-1/8">
-                          {/*<Link href= {`/#${menuItem.path}`}
-                                className={`flex py-2 text-base lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 ${
-                                    isScrolled
-                                        ? "text-sky hover:text-sky"
-                                        : "text-brown-dark hover:text-brown-medium"
-                                }`}
-                          >
-                            {menuItem.title}
-                          </Link>*/}
                           <Link href="/"
                                 className={`flex py-2 text-base lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 ${
                                     isScrolled
@@ -150,12 +124,6 @@ const Header = () => {
               </div>
             </div>
             <div className="w-1/8 justify-end pr-16 lg:pr-0">
-              {/*<Link
-                  href="/signin"
-                  className="hidden px-7 py-3 text-base font-medium text-dark hover:opacity-70 dark:text-white md:block"
-                >
-                  Sign In
-                </Link>*/}
               <ThemeToggler/>
             </div>
           </div>
