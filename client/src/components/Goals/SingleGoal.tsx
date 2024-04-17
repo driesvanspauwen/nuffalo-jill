@@ -6,7 +6,7 @@ const SingleGoal = ({ goal }: { goal: Goal }) => {
   const { icon, title, subgoals } = goal;
 
   return (
-    <div className="mb-16">
+    <div className="mb-8">
       <div className="wow fadeInUp" data-wow-delay=".15s">
         <h3 className="mb-5 text-xl lg:text-2xl font-bold text-brown-dark sm:text-3xl xl:text-4xl">
           {title}

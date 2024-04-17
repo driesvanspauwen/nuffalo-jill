@@ -5,6 +5,7 @@ import HomeContentWrapper from "@/components/HomeContentWrapper";
 import { Metadata } from "next";
 import {getTranslations} from 'next-intl/server';
 import {unstable_setRequestLocale} from 'next-intl/server';
+import Video from "@/components/Video";
 
 
 export const metadata: Metadata = {
@@ -25,6 +26,7 @@ export default async function Home({ params: { locale } }) {
             subtitle= {t('subtitle')}
             backgroundImage="/images/hero/homepage-background.jpg"
         />
+        <Video/>
         <HomeContentWrapper />
         <AboutSectionTwo />
     </>

@@ -7,16 +7,14 @@ import Catering from "@/components/Catering";
 // Used to wrap home page content under the same background image
 export default function HomeContentWrapper() {
     return (
-        <>
-            <div
-                className="z-0 bg-[url(/images/home-content-wrapper/parchment.jpg)] bg-cover bg-center relative"
-            >
-                <Video/>
+        <div className="relative">
+            <div className="absolute top-0 left-0 w-full h-16 bg-gradient-to-b from-brown-dark to-transparent pointer-events-none z-10"></div>
+            <div className="z-0 bg-[url(/images/home-content-wrapper/parchment.jpg)] bg-cover bg-center relative">
                 <Goals/>
                 <EventViewer/>
-                <div className={styles.fadeTop}></div>
-                <Catering />
+                <Catering/>
             </div>
-        </>
+        </div>
     );
 }
+

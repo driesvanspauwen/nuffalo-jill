@@ -10,9 +10,16 @@ const Schedule = () => {
   const [isMonthly, setIsMonthly] = useState(true);
 
   return (
-    <section id="events" className="relative z-10 py-16 md:py-20 lg:py-28">
+    <section id="events" className="relative pt-12">
       <div className="container">
-        <SectionTitle title="Week" center width="665px" />
+        <div className="mt-16 mb-8">
+          <SectionTitle
+              title="ELECTION WEEK"
+              paragraph=""
+              center
+              titleColor="brown-dark"
+          />
+        </div>
 
         <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
           <DayBox packageName="Woensdag">
