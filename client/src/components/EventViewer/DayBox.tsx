@@ -8,7 +8,7 @@ const DayBox = (props: { packageName: string; children: React.ReactNode }) => {
 
   return (
     <div className="w-full">
-      <div className="relative z-10 rounded-sm bg-white px-8 py-10 shadow-three hover:shadow-one dark:bg-brown-dark dark:shadow-two dark:hover:shadow-gray-dark">
+      <div className="relative z-10 rounded-sm bg-brown-dark px-8 py-10 shadow-three hover:shadow-one dark:shadow-two dark:hover:shadow-gray-dark">
         <div className="flex items-center justify-between">
           <SectionTitle
             title={packageName}
