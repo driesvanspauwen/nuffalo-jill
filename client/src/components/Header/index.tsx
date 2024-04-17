@@ -2,7 +2,6 @@ import { Link } from "@/navigation"
 import NextLink from "next/link"
 import {usePathname} from "next/navigation";
 import {useEffect, useState} from "react";
-import ThemeToggler from "./ThemeToggler";
 import menuData from "./menuData";
 import styles from './styles.module.css';
 import LocaleSwitcher from "@/components/LocaleSwitcher/LocaleSwitcher";
