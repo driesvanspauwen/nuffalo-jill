@@ -28,8 +28,8 @@ const FindUs = () => {
                                     Email
                                 </h1>
                                 <p className="text-lg leading-relaxed font-medium text-offwhite">
-                                    beta@vtk.be
-                                </p>
+    <a href="mailto:beta@vtk.be" className="hover:underline">beta@vtk.be</a>
+</p>
                             </div>
                             <div className="mb-9">
                                 <h1 className="mb-4 font-bold text-sky text-2xl">
