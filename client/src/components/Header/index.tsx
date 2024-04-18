@@ -1,5 +1,6 @@
 import { Link } from "@/navigation"
 import NextLink from "next/link"
+import Image from "next/image";
 import {usePathname} from "next/navigation";
 import {useEffect, useState} from "react";
 import menuData from "./menuData";
@@ -43,15 +44,25 @@ const Header = () => {
   return (
     <>
       <header
-          className={`header left-0 top-0 z-40 flex w-full items-center fixed transition ${
-              isScrolled ? "bg-gradient-to-t from-transparent to-black/80" : "bg-transparent"
+          className={`header left-0 top-0 z-40 flex w-full items-center fixed transition-all duration-600 ${
+              isScrolled ? "bg-gradient-to-t from-transparent to-black/80 h-20" : "bg-transparent h-28"
           }`}
       >
-        <div className="container">
-          <div className="relative -mx-4 flex items-center justify-between">
-            <div className="w-1/8 brown-dark">
-              Logo
-            </div>
+        <div className={`container`}>
+          <div className={`relative flex items-center justify-between`}>
+
+              <div className={`w-1/8 brown-dark block relative transition-all duration-600 ${isScrolled ? 'scale-50' : 'scale-100'}`}>
+                <Link href="/" className="header-logo block">
+                  <Image
+                      src={isScrolled ? "/images/header/nuffalo-jill-logo-sky.png" : "/images/header/nuffalo-jill-logo-brown.png"}
+                      alt="logo"
+                      width={80}
+                      height={80}
+                      className="w-full transition-all duration-600"
+                  />
+                </Link>
+              </div>
+
             <div className="flex max-w-full items-center justify-center px-4">
               <div>
                 <button
@@ -154,14 +165,14 @@ const Header = () => {
                 </nav>
               </div>
             </div>
-            <div className="justify-end pr-16 lg:pr-0">
+            <div className={`justify-end pr-16 lg:pr-0 block relative`}>
               {/*<Link
                   href="/signin"
                   className="hidden px-7 py-3 text-base font-medium text-dark hover:opacity-70 dark:text-white md:block"
                 >
                   Sign In
                 </Link>*/}
-              <LocaleSwitcher styling={`flex py-2 text-base lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 uppercase ${
+              <LocaleSwitcher styling={`flex h-20 w-20 text-xl lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 uppercase ${
                   isScrolled
                       ? "text-sky hover:text-sky"
                       : "text-brown-dark hover:text-brown-medium"
