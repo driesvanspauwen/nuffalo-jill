@@ -4,28 +4,22 @@ import Breadcrumb from "@/components/Common/Breadcrumb";
 
 import { Metadata } from "next";
 import singlePloeglid from "@/components/Ploegleden/SinglePloeglid";
-import Hero from "@/components/Hero";
+import TeamHero from "@/components/Hero/teamHero";
 
 export const metadata: Metadata = {
   title: "Blog Page | Free Next.js Template for Startup and SaaS",
   description: "This is Blog Page for Startup Nextjs Template",
-  // other metadata
 };
-
-// <Breadcrumb
-//         pageName="De Ploeg"
-//         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius eros eget sapien consectetur ultrices. Ut quis dapibus libero."
-//       />
 
 const Ploeg = () => {
   return (
       <div
           className="z-0 bg-[url(/images/home-content-wrapper/parchment.jpg)] bg-cover bg-center relative"
       >
-          <Hero
-              title="Ontmoet de ploeg"
-              subtitle="Hier komt een super mega coole foto van ploeg"
-              backgroundImage="/images/hero/homepage-background.jpg"
+          <TeamHero
+              title="THE TEAM"
+              subtitle=""
+              backgroundImage="/images/hero/group-picture.jpg"
           />
 
           <section className="pb-[100px] pt-[100px]">
