@@ -5,6 +5,7 @@ import { fetcher } from "../../lib/api";
 import Image from "next/image";
 import Link from "next/link";
 import SectionTitle from "../Common/SectionTitle";
+import EventBanner from "@/components/EventViewer/EventBanner";
 
 const Schedule = () => {
   const [isMonthly, setIsMonthly] = useState(true);
@@ -24,32 +25,34 @@ const Schedule = () => {
         <div className="grid grid-cols-1 gap-x-8 md:grid-cols-2 lg:grid-cols-3 mt-20">
           <DayBox packageName="Woensdag">
             <div className="mb-8">
-              <Link href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUIcmlja3JvbGw%3D" className="block aspect-w-16 aspect-h-9 rounded-lg overflow-hidden">
-                <Image
-                    src="/images/banners/Fakfeestje.png"
-                    width={1000}
-                    height={760}
-                    className="relative mt-8"
-                    alt="Screenshots of the dashboard project showing desktop version"
-                />
-              </Link>
+              <EventBanner link="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUIcmlja3JvbGw%3D"
+                           image="/images/banners/Fakfeestje.png"></EventBanner>
             </div>
             <div className="mb-8">
-              <Link href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUIcmlja3JvbGw%3D" className="block aspect-w-16 aspect-h-9 rounded-lg overflow-hidden">
-                <Image
-                    src="/images/banners/Fakfeestje.png"
-                    width={1000}
-                    height={760}
-                    className="relative mt-8"
-                    alt="Screenshots of the dashboard project showing desktop version"
-                />
-              </Link>
+              <EventBanner link="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUIcmlja3JvbGw%3D"
+                           image="/images/banners/Fakfeestje.png"></EventBanner>
             </div>
           </DayBox>
-
-
-          <DayBox packageName="Donderdag">Events</DayBox>
-          <DayBox packageName="Vrijdag">Hallo ik ben maarten</DayBox>
+          <DayBox packageName="Donderdag">
+            <div className="mb-8">
+              <EventBanner link="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUIcmlja3JvbGw%3D"
+                           image="/images/banners/Fakfeestje.png"></EventBanner>
+            </div>
+            <div className="mb-8">
+              <EventBanner link="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUIcmlja3JvbGw%3D"
+                           image="/images/banners/Fakfeestje.png"></EventBanner>
+            </div>
+          </DayBox>
+          <DayBox packageName="Vrijdag">
+            <div className="mb-8">
+              <EventBanner link="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUIcmlja3JvbGw%3D"
+                           image="/images/banners/Fakfeestje.png"></EventBanner>
+            </div>
+            <div className="mb-8">
+              <EventBanner link="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUIcmlja3JvbGw%3D"
+                           image="/images/banners/Fakfeestje.png"></EventBanner>
+            </div>
+          </DayBox>
         </div>
       </div>
     </section>
@@ -60,7 +63,7 @@ export default Schedule;
 
 export async function getStaticProps() {
   const eventsResponse = await fetcher(
-    "$(process.env.NEXT_PUBLIC_STRAPI_URL)/event",
+      "$(process.env.NEXT_PUBLIC_STRAPI_URL)/event",
   );
   console.log(eventsResponse);
   return {
