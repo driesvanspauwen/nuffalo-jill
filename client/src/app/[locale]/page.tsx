@@ -6,6 +6,7 @@ import { Metadata } from "next";
 import {getTranslations} from 'next-intl/server';
 import {unstable_setRequestLocale} from 'next-intl/server';
 import Video from "@/components/Video";
+import FindUs from "@/components/FindUs";
 
 
 export const metadata: Metadata = {
@@ -28,7 +29,7 @@ export default async function Home({ params: { locale } }) {
         />
         <Video/>
         <HomeContentWrapper />
-        <AboutSectionTwo />
+        <FindUs />
     </>
     );
 }

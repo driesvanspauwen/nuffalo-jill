@@ -2,7 +2,7 @@ import React from "react";
 
 const AboutSectionTwo = () => {
   return (
-    <section className="py-16 md:py-20 lg:py-28">
+    <section className="bg-brown-dark bg-cover bg-center bg-repeat flex flex-col sm:flex-row py-16 md:py-20 lg:py-28">
       <div className="container">
         <div className="-mx-4 flex flex-wrap items-center">
           <div className="w-full px-4 lg:w-2/3">
@@ -22,19 +22,27 @@ const AboutSectionTwo = () => {
           <div className="w-full px-4 lg:w-1/3">
             <div className="max-w-[470px]">
               <div className="mb-9">
-                <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
-                  Our Location
-                </h3>
-                <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                Grassfield in front of Alma 3
+                <h1 className="mb-4 font-bold text-sky text-2xl">
+                  Email
+                </h1>
+                <p className="text-lg leading-relaxed font-medium text-offwhite">
+                  beta@vtk.be
                 </p>
               </div>
               <div className="mb-9">
-                <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
-                  Contact Us
-                </h3>
-                <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                  Email: kiesploegbeta@vtk.be
+                <h1 className="mb-4 font-bold text-sky text-2xl">
+                  Location
+                </h1>
+                <p className="text-lg leading-relaxed font-medium text-offwhite">
+                  Grassfield in front of Alma 3
+                </p>
+              </div>
+              <div className="mb-9">
+                <h1 className="mb-4 font-bold text-sky text-2xl">
+                  Social Media
+                </h1>
+                <p className="text-lg leading-relaxed font-medium text-offwhite">
+                  {/*TODO*/}
                 </p>
               </div>
             </div>
