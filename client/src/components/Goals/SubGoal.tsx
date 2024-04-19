@@ -16,8 +16,8 @@ const SubGoal = ({ title, subsubgoals }) => (
             </p>
             <div className="mb-8 pl-4">
                 {subsubgoals.map((subsubgoal: Subsubgoal) => (
-                    <p className="mb-4 flex items-center text-lg text-brown-medium uppercase" key={subsubgoal.id}>
-                        <span className="mr-4 flex p-2 items-center justify-center rounded-md bg-primary bg-opacity-10">
+                    <p className="mb-4 flex items-start text-lg text-brown-medium uppercase" key={subsubgoal.id}>
+                        <span className="mr-4 flex p-2 items-center justify-center  rounded-md bg-primary bg-opacity-10">
                             {checkIcon}
                         </span>
                         {subsubgoal.description}
