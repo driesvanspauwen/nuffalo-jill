@@ -2,5 +2,18 @@
   "Hero": {
     "title": "NUFFALO JILL",
     "subtitle": "Iets hier."
+  },
+
+  "Video": {
+    "title": "OVER ONS",
+    "ploeg": "ONTDEK DE PLOEG",
+    "ploegboekje": "LEES HET PLOEGBOEKJE"
+  },
+
+  "FindUs": {
+    "email": "EMAIL",
+    "locatieTitel": "LOCATIE",
+    "locatieOmschrijving": "GRASVELD VOOR ALMA 3",
+    "socials": "SOCIALE MEDIA"
   }
 }

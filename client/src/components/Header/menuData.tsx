@@ -25,5 +25,23 @@ const menuData: Menu[] = [
     path: "events",
     newTab: false,
   },
+  {
+    id: 4,
+    title: "I",
+    path: "",
+    newTab: false,
+  },
+  {
+    id: 5,
+    title: "TEAM",
+    path: "/ploeg",
+    newTab: false,
+  },
+  {
+    id: 6,
+    title: "TEAM MAGAZINE",
+    path: "/ploegboekje",
+    newTab: false,
+  },
 ];
 export default menuData;

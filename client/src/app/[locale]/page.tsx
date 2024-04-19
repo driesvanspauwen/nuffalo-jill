@@ -17,19 +17,30 @@ export const metadata: Metadata = {
 export default async function Home({ params: { locale } }) {
 
     unstable_setRequestLocale(locale);
-    const t = await getTranslations('Hero');
+    const hero = await getTranslations('Hero');
+    const video = await getTranslations('Video');
+    const findus = await getTranslations('FindUs');
 
     return (
     <>
         <ScrollUp />
         <Hero
-            title = {t('title')}
-            subtitle= {t('subtitle')}
+            title = {hero('title')}
+            subtitle= {hero('subtitle')}
             backgroundImage="/images/hero/homepage-background.jpg"
         />
-        <Video/>
+        <Video
+            title = {video('title')}
+            ploeg= {video('ploeg')}
+            ploegboekje={video('ploegboekje')}
+        />
         <HomeContentWrapper />
-        <FindUs />
+        <FindUs 
+            email = {findus('email')}
+            locatieTitel = {findus('locatieTitel')}
+            locatieOmschrijving = {findus('locatieOmschrijving')}
+            socials = {findus('socials')}
+        />
     </>
     );
 }

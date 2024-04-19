@@ -7,7 +7,7 @@ import SectionTitle from "../Common/SectionTitle";
 
 import ModalVideo from "react-modal-video";
 
-const Video = () => {
+const Video = ({title, ploeg, ploegboekje}) => {
   const [isOpen, setOpen] = useState(false);
 
   return (
@@ -18,7 +18,7 @@ const Video = () => {
           <div id="video" className="absolute top-0 left-0 pointer-events-none h-screen -z-10"></div>
           <div className="container">
             <SectionTitle
-                title="WHO WE ARE"
+                title={title}
                 paragraph=""
                 center
                 titleColor="sky"
@@ -58,10 +58,10 @@ const Video = () => {
               <div className="flex justify-center items-center">
                 <Link href="/ploeg"
                       className="bg-sky mb-3 mr-3 inline-flex items-center justify-center rounded-sm px-4 py-2 text-lg text-black duration-300 hover:bg-primary hover:text-sky">
-                  DISCOVER THE TEAM</Link>
+                  {ploeg}</Link>
                 <Link href="/ploegboekje"
                       className="bg-sky mb-3 mr-3 inline-flex items-center justify-center rounded-sm px-4 py-2 text-lg text-black duration-300 hover:bg-primary hover:text-sky">
-                  READ THE TEAM MAGAZINE</Link>
+                  {ploegboekje}</Link>
               </div>
             </div>
 
