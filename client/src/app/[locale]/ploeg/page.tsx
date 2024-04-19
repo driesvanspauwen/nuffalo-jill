@@ -7,8 +7,8 @@ import singlePloeglid from "@/components/Ploegleden/SinglePloeglid";
 import TeamHero from "@/components/Hero/teamHero";
 
 export const metadata: Metadata = {
-  title: "Blog Page | Free Next.js Template for Startup and SaaS",
-  description: "This is Blog Page for Startup Nextjs Template",
+  title: "Nuffalo Jill | Meet the team",
+  description: "This is Team Page for Election Team Nuffalo Jill",
 };
 
 const Ploeg = () => {
@@ -17,12 +17,12 @@ const Ploeg = () => {
           className="z-0 bg-[url(/images/home-content-wrapper/parchment.jpg)] bg-cover bg-center relative"
       >
           <TeamHero
-              title="THE TEAM"
-              subtitle=""
               backgroundImage="/images/hero/group-picture.jpg"
+              scrollId="team"
           />
 
-          <section className="pb-[100px] pt-[100px]">
+          <section className="relative pb-[100px] pt-[100px]">`
+              <div id="team" className="absolute top-0 left-0 pointer-events-none h-screen -z-10"></div> {/*For scroll effect*/}
               <div className="container pb-[50px] pl-[10%] pr-[10%]">
                   <h2 className="pb-[40px] text-center">Kandidaat Groep 5</h2>
                   <div className="-mx-6 flex flex-wrap justify-center" style={{alignItems: 'stretch'}}>
@@ -189,7 +189,7 @@ const Ploeg = () => {
                       ))}
                   </div>
               </div>
-              
+
           </section>
       </div>
   );

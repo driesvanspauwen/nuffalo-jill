@@ -1,6 +1,11 @@
 'use client'
 
-const TeamHero = ({title, subtitle, backgroundImage}) => {
+type TeamHeroProps = {
+    scrollId: string;
+    backgroundImage: string;
+};
+
+const TeamHero: React.FC<TeamHeroProps> = ({ scrollId, backgroundImage }) => {
     return (
         <>
             <section
@@ -27,9 +32,24 @@ const TeamHero = ({title, subtitle, backgroundImage}) => {
                     className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-b from-transparent to-brown-dark z-10 flex justify-center items-center">
                     <button
                         className="relative border-offwhite text-xl text-offwhite bg-transparent border-2 px-4 py-2 mt-32 hover:bg-brown-dark hover:text-offwhite transition duration-300 ease-in-out"
-                        onClick={() => {
-                            // TODO: add scroll effect
-                        }}
+                        onClick={(e) => {
+                            {
+                                setTimeout(() => {
+                                    (window.innerWidth < 500 ?
+                                            document.getElementById(scrollId) &&
+                                            document
+                                                .getElementById(scrollId)
+                                                .scrollIntoView({ behavior: "smooth", block: "start",
+                                                })
+                                            :
+                                            document.getElementById(scrollId) &&
+                                            document
+                                                .getElementById(scrollId)
+                                                .scrollIntoView({ behavior: "smooth", block: "end",
+                                                })
+                                    )
+                                }, 100)
+                            }}}
                     >
                         <p>DISCOVER NUFFALO JILL</p>
                     </button>
