@@ -1,4 +1,3 @@
-import AboutSectionTwo from "@/components/About/AboutSectionTwo";
 import ScrollUp from "@/components/Common/ScrollUp";
 import Hero from "@/components/Hero";
 import HomeContentWrapper from "@/components/HomeContentWrapper";

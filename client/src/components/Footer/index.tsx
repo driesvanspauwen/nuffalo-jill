@@ -24,7 +24,7 @@ const SingleBrand = ({ brand }: { brand: Brand }) => {
 const Footer = () => {
   return (
     <>
-      <footer className="relative z-10 bg-brown-dark pt-16 dark:bg-gray-dark md:pt-20 lg:pt-0">
+      <footer className="relative z-10 bg-brown-dark dark:bg-gray-dark">
         <div className="container">
           <div className="container">
             <div className="-mx-4 flex flex-wrap">

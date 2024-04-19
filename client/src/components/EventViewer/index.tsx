@@ -23,7 +23,7 @@ const Schedule = () => {
             />
           </div>
 
-          <div className="grid grid-cols-1 gap-x-8 md:grid-cols-2 lg:grid-cols-3 mt-20">
+          <div className="grid grid-cols-1 gap-x-8 md:grid-cols-2 lg:grid-cols-3 mt-0 md:mt-20">
             <DayBox packageName="Woensdag">
               <div className="mb-8">
                 <EventBanner link="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUIcmlja3JvbGw%3D"
