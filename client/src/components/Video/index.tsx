@@ -2,7 +2,7 @@
 
 import { Link } from "@/navigation"
 import Image from "next/image";
-import { useState } from "react";
+import React, { useState } from "react";
 import SectionTitle from "../Common/SectionTitle";
 
 import ModalVideo from "react-modal-video";
@@ -13,8 +13,9 @@ const Video = () => {
   return (
       <>
         <section
-            id="video" className="bg-brown-dark bg-cover bg-center bg-repeat flex z-10 py-28"
+            className="relative bg-brown-dark bg-cover bg-center bg-repeat flex z-10 py-28"
         >
+          <div id="video" className="absolute top-0 left-0 pointer-events-none h-screen -z-10"></div>
           <div className="container">
             <SectionTitle
                 title="WHO WE ARE"
