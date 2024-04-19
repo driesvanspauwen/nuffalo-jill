@@ -1,6 +1,6 @@
 import React from 'react';
 import { Goal, Subgoal } from "@/types/goals";
-import SubGoalList from "./SubGoalList";
+import SubGoal from "./SubGoal";
 
 const SingleGoal = ({ goal }: { goal: Goal }) => {
   const { icon, title, subgoals } = goal;
@@ -12,10 +12,10 @@ const SingleGoal = ({ goal }: { goal: Goal }) => {
           {title}
         </h3>
         <div className="mb-12 max-w-[570px] lg:mb-0">
-          <div className="mx-[-12px] flex flex-wrap">
-            <div className="w-full px-3 sm:w-1/2 lg:w-full xl:w-full">
+          <div className="flex flex-wrap">
+            <div className="w-full sm:w-1/2 lg:w-full xl:w-full">
               {subgoals.map((subgoal: Subgoal) => (
-                <SubGoalList key={subgoal.id} text={subgoal.title} />
+                <SubGoal key={subgoal.id} title={subgoal.title} subsubgoals={subgoal.subsubgoals} />
               ))}
             </div>
           </div>
