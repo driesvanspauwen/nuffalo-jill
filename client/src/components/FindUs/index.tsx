@@ -1,7 +1,7 @@
 import React from "react";
 import SectionTitle from "@/components/Common/SectionTitle";
 
-const FindUs = () => {
+const FindUs = ({email, locatieTitel, locatieOmschrijving, socials}) => {
     return (
         <section
             className="bg-brown-dark bg-cover bg-center bg-repeat flex flex-col sm:flex-row pt-16 md:pt-20 lg:pt-28 pb-8 md:pb-10 lg:pb-14">
@@ -25,7 +25,7 @@ const FindUs = () => {
                         <div className="max-w-[470px]">
                             <div className="mb-9">
                                 <h1 className="mb-4 font-bold text-sky text-2xl">
-                                    Email
+                                    {email}
                                 </h1>
                                 <p className="text-lg leading-relaxed font-medium text-offwhite">
     <a href="mailto:beta@vtk.be" className="hover:underline">beta@vtk.be</a>
@@ -33,15 +33,15 @@ const FindUs = () => {
                             </div>
                             <div className="mb-9">
                                 <h1 className="mb-4 font-bold text-sky text-2xl">
-                                    Location
+                                    {locatieTitel}
                                 </h1>
                                 <p className="text-lg leading-relaxed font-medium text-offwhite">
-                                    Grassfield in front of Alma 3
+                                    {locatieOmschrijving}
                                 </p>
                             </div>
                             <div className="mb-9">
                                 <h1 className="mb-4 font-bold text-sky text-2xl">
-                                    Social Media
+                                    {socials}
                                 </h1>
                                 <div className="flex space-x-4">
                                     <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
