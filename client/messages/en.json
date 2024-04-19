@@ -2,5 +2,18 @@
   "Hero": {
     "title": "NUFFALO JILL",
     "subtitle": "Something Here."
+  },
+
+  "Video": {
+    "title": "WHO WE ARE",
+    "ploeg": "DISCOVER THE TEAM",
+    "ploegboekje": "READ THE TEAM MAGAZINE"
+  }, 
+
+  "FindUs": {
+    "email": "EMAIL",
+    "locatieTitel": "LOCATION",
+    "locatieOmschrijving": "GRASSFIELD IN FRONT OF ALMA 3",
+    "socials": "SOCIAL MEDIA"
   }
 }
