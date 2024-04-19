@@ -7,8 +7,8 @@ import singlePloeglid from "@/components/Ploegleden/SinglePloeglid";
 import TeamHero from "@/components/Hero/teamHero";
 
 export const metadata: Metadata = {
-  title: "Blog Page | Free Next.js Template for Startup and SaaS",
-  description: "This is Blog Page for Startup Nextjs Template",
+  title: "Nuffalo Jill | Meet the team",
+  description: "This is Team Page for Election Team Nuffalo Jill",
 };
 
 const Ploeg = () => {
