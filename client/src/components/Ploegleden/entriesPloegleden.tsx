@@ -188,7 +188,7 @@ const entriesPloegleden: PloeglidEntry[] = [
   {
     id: 20,
     name: "Jonas Van Bulck",
-    image: "/images/ploegleden/placeholder-person-icon.png",
+    image: "/images/ploegleden/Jonas.jpg",
     post: "Evenementen",
     g5: false,
     g5_post: "",
@@ -208,7 +208,7 @@ const entriesPloegleden: PloeglidEntry[] = [
   {
     id: 22,
     name: "Jules Legrand",
-    image: "/images/ploegleden/placeholder-person-icon.png",
+    image: "/images/ploegleden/Jules.jpg",
     post: "Evenementen",
     g5: false,
     g5_post: "",
@@ -391,7 +391,7 @@ const entriesPloegleden: PloeglidEntry[] = [
   {
     id: 40,
     name: "Lucas Fonderie",
-    image: "/images/ploegleden/placeholder-person-icon.png",
+    image: "/images/ploegleden/Lucas_Fonderie.jpg",
     post: "Locatie",
     g5: false,
     g5_post: "",
@@ -401,7 +401,7 @@ const entriesPloegleden: PloeglidEntry[] = [
   {
     id: 41,
     name: "Victor Moeys",
-    image: "/images/ploegleden/placeholder-person-icon.png",
+    image: "/images/ploegleden/Victor.jpg",
     post: "Locatie",
     g5: false,
     g5_post: "",
@@ -411,7 +411,7 @@ const entriesPloegleden: PloeglidEntry[] = [
   {
     id: 42,
     name: "Robbe Van Royen",
-    image: "/images/ploegleden/placeholder-person-icon.png",
+    image: "/images/ploegleden/Robbe_VanRoyen.jpg",
     post: "Locatie",
     g5: false,
     g5_post: "",
@@ -421,7 +421,7 @@ const entriesPloegleden: PloeglidEntry[] = [
   {
     id: 43,
     name: "Wout Raspoet",
-    image: "/images/ploegleden/placeholder-person-icon.png",
+    image: "/images/ploegleden/Wout.jpg",
     post: "Locatie",
     g5: false,
     g5_post: "",
@@ -439,7 +439,7 @@ const entriesPloegleden: PloeglidEntry[] = [
   },{
     id: 45,
     name: "Matthijs De Haeck",
-    image: "/images/ploegleden/placeholder-person-icon.png",
+    image: "/images/ploegleden/Matthijs.jpg",
     post: "Locatie",
     g5: false,
     g5_post: "",
@@ -457,7 +457,7 @@ const entriesPloegleden: PloeglidEntry[] = [
   },{
     id: 47,
     name: "Lander De Veuster",
-    image: "/images/ploegleden/placeholder-person-icon.png",
+    image: "/images/ploegleden/Lander_DeVeuster.jpg",
     post: "Locatie",
     g5: false,
     g5_post: "",
@@ -475,7 +475,7 @@ const entriesPloegleden: PloeglidEntry[] = [
   },{
     id: 49,
     name: "Tom Moermans",
-    image: "/images/ploegleden/placeholder-person-icon.png",
+    image: "/images/ploegleden/Tom.jpg",
     post: "Locatie",
     g5: false,
     g5_post: "",
@@ -493,7 +493,7 @@ const entriesPloegleden: PloeglidEntry[] = [
   },{
     id: 51,
     name: "Xander Depauw",
-    image: "/images/ploegleden/placeholder-person-icon.png",
+    image: "/images/ploegleden/Xander.jpg",
     post: "Locatie",
     g5: false,
     g5_post: "",
@@ -502,7 +502,7 @@ const entriesPloegleden: PloeglidEntry[] = [
   },{
     id: 52,
     name: "Viktor Meekers",
-    image: "/images/ploegleden/placeholder-person-icon.png",
+    image: "/images/ploegleden/Viktor.jpg",
     post: "Locatie",
     g5: false,
     g5_post: "",
@@ -511,7 +511,7 @@ const entriesPloegleden: PloeglidEntry[] = [
   },{
     id: 53,
     name: "Lander Verhoeven",
-    image: "/images/ploegleden/placeholder-person-icon.png",
+    image: "/images/ploegleden/Lander_Verhoeven.jpg",
     post: "Locatie",
     g5: false,
     g5_post: "",
@@ -520,7 +520,7 @@ const entriesPloegleden: PloeglidEntry[] = [
   },{
     id: 54,
     name: "Timon Dries",
-    image: "/images/ploegleden/placeholder-person-icon.png",
+    image: "/images/ploegleden/Timon.jpg",
     post: "Locatie",
     g5: false,
     g5_post: "",
@@ -529,7 +529,7 @@ const entriesPloegleden: PloeglidEntry[] = [
   },{
     id: 55,
     name: "Brent De Peuter",
-    image: "/images/ploegleden/placeholder-person-icon.png",
+    image: "/images/ploegleden/Brent.jpg",
     post: "Locatie",
     g5: false,
     g5_post: "",
@@ -538,7 +538,7 @@ const entriesPloegleden: PloeglidEntry[] = [
   },{
     id: 56,
     name: "Tiemen Moeyersons",
-    image: "/images/ploegleden/placeholder-person-icon.png",
+    image: "/images/ploegleden/Tiemen.jpg",
     post: "Locatie",
     g5: false,
     g5_post: "",
@@ -569,7 +569,7 @@ const entriesPloegleden: PloeglidEntry[] = [
   {
     id: 59,
     name: "Lucas Renard",
-    image: "/images/ploegleden/placeholder-person-icon.png",
+    image: "/images/ploegleden/Lucas.jpg",
     post: "Marketing",
     g5: false,
     g5_post: "",
@@ -578,16 +578,7 @@ const entriesPloegleden: PloeglidEntry[] = [
   },{
     id: 60,
     name: "Willem Bormans",
-    image: "/images/ploegleden/placeholder-person-icon.png",
-    post: "Marketing",
-    g5: false,
-    g5_post: "",
-    responsible: false
-
-  },{
-    id: 61,
-    name: "Lene Gabriels",
-    image: "/images/ploegleden/placeholder-person-icon.png",
+    image: "/images/ploegleden/Willem.jpg",
     post: "Marketing",
     g5: false,
     g5_post: "",
@@ -596,7 +587,7 @@ const entriesPloegleden: PloeglidEntry[] = [
   },{
     id: 62,
     name: "Bram Verbelen",
-    image: "/images/ploegleden/placeholder-person-icon.png",
+    image: "/images/ploegleden/Bram.jpg",
     post: "Marketing",
     g5: false,
     g5_post: "",
@@ -605,7 +596,7 @@ const entriesPloegleden: PloeglidEntry[] = [
   },{
     id: 63,
     name: "Marie Lampaert",
-    image: "/images/ploegleden/placeholder-person-icon.png",
+    image: "/images/ploegleden/Marie.jpg",
     post: "Marketing",
     g5: false,
     g5_post: "",
@@ -614,7 +605,7 @@ const entriesPloegleden: PloeglidEntry[] = [
   },{
     id: 64,
     name: "Emily Denys",
-    image: "/images/ploegleden/placeholder-person-icon.png",
+    image: "/images/ploegleden/Emily.jpg",
     post: "Marketing",
     g5: false,
     g5_post: "",
@@ -623,7 +614,7 @@ const entriesPloegleden: PloeglidEntry[] = [
   },{
     id: 65,
     name: "Sepp Swinnen",
-    image: "/images/ploegleden/placeholder-person-icon.png",
+    image: "/images/ploegleden/Sepp.jpg",
     post: "Marketing",
     g5: false,
     g5_post: "",
@@ -632,7 +623,7 @@ const entriesPloegleden: PloeglidEntry[] = [
   },{
     id: 66,
     name: "Robbe Mensch",
-    image: "/images/ploegleden/placeholder-person-icon.png",
+    image: "/images/ploegleden/Robbe_Mensch.jpg",
     post: "Marketing",
     g5: false,
     g5_post: "",
@@ -645,7 +636,7 @@ const entriesPloegleden: PloeglidEntry[] = [
   {
     id: 67,
     name: "Wannes Huygh",
-    image: "/images/ploegleden/placeholder-person-icon.png",
+    image: "/images/ploegleden/Wannes.jpg",
     post: "Natura",
     g5: false,
     g5_post: "",
@@ -654,7 +645,7 @@ const entriesPloegleden: PloeglidEntry[] = [
   },{
     id: 68,
     name: "Marte Maes",
-    image: "/images/ploegleden/placeholder-person-icon.png",
+    image: "/images/ploegleden/Marte.jpg",
     post: "Natura",
     g5: false,
     g5_post: "",
@@ -664,7 +655,7 @@ const entriesPloegleden: PloeglidEntry[] = [
   {
     id: 69,
     name: "Diete Wouters",
-    image: "/images/ploegleden/placeholder-person-icon.png",
+    image: "/images/ploegleden/Diete.jpg",
     post: "Natura",
     g5: false,
     g5_post: "",
@@ -673,7 +664,7 @@ const entriesPloegleden: PloeglidEntry[] = [
   },{
     id: 70,
     name: "Achille De Vriese",
-    image: "/images/ploegleden/placeholder-person-icon.png",
+    image: "/images/ploegleden/Achille.jpg",
     post: "Natura",
     g5: false,
     g5_post: "",
@@ -682,7 +673,7 @@ const entriesPloegleden: PloeglidEntry[] = [
   },{
     id: 71,
     name: "Pierre Stavart",
-    image: "/images/ploegleden/placeholder-person-icon.png",
+    image: "/images/ploegleden/Pierre_stavard.jpg",
     post: "Natura",
     g5: false,
     g5_post: "",
@@ -691,7 +682,7 @@ const entriesPloegleden: PloeglidEntry[] = [
   },{
     id: 72,
     name: "Driek Rediers",
-    image: "/images/ploegleden/placeholder-person-icon.png",
+    image: "/images/ploegleden/Driek.jpg",
     post: "Natura",
     g5: false,
     g5_post: "",
@@ -700,7 +691,7 @@ const entriesPloegleden: PloeglidEntry[] = [
   },{
     id: 73,
     name: "Pierre Harmant",
-    image: "/images/ploegleden/placeholder-person-icon.png",
+    image: "/images/ploegleden/Pierre.jpg",
     post: "Natura",
     g5: false,
     g5_post: "",
@@ -718,7 +709,7 @@ const entriesPloegleden: PloeglidEntry[] = [
   },{
     id: 75,
     name: "Alexander Dubois",
-    image: "/images/ploegleden/placeholder-person-icon.png",
+    image: "/images/ploegleden/Alexander.jpg",
     post: "Natura",
     g5: false,
     g5_post: "",
@@ -751,7 +742,7 @@ const entriesPloegleden: PloeglidEntry[] = [
   },{
     id: 78,
     name: "Thomas Billiet",
-    image: "/images/ploegleden/placeholder-person-icon.png",
+    image: "/images/ploegleden/Thomas.jpg",
     post: "Pre",
     g5: false,
     g5_post: "",
@@ -760,7 +751,7 @@ const entriesPloegleden: PloeglidEntry[] = [
   },{
     id: 79,
     name: "Henri Mesman",
-    image: "/images/ploegleden/placeholder-person-icon.png",
+    image: "/images/ploegleden/Henri.jpg",
     post: "Pre",
     g5: false,
     g5_post: "",
@@ -778,7 +769,7 @@ const entriesPloegleden: PloeglidEntry[] = [
   },{
     id: 81,
     name: "Quinten Vande Reyde",
-    image: "/images/ploegleden/placeholder-person-icon.png",
+    image: "/images/ploegleden/Quinten.jpg",
     post: "Pre",
     g5: false,
     g5_post: "",
@@ -787,7 +778,7 @@ const entriesPloegleden: PloeglidEntry[] = [
   },{
     id: 82,
     name: "Oscar Peersman",
-    image: "/images/ploegleden/placeholder-person-icon.png",
+    image: "/images/ploegleden/Oscar.jpg",
     post: "Pre",
     g5: false,
     g5_post: "",
@@ -820,7 +811,7 @@ const entriesPloegleden: PloeglidEntry[] = [
   },{
     id: 85,
     name: "Nando Quishpe Cahuasqui",
-    image: "/images/ploegleden/placeholder-person-icon.png",
+    image: "/images/ploegleden/Nando.jpg",
     post: "Sponsoring",
     g5: false,
     g5_post: "",
@@ -838,7 +829,7 @@ const entriesPloegleden: PloeglidEntry[] = [
   },{
     id: 87,
     name: "Vincent Ramharter",
-    image: "/images/ploegleden/placeholder-person-icon.png",
+    image: "/images/ploegleden/Vincent.jpg",
     post: "Sponsoring",
     g5: false,
     g5_post: "",
@@ -874,7 +865,7 @@ const entriesPloegleden: PloeglidEntry[] = [
   },{
     id: 91,
     name: "Marie-Johanna Schillemans",
-    image: "/images/ploegleden/placeholder-person-icon.png",
+    image: "/images/ploegleden/MJ.jpg",
     post: "Sponsoring",
     g5: false,
     g5_post: "",
@@ -892,7 +883,7 @@ const entriesPloegleden: PloeglidEntry[] = [
   },{
     id: 93,
     name: "Lars Lagauw",
-    image: "/images/ploegleden/placeholder-person-icon.png",
+    image: "/images/ploegleden/Lars.jpg",
     post: "Sponsoring",
     g5: false,
     g5_post: "",
@@ -927,7 +918,7 @@ const entriesPloegleden: PloeglidEntry[] = [
   },{
     id: 96,
     name: "Seppe Van Der Biest",
-    image: "/images/ploegleden/placeholder-person-icon.png",
+    image: "/images/ploegleden/SeppeVanDerBiest.jpg",
     post: "Standpunten",
     g5: false,
     g5_post: "",
@@ -944,7 +935,7 @@ const entriesPloegleden: PloeglidEntry[] = [
   },{
     id: 98,
     name: "Arno Beyers",
-    image: "/images/ploegleden/placeholder-person-icon.png",
+    image: "/images/ploegleden/Arno.jpg",
     post: "Standpunten",
     g5: false,
     g5_post: "",
