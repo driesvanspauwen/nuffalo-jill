@@ -1,6 +1,7 @@
 import SectionTitle from "../Common/SectionTitle";
 import SinglePloeglid from "./SinglePloeglid";
 import entriesPloegleden from "./entriesPloegleden";
+import dynamic from 'next/dynamic'
 
 const Ploeg = () => {
   return (

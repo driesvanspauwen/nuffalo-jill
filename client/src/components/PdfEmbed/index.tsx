@@ -18,8 +18,7 @@ function PdfEmbed() {
     }
 
     return (
-        <div>
-
+        <div class={"inset-x-0 bottom-0"}>
             <Document file="/ploegboekje/Ploegboekje.pdf" onLoadSuccess={onDocumentLoadSuccess}>
                 <Page pageNumber={pageNumber} />
             </Document>
