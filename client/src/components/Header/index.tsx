@@ -51,20 +51,26 @@ const Header = () => {
         <div className={`container`}>
           <div className={`relative flex items-center justify-between`}>
 
-              <div className={`w-1/8 brown-dark block relative transition-all duration-600 ${isScrolled ? 'scale-50' : 'scale-100'}`}>
-                <Link href="/" className="header-logo block">
-                  <Image
-                      src={isScrolled ? "/images/header/nuffalo-jill-logo-sky.png" : "/images/header/nuffalo-jill-logo-brown.png"}
-                      alt="logo"
-                      width={80}
-                      height={80}
-                      className="w-full transition-all duration-600"
-                  />
-                </Link>
-              </div>
+            <div className={`w-1/8 brown-dark block relative transition-all duration-600 ${isScrolled ? 'scale-50' : 'scale-100'}`}>
+              <Link href="/" className="header-logo block">
+                <Image
+                    src={isScrolled ? "/images/header/nuffalo-jill-logo-sky.png" : "/images/header/nuffalo-jill-logo-brown.png"}
+                    alt="logo"
+                    width={80}
+                    height={80}
+                    className="w-full transition-all duration-600"
+                />
+              </Link>
+            </div>
 
-            <div className="flex max-w-full items-center justify-center px-4">
+            <div className="flex max-w-full items-end justify-end px-4">
               <div>
+                <LocaleSwitcher
+                    styling={`flex h-20 w-20 text-xl lg:inline-flex uppercase absolute right-4 top-1/2 block translate-y-[-50%] lg:hidden ${
+                        isScrolled
+                            ? "text-sky hover:text-sky"
+                            : "text-brown-dark hover:text-brown-medium"
+                    }`}/>
                 <button
                     onClick={navbarToggleHandler}
                     id="navbarToggler"
@@ -103,30 +109,33 @@ const Header = () => {
                         <li key={index} className="group relative max-w-1/8">
                           {window.location.pathname === "/" || window.location.pathname === "/en" || window.location.pathname === "/nl" ? (
                               <NextLink href="/"
-                                    className={`flex py-2 text-base lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 ${
-                                        isScrolled
-                                            ? "text-sky hover:text-sky"
-                                            : (window.innerWidth < 500 ? "text-sky hover:text-sky" : "text-brown-dark hover:text-brown-medium")
-                                    }`}
-                                    onClick={(e) => {
-                                      {
-                                        e.preventDefault()
-                                        setTimeout(() => {
-                                          (window.innerWidth < 500 ?
-                                                  document.getElementById(menuItem.path) &&
-                                                  document
-                                                      .getElementById(menuItem.path)
-                                                      .scrollIntoView({ behavior: "smooth", block: "start",
-                                                      })
-                                                  :
-                                                  document.getElementById(menuItem.path) &&
-                                                  document
-                                                      .getElementById(menuItem.path)
-                                                      .scrollIntoView({ behavior: "smooth", block: "end",
-                                                      })
-                                          )
-                                        }, 50)
-                                      }}}
+                                        className={`flex py-2 text-base lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 ${
+                                            isScrolled
+                                                ? "text-sky hover:text-sky"
+                                                : (window.innerWidth < 500 ? "text-sky hover:text-sky" : "text-brown-dark hover:text-brown-medium")
+                                        }`}
+                                        onClick={(e) => {
+                                          {
+                                            e.preventDefault()
+                                            setTimeout(() => {
+                                              (window.innerWidth < 500 ?
+                                                      document.getElementById(menuItem.path) &&
+                                                      document
+                                                          .getElementById(menuItem.path)
+                                                          .scrollIntoView({
+                                                            behavior: "smooth", block: "start",
+                                                          })
+                                                      :
+                                                      document.getElementById(menuItem.path) &&
+                                                      document
+                                                          .getElementById(menuItem.path)
+                                                          .scrollIntoView({
+                                                            behavior: "smooth", block: "end",
+                                                          })
+                                              )
+                                            }, 50)
+                                          }
+                                        }}
                               >
                                 {menuItem.title}
                               </NextLink>
@@ -144,17 +153,20 @@ const Header = () => {
                                                   document.getElementById(menuItem.path) &&
                                                   document
                                                       .getElementById(menuItem.path)
-                                                      .scrollIntoView({ behavior: "smooth", block: "start",
+                                                      .scrollIntoView({
+                                                        behavior: "smooth", block: "start",
                                                       })
                                                   :
                                                   document.getElementById(menuItem.path) &&
                                                   document
                                                       .getElementById(menuItem.path)
-                                                      .scrollIntoView({ behavior: "smooth", block: "end",
+                                                      .scrollIntoView({
+                                                        behavior: "smooth", block: "end",
                                                       })
                                           )
                                         }, 100)
-                                      }}}
+                                      }
+                                    }}
                               >
                                 {menuItem.title}
                               </Link>
@@ -165,18 +177,13 @@ const Header = () => {
                 </nav>
               </div>
             </div>
-            <div className={`justify-end pr-16 lg:pr-0 block relative`}>
-              {/*<Link
-                  href="/signin"
-                  className="hidden px-7 py-3 text-base font-medium text-dark hover:opacity-70 dark:text-white md:block"
-                >
-                  Sign In
-                </Link>*/}
-              <LocaleSwitcher styling={`flex h-20 w-20 text-xl lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 uppercase ${
-                  isScrolled
-                      ? "text-sky hover:text-sky"
-                      : "text-brown-dark hover:text-brown-medium"
-              }`} />
+            <div className={`flex items-center justify-end pr-16 lg:pr-0 relative`}>
+              <LocaleSwitcher
+                  styling={`flex h-20 w-20 text-xl lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 uppercase hidden lg:block ${
+                      isScrolled
+                          ? "text-sky hover:text-sky"
+                          : "text-brown-dark hover:text-brown-medium"
+                  }`} />
             </div>
           </div>
         </div>
