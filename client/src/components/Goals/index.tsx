@@ -67,6 +67,14 @@ const Goals = () => {
                     }}
                     modules={[Pagination]}
                     className="mt-20 w-full mx-8 md:w-2/3 md:mx-0"
+                    style={{
+                        // @ts-ignore
+                        "--swiper-pagination-color": "#FBB040",
+                        "--swiper-pagination-bullet-inactive-color": "#999999",
+                        "--swiper-pagination-bullet-inactive-opacity": "1",
+                        "--swiper-pagination-bullet-size": "16px",
+                        "--swiper-pagination-bullet-horizontal-gap": "10px"
+                    }}
                 >
                     {goalsData.map((goal, index) => (
                         <SwiperSlide key={goal.id} className="flex justify-center items-center">
