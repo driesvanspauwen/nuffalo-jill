@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import React, { useState } from "react";
 import DayBox from "./DayBox";
 import { fetcher } from "../../lib/api";
 import Image from "next/image";
@@ -11,51 +11,52 @@ const Schedule = () => {
   const [isMonthly, setIsMonthly] = useState(true);
 
   return (
-    <section id="events" className="relative pt-12">
-      <div className="container">
-        <div className="mt-16 mb-8">
-          <SectionTitle
-              title="ELECTION WEEK"
-              paragraph=""
-              center
-              titleColor="brown-dark"
-          />
-        </div>
+      <section className="relative pt-12">
+        <div id="events" className="absolute top-0 left-0 pointer-events-none h-screen -z-10"></div> { /*For scrollable links */}
+        <div className="container">
+          <div className="mt-16 mb-8">
+            <SectionTitle
+                title="ELECTION WEEK"
+                paragraph=""
+                center
+                titleColor="brown-dark"
+            />
+          </div>
 
-        <div className="grid grid-cols-1 gap-x-8 md:grid-cols-2 lg:grid-cols-3 mt-20">
-          <DayBox packageName="Woensdag">
-            <div className="mb-8">
-              <EventBanner link="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUIcmlja3JvbGw%3D"
-                           image="/images/banners/Fakfeestje.png"></EventBanner>
-            </div>
-            <div className="mb-8">
-              <EventBanner link="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUIcmlja3JvbGw%3D"
-                           image="/images/banners/Fakfeestje.png"></EventBanner>
-            </div>
-          </DayBox>
-          <DayBox packageName="Donderdag">
-            <div className="mb-8">
-              <EventBanner link="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUIcmlja3JvbGw%3D"
-                           image="/images/banners/Fakfeestje.png"></EventBanner>
-            </div>
-            <div className="mb-8">
-              <EventBanner link="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUIcmlja3JvbGw%3D"
-                           image="/images/banners/Fakfeestje.png"></EventBanner>
-            </div>
-          </DayBox>
-          <DayBox packageName="Vrijdag">
-            <div className="mb-8">
-              <EventBanner link="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUIcmlja3JvbGw%3D"
-                           image="/images/banners/Fakfeestje.png"></EventBanner>
-            </div>
-            <div className="mb-8">
-              <EventBanner link="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUIcmlja3JvbGw%3D"
-                           image="/images/banners/Fakfeestje.png"></EventBanner>
-            </div>
-          </DayBox>
+          <div className="grid grid-cols-1 gap-x-8 md:grid-cols-2 lg:grid-cols-3 mt-20">
+            <DayBox packageName="Woensdag">
+              <div className="mb-8">
+                <EventBanner link="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUIcmlja3JvbGw%3D"
+                             image="/images/banners/Fakfeestje.png"></EventBanner>
+              </div>
+              <div className="mb-8">
+                <EventBanner link="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUIcmlja3JvbGw%3D"
+                             image="/images/banners/Fakfeestje.png"></EventBanner>
+              </div>
+            </DayBox>
+            <DayBox packageName="Donderdag">
+              <div className="mb-8">
+                <EventBanner link="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUIcmlja3JvbGw%3D"
+                             image="/images/banners/Fakfeestje.png"></EventBanner>
+              </div>
+              <div className="mb-8">
+                <EventBanner link="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUIcmlja3JvbGw%3D"
+                             image="/images/banners/Fakfeestje.png"></EventBanner>
+              </div>
+            </DayBox>
+            <DayBox packageName="Vrijdag">
+              <div className="mb-8">
+                <EventBanner link="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUIcmlja3JvbGw%3D"
+                             image="/images/banners/Fakfeestje.png"></EventBanner>
+              </div>
+              <div className="mb-8">
+                <EventBanner link="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUIcmlja3JvbGw%3D"
+                             image="/images/banners/Fakfeestje.png"></EventBanner>
+              </div>
+            </DayBox>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
   );
 };
 

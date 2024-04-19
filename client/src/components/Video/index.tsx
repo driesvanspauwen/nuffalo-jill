@@ -15,7 +15,7 @@ const Video = ({title, ploeg, ploegboekje}) => {
         <section
             className="relative bg-brown-dark bg-cover bg-center bg-repeat flex z-10 py-28"
         >
-          <div id="video" className="absolute top-0 left-0 pointer-events-none h-screen -z-10"></div>
+          <div id="video" className="absolute top-0 left-0 pointer-events-none h-screen -z-10"></div> { /*For scrollable links */}
           <div className="container">
             <SectionTitle
                 title={title}

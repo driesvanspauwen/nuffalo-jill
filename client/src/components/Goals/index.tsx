@@ -40,7 +40,7 @@ const Goals = () => {
     return (
         <>
             <section className="pt-28">
-                <div id="goals" className="absolute top-0 left-0 pointer-events-none h-screen -z-10"></div>
+                <div id="goals" className="absolute top-0 left-0 pointer-events-none h-screen -z-10"></div> { /*For scrollable links */}
                 <div className="container">
                     <div className="mt-16 mb-8">
                         <SectionTitle
