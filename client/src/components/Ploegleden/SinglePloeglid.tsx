@@ -3,12 +3,12 @@ import Image from "next/image";
 import Link from "next/link";
 
 const SinglePloeglid = ({ ploeglid }: { ploeglid: PloeglidEntry }) => {
-  const { name, image, post, g5, g5_post } = ploeglid;
+  const { name, image, post, g5, g5_post, responsible} = ploeglid;
   return (
     <>
       <div className="group relative overflow-hidden rounded-sm bg-white shadow-one duration-300 hover:shadow-two dark:bg-brown-dark dark:hover:shadow-gray-dark text-center">
           <div className="relative block aspect-[4/5] w-full">
-              <Image src={image} alt="image" fill />
+              <Image src={image} alt="image" fill objectFit="cover"/>
           </div>
 
         {g5 ? ( // Als ploeglid deel is van g5, printen we de g5_post
@@ -36,6 +36,13 @@ const SinglePloeglid = ({ ploeglid }: { ploeglid: PloeglidEntry }) => {
                 </h3>
               </div>
             </div>
+        )}
+        {responsible ? (
+          <div subpixel-antialiased className="absolute top-0 right-0 bg-primary text-white text-xs p-2">
+            Verantwoordelijke
+          </div>
+        ) : (
+          <></>
         )}
 
 
