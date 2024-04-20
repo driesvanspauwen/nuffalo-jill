@@ -5,9 +5,9 @@ import Image from "next/image";
 import Link from "next/link";
 import {getTranslations} from 'next-intl/server';
 
-export default function SinglePloeglid({ ploeglid }: { ploeglid: PloeglidEntry }) {
+export default function SinglePloeglid({ ploeglid, singlePloegLidTranslations }: { ploeglid: PloeglidEntry, singlePloegLidTranslations: any }) {
   const { name, image, post, g5, g5_post, responsible} = ploeglid;
-
+  console.log(g5_post)
   return (
     <>
       <div className="group relative overflow-hidden rounded-md bg-white shadow-one duration-300 hover:shadow-two dark:bg-brown-dark dark:hover:shadow-gray-dark text-center">
@@ -20,13 +20,13 @@ export default function SinglePloeglid({ ploeglid }: { ploeglid: PloeglidEntry }
                 <div
                     className="p-6 sm:p-8 md:px-6 md:py-2 lg:p-8 xl:px-5 xl:py-8 2xl:p-4">
                   <h3
-                      className="mb-2 block text-xl font-bold text-sky sm:text-2xl"
+                      className="mb-2 block text-xl font-bold text-brown-dark sm:text-2xl"
                   >
                       {name}
                   </h3>
                     {/*text-sand is tekstkleur van post g5*/}
-                  <p className="text-base font-medium text-sand dark:border-white dark:border-opacity-10">
-                    {g5_post}
+                  <p className="text-base font-medium text-sky dark:border-white dark:border-opacity-10">
+                    {singlePloegLidTranslations[g5_post]}
                   </p>
                 </div>
               </div>
@@ -34,7 +34,7 @@ export default function SinglePloeglid({ ploeglid }: { ploeglid: PloeglidEntry }
             <div className="flex flex-col justify-center h-[10vh] lg:h-[12vh]">
               <div className="p-6 sm:p-8 md:px-6 md:py-2 lg:p-8 xl:px-5 xl:py-8 2xl:p-4">
                 <h3
-                    className="mb-2 block text-xl font-bold text-sky sm:text-2xl"
+                    className="mb-2 block text-xl font-bold text-brown-dark sm:text-2xl"
                 >
                     {name}
                 </h3>
@@ -43,7 +43,7 @@ export default function SinglePloeglid({ ploeglid }: { ploeglid: PloeglidEntry }
         )}
         {responsible ? (
           <div subpixel-antialiased className="absolute top-0 right-0 bg-primary text-white text-xs p-2">
-            VERANTWOORDELIJKE
+              {singlePloegLidTranslations['description']}
           </div>
         ) : (
           <></>

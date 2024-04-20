@@ -46,6 +46,10 @@
   },
 
   "SinglePloeglid": {
-    "description": "RESPONSIBLE"
+    "description": "RESPONSIBLE",
+    "Kandidaat Praeses": "Candidate President",
+    "Kandidaat Vice-Praeses": "Candidate Vice President",
+    "Kandidaat Beheerder": "Candidate Financial Manager",
+    "Kandidaat Secretaris": "Candidate Secretary"
   }
 }

@@ -46,6 +46,10 @@
   },
   
   "SinglePloeglid": {
-    "description": "VERANTWOORDELIJKE"
+    "description": "VERANTWOORDELIJKE",
+    "Kandidaat Praeses": "Kandidaat Praeses",
+    "Kandidaat Vice-Praeses": "Kandidaat Vice-Praeses",
+    "Kandidaat Beheerder": "Kandidaat Beheerder",
+    "Kandidaat Secretaris": "Kandidaat Secretaris"
   }
 }
