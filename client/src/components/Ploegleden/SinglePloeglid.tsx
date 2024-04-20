@@ -1,11 +1,12 @@
+"use client";
+
 import { PloeglidEntry } from "@/types/ploeglidEntry";
 import Image from "next/image";
 import Link from "next/link";
 import {getTranslations} from 'next-intl/server';
 
-async function SinglePloeglid({ ploeglid }: { ploeglid: PloeglidEntry }) {
+export default function SinglePloeglid({ ploeglid }: { ploeglid: PloeglidEntry }) {
   const { name, image, post, g5, g5_post, responsible} = ploeglid;
-  const description = await getTranslations('SinglePloeglid');
 
   return (
     <>
@@ -33,7 +34,7 @@ async function SinglePloeglid({ ploeglid }: { ploeglid: PloeglidEntry }) {
             <div className="flex flex-col justify-center h-[10vh] lg:h-[12vh]">
               <div className="p-6 sm:p-8 md:px-6 md:py-2 lg:p-8 xl:px-5 xl:py-8 2xl:p-4">
                 <h3
-                    className="mb-2 block text-xl font-bold hover:text-primary text-sky sm:text-2xl"
+                    className="mb-2 block text-xl font-bold text-sky sm:text-2xl"
                 >
                     {name}
                 </h3>
@@ -42,7 +43,7 @@ async function SinglePloeglid({ ploeglid }: { ploeglid: PloeglidEntry }) {
         )}
         {responsible ? (
           <div subpixel-antialiased className="absolute top-0 right-0 bg-primary text-white text-xs p-2">
-            {description('description')}
+            VERANTWOORDELIJKE
           </div>
         ) : (
           <></>
@@ -53,5 +54,3 @@ async function SinglePloeglid({ ploeglid }: { ploeglid: PloeglidEntry }) {
     </>
   );
 };
-
-export default SinglePloeglid;
