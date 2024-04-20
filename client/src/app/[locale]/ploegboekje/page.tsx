@@ -13,7 +13,7 @@ const Ploegboekje = () => {
                         src="/ploegboekje/ploegboekje_nuffalo_jill.pdf"
                     />
                 </div>
-                <a className="flex px-4 py-32 md:hidden justify-center mb-5 text-center" href="/ploegboekje/Ploegboekje.pdf">
+                <a className="flex px-4 py-32 md:hidden justify-center mb-5 text-center" href="/ploegboekje/ploegboekje_nuffalo_jill.pdf">
                     <u>Download het ploegboekje!</u>
                 </a>
             </section>
