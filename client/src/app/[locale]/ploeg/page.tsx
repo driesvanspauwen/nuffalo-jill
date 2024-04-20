@@ -14,35 +14,36 @@ import entriesPosten from "@/app/[locale]/ploeg/entriesPosten";
 const Ploeg = () => {
   return (
       <div
-          className="z-0 bg-[url(/images/home-content-wrapper/parchment.jpg)] bg-cover bg-center relative"
+          className="z-0 bg-offwhite bg-cover bg-center relative"
       >
           <TeamHero
               backgroundImage="/images/hero/group-picture.jpg"
               scrollId="team"
           />
 
-          <div className="mb-2 mt-10 mx-auto text-center pt-[50px]">
-              <div className="flex justify-center items-center flex-wrap" >
-                  {entriesPosten.map((post) => (
-                      <div key={post.key} className="mb-3 mr-3 items-center">
-                          <ReactLink
-                              className="shadow-one hover:shadow-two dark:hover:shadow-gray-dark bg-brown-dark inline-flex items-center justify-center rounded-sm px-4 py-2 text-lg text-sky duration-300 cursor-pointer"
-                              to={post.id}
-                              spy={true}
-                              smooth={true}
-                              offset={-75}
-                              duration={500}
-                          >
-                              {post.name}
-                          </ReactLink>
-                      </div>
-                  ))}
-              </div>
-          </div>
-          <section className="relative pb-[100px] pt-[100px]">
-
+          <section className="relative pb-16 pt-16">
               <div id="team" className="absolute top-0 left-0 pointer-events-none h-screen -z-10"></div>
               {/*For scroll effect*/}
+
+              <div className="mx-auto text-center pb-16">
+                  <div className="flex justify-center items-center flex-wrap">
+                      {entriesPosten.map((post) => (
+                          <div key={post.key} className="mb-3 mr-3 items-center">
+                              <ReactLink
+                                  className="shadow-one hover:shadow-two dark:hover:shadow-gray-dark bg-brown-dark inline-flex items-center justify-center rounded-sm px-4 py-2 text-lg text-sky duration-300 cursor-pointer"
+                                  to={post.id}
+                                  spy={true}
+                                  smooth={true}
+                                  offset={-75}
+                                  duration={500}
+                              >
+                                  {post.name}
+                              </ReactLink>
+                          </div>
+                      ))}
+                  </div>
+              </div>
+
               <div id="g5" className="container pb-[50px] pl-[10%] pr-[10%]">
                   <h2 className="pb-[40px] text-brown-dark text-center">Kandidaat Groep 5</h2>
                   <div className="-mx-6 flex flex-wrap justify-center" style={{alignItems: 'stretch'}}>
@@ -56,9 +57,6 @@ const Ploeg = () => {
                       ))}
                   </div>
               </div>
-
-              <div className="w-full bg-brown-dark h-0.5"></div>
-              {/* Brown line */}
 
               <div id="catering" className="container pb-[50px] pt-[50px] pl-[10%] pr-[10%]">
                   <h2 className="pb-[40px] text-brown-dark text-center">Catering</h2>
@@ -74,9 +72,6 @@ const Ploeg = () => {
                   </div>
               </div>
 
-              <div className="w-full bg-brown-dark h-0.5"></div>
-              {/* Brown line */}
-
               <div id="digitaal" className="container pb-[50px] pt-[50px] pl-[10%] pr-[10%]">
                   <h2 className="pb-[40px] text-brown-dark text-center">Digitaal</h2>
                   <div className="-mx-6 flex flex-wrap justify-center">
@@ -90,9 +85,6 @@ const Ploeg = () => {
                       ))}
                   </div>
               </div>
-
-              <div className="w-full bg-brown-dark h-0.5"></div>
-              {/* Brown line */}
 
               <div id="evenementen" className="container pb-[50px] pt-[50px] pl-[10%] pr-[10%]">
                   <h2 className="pb-[40px] text-brown-dark text-center">Evenementen</h2>
@@ -108,9 +100,6 @@ const Ploeg = () => {
                   </div>
               </div>
 
-              <div className="w-full bg-brown-dark h-0.5"></div>
-              {/* Brown line */}
-
               <div id="locatie" className="container pb-[50px] pt-[50px] pl-[10%] pr-[10%]">
                   <h2 className="pb-[40px] text-brown-dark text-center">Locatie</h2>
                   <div className="-mx-6 flex flex-wrap justify-center">
@@ -124,9 +113,6 @@ const Ploeg = () => {
                       ))}
                   </div>
               </div>
-
-              <div className="w-full bg-brown-dark h-0.5"></div>
-              {/* Brown line */}
 
               <div id="marketing" className="container pb-[50px] pt-[50px] pl-[10%] pr-[10%]">
                   <h2 className="pb-[40px] text-brown-dark text-center">Marketing</h2>
@@ -142,9 +128,6 @@ const Ploeg = () => {
                   </div>
               </div>
 
-              <div className="w-full bg-brown-dark h-0.5"></div>
-              {/* Brown line */}
-
               <div id="natura" className="container pb-[50px] pt-[50px] pl-[10%] pr-[10%]">
                   <h2 className="pb-[40px] text-brown-dark text-center">Natura</h2>
                   <div className="-mx-6 flex flex-wrap justify-center">
@@ -158,9 +141,6 @@ const Ploeg = () => {
                       ))}
                   </div>
               </div>
-
-              <div className="w-full bg-brown-dark h-0.5"></div>
-              {/* Brown line */}
 
               <div id="pre" className="container pb-[50px] pt-[50px] pl-[10%] pr-[10%]">
                   <h2 className="pb-[40px] text-brown-dark text-center">Pre</h2>
@@ -176,9 +156,6 @@ const Ploeg = () => {
                   </div>
               </div>
 
-              <div className="w-full bg-brown-dark h-0.5"></div>
-              {/* Brown line */}
-
               <div id="sponsoring" className="container pb-[50px] pt-[50px] pl-[10%] pr-[10%]">
                   <h2 className="pb-[40px] text-brown-dark text-center">Sponsoring</h2>
                   <div className="-mx-6 flex flex-wrap justify-center">
@@ -192,9 +169,6 @@ const Ploeg = () => {
                       ))}
                   </div>
               </div>
-
-              <div className="w-full bg-brown-dark h-0.5"></div>
-              {/* Brown line */}
 
               <div id="standpunten" className="container pb-[50px] pt-[50px] pl-[10%] pr-[10%]">
                   <h2 className="pb-[40px] text-brown-dark text-center">Standpunten</h2>
