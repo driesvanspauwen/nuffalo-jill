@@ -32,7 +32,7 @@ const TeamHero: React.FC<TeamHeroProps> = ({ scrollId, backgroundImage, descript
                 <div
                     className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-b from-transparent to-brown-dark z-10 flex justify-center items-center">
                     <button
-                        className="relative border-offwhite text-xl text-offwhite bg-transparent border-2 px-4 py-2 mt-32 hover:bg-brown-dark hover:text-offwhite transition duration-300 ease-in-out"
+                        className="relative border-offwhite text-xl text-offwhite bg-transparent border-2 px-4 py-2 mt-32 hover:bg-brown-dark hover:text-offwhite transition duration-300 ease-in-out rounded-md"
                         onClick={(e) => {
                             {
                                 setTimeout(() => {

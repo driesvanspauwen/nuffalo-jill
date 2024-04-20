@@ -9,7 +9,7 @@ const FindUs = ({email, locatieTitel, locatieOmschrijving, socials}) => {
                 <div className="-mx-4 flex flex-wrap items-center">
                     <div className="w-full px-8 sm:px-4 lg:w-2/3">
                         <div
-                            className="relative h-[400px] w-full"
+                            className="relative h-[400px] w-full rounded-lg overflow-hidden"
                             data-wow-delay=".15s"
                         >
                             <iframe

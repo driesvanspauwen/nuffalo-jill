@@ -9,7 +9,7 @@ async function SinglePloeglid({ ploeglid }: { ploeglid: PloeglidEntry }) {
 
   return (
     <>
-      <div className="group relative overflow-hidden rounded-sm bg-white shadow-one duration-300 hover:shadow-two dark:bg-brown-dark dark:hover:shadow-gray-dark text-center">
+      <div className="group relative overflow-hidden rounded-md bg-white shadow-one duration-300 hover:shadow-two dark:bg-brown-dark dark:hover:shadow-gray-dark text-center">
           <div className="relative block aspect-[4/5] w-full">
               <Image src={image} alt="image" fill objectFit="cover"/>
           </div>
