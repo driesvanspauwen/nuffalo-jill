@@ -3,9 +3,10 @@
 type TeamHeroProps = {
     scrollId: string;
     backgroundImage: string;
+    description: string,
 };
 
-const TeamHero: React.FC<TeamHeroProps> = ({ scrollId, backgroundImage }) => {
+const TeamHero: React.FC<TeamHeroProps> = ({ scrollId, backgroundImage, description}) => {
     return (
         <>
             <section
@@ -51,7 +52,7 @@ const TeamHero: React.FC<TeamHeroProps> = ({ scrollId, backgroundImage }) => {
                                 }, 100)
                             }}}
                     >
-                        <p>DISCOVER NUFFALO JILL</p>
+                        <p>{description}</p>
                     </button>
                 </div>
 

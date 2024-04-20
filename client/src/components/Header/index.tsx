@@ -3,7 +3,7 @@ import NextLink from "next/link"
 import Image from "next/image";
 import {usePathname} from "next/navigation";
 import {useEffect, useState} from "react";
-import menuData from "./menuData";
+import { menuDataDutch, menuDataEnglish } from "./menuData";
 import styles from './styles.module.css';
 import LocaleSwitcher from "@/components/LocaleSwitcher/LocaleSwitcher";
 
@@ -40,6 +40,13 @@ const Header = () => {
   };
 
   const usePathName = usePathname();
+
+  let menuData;
+  if (usePathName === "/" || usePathName === "/nl") {
+      menuData = menuDataDutch;
+  } else {
+      menuData = menuDataEnglish;
+  };
 
   return (
     <>

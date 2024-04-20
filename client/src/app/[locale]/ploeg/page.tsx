@@ -1,30 +1,35 @@
 import SinglePloeglid from "@/components/Ploegleden/SinglePloeglid";
 import entriesPloegleden from "@/components/Ploegleden/entriesPloegleden";
 import Breadcrumb from "@/components/Common/Breadcrumb";
-
 import { Metadata } from "next";
 import singlePloeglid from "@/components/Ploegleden/SinglePloeglid";
 import TeamHero from "@/components/Hero/teamHero";
+import {getTranslations} from 'next-intl/server';
 
 export const metadata: Metadata = {
-  title: "Nuffalo Jill | Meet the team",
-  description: "This is Team Page for Election Team Nuffalo Jill",
-};
+    title: "Nuffalo Jill | Meet the team",
+    description: "This is Team Page for Election Team Nuffalo Jill",
+  };
 
-const Ploeg = () => {
-  return (
+export default async function Ploeg() {
+
+    const ploeg = await getTranslations('Ploeg');
+    const ontdek = await getTranslations('TeamHero');
+
+    return (
       <div
           className="z-0 bg-[url(/images/home-content-wrapper/parchment.jpg)] bg-cover bg-center relative"
       >
           <TeamHero
               backgroundImage="/images/hero/group-picture.jpg"
               scrollId="team"
+              description={ontdek('description')}
           />
 
           <section className="relative pb-[100px] pt-[100px]">`
               <div id="team" className="absolute top-0 left-0 pointer-events-none h-screen -z-10"></div> {/*For scroll effect*/}
               <div className="container pb-[50px] pl-[10%] pr-[10%]">
-                  <h2 className="pb-[40px] text-center">Kandidaat Groep 5</h2>
+                  <h2 className="pb-[40px] text-center">{ploeg('g5')}</h2>
                   <div className="-mx-6 flex flex-wrap justify-center" style={{alignItems: 'stretch'}}>
                       {entriesPloegleden.filter(x => (x.post === "Kandidaat Groep 5")).map((singlePloeglid) => (
                           <div
@@ -41,7 +46,7 @@ const Ploeg = () => {
               {/* White line */}
 
               <div className="container pb-[50px] pt-[50px] pl-[10%] pr-[10%]">
-                  <h2 className="pb-[40px] text-center">Catering</h2>
+                  <h2 className="pb-[40px] text-center">{ploeg('catering')}</h2>
                   <div className="-mx-6 flex flex-wrap justify-center">
                       {entriesPloegleden.filter(x => (x.post === "Catering")).map((singlePloeglid) => (
                           <div
@@ -58,7 +63,7 @@ const Ploeg = () => {
               {/* White line */}
 
               <div className="container pb-[50px] pt-[50px] pl-[10%] pr-[10%]">
-                  <h2 className="pb-[40px] text-center">Digitaal</h2>
+                  <h2 className="pb-[40px] text-center">{ploeg('digitaal')}</h2>
                   <div className="-mx-6 flex flex-wrap justify-center">
                       {entriesPloegleden.filter(x => (x.post === "Digitaal")).map((singlePloeglid) => (
                           <div
@@ -75,7 +80,7 @@ const Ploeg = () => {
               {/* White line */}
 
               <div className="container pb-[50px] pt-[50px] pl-[10%] pr-[10%]">
-                  <h2 className="pb-[40px] text-center">Evenementen</h2>
+                  <h2 className="pb-[40px] text-center">{ploeg('evenementen')}</h2>
                   <div className="-mx-6 flex flex-wrap justify-center">
                       {entriesPloegleden.filter(x => (x.post === "Evenementen")).map((singlePloeglid) => (
                           <div
@@ -92,7 +97,7 @@ const Ploeg = () => {
               {/* White line */}
 
               <div className="container pb-[50px] pt-[50px] pl-[10%] pr-[10%]">
-                  <h2 className="pb-[40px] text-center">Locatie</h2>
+                  <h2 className="pb-[40px] text-center">{ploeg('locatie')}</h2>
                   <div className="-mx-6 flex flex-wrap justify-center">
                       {entriesPloegleden.filter(x => (x.post === "Locatie")).map((singlePloeglid) => (
                           <div
@@ -109,7 +114,7 @@ const Ploeg = () => {
               {/* White line */}
 
               <div className="container pb-[50px] pt-[50px] pl-[10%] pr-[10%]">
-                  <h2 className="pb-[40px] text-center">Marketing</h2>
+                  <h2 className="pb-[40px] text-center">{ploeg('marketing')}</h2>
                   <div className="-mx-6 flex flex-wrap justify-center">
                       {entriesPloegleden.filter(x => (x.post === "Marketing")).map((singlePloeglid) => (
                           <div
@@ -126,7 +131,7 @@ const Ploeg = () => {
               {/* White line */}
 
               <div className="container pb-[50px] pt-[50px] pl-[10%] pr-[10%]">
-                  <h2 className="pb-[40px] text-center">Natura</h2>
+                  <h2 className="pb-[40px] text-center">{ploeg('natura')}</h2>
                   <div className="-mx-6 flex flex-wrap justify-center">
                       {entriesPloegleden.filter(x => (x.post === "Natura")).map((singlePloeglid) => (
                           <div
@@ -143,7 +148,7 @@ const Ploeg = () => {
               {/* White line */}
 
               <div className="container pb-[50px] pt-[50px] pl-[10%] pr-[10%]">
-                  <h2 className="pb-[40px] text-center">Pre</h2>
+                  <h2 className="pb-[40px] text-center">{ploeg('pre')}</h2>
                   <div className="-mx-6 flex flex-wrap justify-center">
                       {entriesPloegleden.filter(x => (x.post === "Pre")).map((singlePloeglid) => (
                           <div
@@ -160,7 +165,7 @@ const Ploeg = () => {
               {/* White line */}
 
               <div className="container pb-[50px] pt-[50px] pl-[10%] pr-[10%]">
-                  <h2 className="pb-[40px] text-center">Sponsoring</h2>
+                  <h2 className="pb-[40px] text-center">{ploeg('sponsoring')}</h2>
                   <div className="-mx-6 flex flex-wrap justify-center">
                       {entriesPloegleden.filter(x => (x.post === "Sponsoring")).map((singlePloeglid) => (
                           <div
@@ -177,7 +182,7 @@ const Ploeg = () => {
               {/* White line */}
 
               <div className="container pb-[50px] pt-[50px] pl-[10%] pr-[10%]">
-                  <h2 className="pb-[40px] text-center">Standpunten</h2>
+                  <h2 className="pb-[40px] text-center">{ploeg('standpunten')}</h2>
                   <div className="-mx-6 flex flex-wrap justify-center">
                       {entriesPloegleden.filter(x => (x.post === "Standpunten")).map((singlePloeglid) => (
                           <div
@@ -194,5 +199,3 @@ const Ploeg = () => {
       </div>
   );
 };
-
-export default Ploeg;

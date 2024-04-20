@@ -1,9 +1,12 @@
 import { PloeglidEntry } from "@/types/ploeglidEntry";
 import Image from "next/image";
 import Link from "next/link";
+import {getTranslations} from 'next-intl/server';
 
-const SinglePloeglid = ({ ploeglid }: { ploeglid: PloeglidEntry }) => {
+async function SinglePloeglid({ ploeglid }: { ploeglid: PloeglidEntry }) {
   const { name, image, post, g5, g5_post, responsible} = ploeglid;
+  const description = await getTranslations('SinglePloeglid');
+
   return (
     <>
       <div className="group relative overflow-hidden rounded-sm bg-white shadow-one duration-300 hover:shadow-two dark:bg-brown-dark dark:hover:shadow-gray-dark text-center">
@@ -39,7 +42,7 @@ const SinglePloeglid = ({ ploeglid }: { ploeglid: PloeglidEntry }) => {
         )}
         {responsible ? (
           <div subpixel-antialiased className="absolute top-0 right-0 bg-primary text-white text-xs p-2">
-            Verantwoordelijke
+            {description('description')}
           </div>
         ) : (
           <></>

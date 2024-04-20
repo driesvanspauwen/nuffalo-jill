@@ -1,12 +1,12 @@
 import { Catering, CateringElement } from "@/types/catering";
 
-const cateringData: Catering[] = [
+const cateringDataDutch: Catering[] = [
     {
       id: 1,
       date: "Toog",
       cateringelements: [
         { id: 1, content: "Frisdrank/Bier/Redbull", price: 1 },
-        { id: 2, content: "Karmelier/Watermelon Spritz", price: 1.50 },
+        { id: 2, content: "Karmeliet/Watermelon Spritz", price: 1.50 },
         { id: 3, content: "Aperol Spritz", price: 2.50 }
       ]
     },
@@ -48,4 +48,52 @@ const cateringData: Catering[] = [
     },
 ];
 
-export default cateringData;
+const cateringDataEnglish: Catering[] = [
+  {
+    id: 1,
+    date: "Bar",
+    cateringelements: [
+      { id: 1, content: "Soda/Beer/Redbull", price: 1 },
+      { id: 2, content: "Karmeliet/Watermelon Spritz", price: 1.50 },
+      { id: 3, content: "Aperol Spritz", price: 2.50 }
+    ]
+  },
+  {
+      id: 2,
+      date: "French fry stand",
+      cateringelements: [
+        { id: 1, content: "Fries", price: 1.2 },
+        { id: 2, content: "Meat/Cheese croquette", price: 1.2 },
+        { id: 3, content: "Frikandel/Kipcorn/Bamischijf", price: 1.2 }
+      ]
+  },
+  {
+      id: 3,
+      date: "Monday 29/4",
+      cateringelements: [
+        { id: 1, content: "Croque monsieur", price: 1 },
+        { id: 2, content: "Panini", price: 1.5 },
+        { id: 3, content: "Paella", price: 4 }
+      ]
+  },
+  {
+      id: 4,
+      date: "Tuesday 30/4",
+      cateringelements: [
+        { id: 1, content: "Brunch", price: 4 },
+        { id: 2, content: "Chili con carne", price: 4 },
+        { id: 3, content: "Chili sin carne", price: 4 }
+      ]
+  },
+  {
+      id: 5,
+      date: "Wednesday 1/5",
+      cateringelements: [
+        { id: 1, content: "Wraps", price: 2.5 },
+        { id: 2, content: "BBQ: 2 pieces of meat", price: 4 },
+        { id: 3, content: "BBQ: 3 pieces of meat", price: 5 }
+      ]
+  },
+];
+
+export {cateringDataDutch, cateringDataEnglish};

@@ -15,5 +15,37 @@
     "locatieTitel": "LOCATIE",
     "locatieOmschrijving": "GRASVELD VOOR ALMA 3",
     "socials": "SOCIALE MEDIA"
+  },
+
+  "Goals": {
+    "title": "STANDPUNTEN"
+  },
+
+  "EventViewer": {
+    "title": "KIESWEEK",
+    "dag1": "MAANDAG 29/04",
+    "dag2": "DINSDAG 30/04",
+    "dag3": "WOENSDAG 01/05"
+  },
+
+  "Ploeg": {
+    "g5": "KANDIDAAT GROEP 5",
+    "catering": "CATERING",
+    "digitaal": "DIGITAAL",
+    "evenementen": "EVENEMENTEN",
+    "locatie": "LOCATIE",
+    "marketing": "MARKETING",
+    "natura": "NATURA",
+    "pre": "PRE",
+    "sponsoring": "SPONSORING",
+    "standpunten": "STANDPUNTEN"
+  },
+
+  "TeamHero": {
+    "description": "ONTDEK NUFFALO JILL"
+  },
+  
+  "SinglePloeglid": {
+    "description": "VERANTWOORDELIJKE"
   }
 }

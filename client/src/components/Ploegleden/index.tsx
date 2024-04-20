@@ -4,6 +4,7 @@ import entriesPloegleden from "./entriesPloegleden";
 import dynamic from 'next/dynamic'
 
 const Ploeg = () => {
+
   return (
     <section
       id="blog"

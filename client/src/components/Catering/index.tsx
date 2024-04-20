@@ -1,8 +1,20 @@
+'use client';
 import SectionTitle from "../Common/SectionTitle";
 import SingleDay from "./SingleDay";
-import cateringData from "./cateringData";
+import {cateringDataDutch, cateringDataEnglish} from "./cateringData";
+import {usePathname} from "next/navigation";
 
 const Catering = () => {
+
+    const usePathName = usePathname();
+
+    let cateringData;
+    if (usePathName === "/" || usePathName === "/nl") {
+      cateringData = cateringDataDutch;
+    } else {
+      cateringData = cateringDataEnglish;
+    };
+
     return (
         <>
             <section className="py-16 md:py-20 lg:py-28">

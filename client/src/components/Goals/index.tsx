@@ -2,14 +2,15 @@
 
 import SectionTitle from "../Common/SectionTitle";
 import SingleGoal from "./SingleGoal";
-import goalsData from "./goalsData";
+import {goalsDataDutch, goalsDataEnglish} from "./goalsData";
+import {usePathname} from "next/navigation";
 import React, {useEffect, useRef, useState} from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 
-const Goals = () => {
+const Goals = ({title}) => {
 
     const [screenSize, setScreenSize] = useState('');
 
@@ -36,6 +37,14 @@ const Goals = () => {
         return () => window.removeEventListener('resize', handleResize);
     }, []);
 
+    const usePathName = usePathname();
+
+    let goalsData;
+    if (usePathName === "/" || usePathName === "/nl") {
+      goalsData = goalsDataDutch;
+    } else {
+      goalsData = goalsDataEnglish;
+    };
 
     return (
         <>
@@ -44,7 +53,7 @@ const Goals = () => {
                 <div className="container">
                     <div className="mt-16 mb-8">
                         <SectionTitle
-                            title="WHAT WE STAND FOR"
+                            title={title}
                             paragraph=""
                             center
                             titleColor="brown-dark"

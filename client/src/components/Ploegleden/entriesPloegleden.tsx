@@ -943,4 +943,5 @@ const entriesPloegleden: PloeglidEntry[] = [
 
   },
 ];
+
 export default entriesPloegleden;
