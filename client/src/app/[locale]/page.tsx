@@ -21,25 +21,26 @@ export default async function Home({ params: { locale } }) {
     const findus = await getTranslations('FindUs');
 
     return (
-    <>
-        <ScrollUp />
-        <Hero
-            title = {hero('title')}
-            subtitle= {hero('subtitle')}
-            backgroundImage="/images/hero/homepage-background.jpg"
-        />
-        <Video
-            title = {video('title')}
-            ploeg= {video('ploeg')}
-            ploegboekje={video('ploegboekje')}
-        />
-        <HomeContentWrapper />
-        <FindUs 
-            email = {findus('email')}
-            locatieTitel = {findus('locatieTitel')}
-            locatieOmschrijving = {findus('locatieOmschrijving')}
-            socials = {findus('socials')}
-        />
-    </>
+        <>
+            <meta name="google-site-verification" content="Nav6TjWrom0MGOZw-Ai5X-UFSxfMHMfifS1BMU38ge0"/>
+            <ScrollUp/>
+            <Hero
+                title={hero('title')}
+                subtitle={hero('subtitle')}
+                backgroundImage="/images/hero/homepage-background.jpg"
+            />
+            <Video
+                title={video('title')}
+                ploeg={video('ploeg')}
+                ploegboekje={video('ploegboekje')}
+            />
+            <HomeContentWrapper/>
+            <FindUs
+                email={findus('email')}
+                locatieTitel={findus('locatieTitel')}
+                locatieOmschrijving={findus('locatieOmschrijving')}
+                socials={findus('socials')}
+            />
+        </>
     );
 }
