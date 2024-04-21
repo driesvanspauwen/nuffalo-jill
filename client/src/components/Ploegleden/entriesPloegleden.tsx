@@ -144,7 +144,7 @@ const entriesPloegleden: PloeglidEntry[] = [
   {
     id: 16,
     name: "Amélie van den Heuvel",
-    image: "/images/ploegleden/AmelieVanDenHeuvel.jpg",
+    image: "/images/ploegleden/AmelievandenHeuvel.jpg",
     post: "Evenementen",
     g5: false,
     g5_post: "",
@@ -198,7 +198,7 @@ const entriesPloegleden: PloeglidEntry[] = [
   {
     id: 23,
     name: "Phelps Van Den Bosch",
-    image: "/images/ploegleden/PhelpsVandenBosch.jpeg",
+    image: "/images/ploegleden/PhelpsVandenbosch.jpeg",
     post: "Evenementen",
     g5: false,
     g5_post: "",
@@ -677,7 +677,7 @@ const entriesPloegleden: PloeglidEntry[] = [
   {
     id: 76,
     name: "Patryk Borzym",
-    image: "/images/ploegleden/patje.jpg",
+    image: "/images/ploegleden/Patje.jpg",
     post: "Pre",
     g5: false,
     g5_post: "",
@@ -843,7 +843,7 @@ const entriesPloegleden: PloeglidEntry[] = [
   {
     id: 94,
     name: "Jef De Koker",
-    image: "/images/ploegleden/jef.jpg",
+    image: "/images/ploegleden/Jef.jpg",
     post: "Standpunten",
     g5: false,
     g5_post: "",
