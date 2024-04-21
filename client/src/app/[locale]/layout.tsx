@@ -11,6 +11,7 @@ import { Inter } from "next/font/google";
 import { Libre_Franklin } from "next/font/google";
 import "node_modules/react-modal-video/css/modal-video.css";
 import "@/styles/index.css";
+import { Metadata } from "next";
 
 const inter = Inter({ subsets: ["latin"] });
 const libreFranklin = Libre_Franklin({
