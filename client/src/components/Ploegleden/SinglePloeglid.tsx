@@ -20,7 +20,7 @@ export default function SinglePloeglid({ ploeglid, singlePloegLidTranslations }:
                 <div
                     className="p-6 sm:p-8 md:px-6 md:py-2 lg:p-8 xl:px-5 xl:py-8 2xl:p-4">
                   <h3
-                      className="mb-2 block text-xl font-bold text-brown-dark sm:text-2xl"
+                      className="mb-2 block text-xl font-bold text-sky sm:text-2xl"
                   >
                       {name}
                   </h3>
@@ -34,7 +34,7 @@ export default function SinglePloeglid({ ploeglid, singlePloegLidTranslations }:
             <div className="flex flex-col justify-center h-[10vh] lg:h-[12vh]">
               <div className="p-6 sm:p-8 md:px-6 md:py-2 lg:p-8 xl:px-5 xl:py-8 2xl:p-4">
                 <h3
-                    className="mb-2 block text-xl font-bold text-brown-dark sm:text-2xl"
+                    className="mb-2 block text-xl font-bold text-sky sm:text-2xl"
                 >
                     {name}
                 </h3>
