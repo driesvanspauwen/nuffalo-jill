@@ -1,4 +1,5 @@
 import { Link } from "@/navigation"
+import { useRouter } from 'next/router';
 import NextLink from "next/link"
 import Image from "next/image";
 import {usePathname} from "next/navigation";
@@ -6,7 +7,6 @@ import {useEffect, useState} from "react";
 import { menuDataDutch, menuDataEnglish } from "./menuData";
 import styles from './styles.module.css';
 import LocaleSwitcher from "@/components/LocaleSwitcher/LocaleSwitcher";
-
 
 const Header = () => {
   // Navbar toggle
@@ -42,14 +42,79 @@ const Header = () => {
   const usePathName = usePathname();
 
   let menuData;
-  if (usePathName === "/" || usePathName === "/nl") {
-      menuData = menuDataDutch;
+  if (usePathName.substring(0, 3) === "/nl") {
+    menuData = menuDataDutch;
   } else {
-      menuData = menuDataEnglish;
-  };
+    menuData = menuDataEnglish;
+  }
+
+  function SamePageScroll({menuItem}) {
+    return (
+        <NextLink href="/"
+                  className={`flex py-2 text-base lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 ${
+                      isScrolled
+                          ? "text-sky hover:text-sky"
+                          : (window.innerWidth < 500 ? "text-sky hover:text-sky" : "text-brown-dark hover:text-brown-medium")
+                  }`}
+                  onClick={(e) => {
+                    {
+                      e.preventDefault()
+                      setTimeout(() => {
+                        (window.innerWidth < 500 ?
+                                document.getElementById(menuItem.path) &&
+                                document
+                                    .getElementById(menuItem.path)
+                                    .scrollIntoView({ behavior: "smooth", block: "start",
+                                    })
+                                :
+                                document.getElementById(menuItem.path) &&
+                                document
+                                    .getElementById(menuItem.path)
+                                    .scrollIntoView({ behavior: "smooth", block: "end",
+                                    })
+                        )
+                      }, 50)
+                    }}}
+        >
+          {menuItem.title}
+        </NextLink>
+    )
+  }
+
+  function OtherPageScroll({menuItem, otherPageHref}) {
+    return (
+      <Link href={otherPageHref}
+        className={`flex py-2 text-base lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 ${
+            isScrolled
+                ? "text-sky hover:text-sky"
+                : (window.innerWidth < 500 ? "text-sky hover:text-sky" : "text-brown-dark hover:text-brown-medium")
+        }`}
+        onClick={(e) => {
+          {
+            setTimeout(() => {
+              (window.innerWidth < 500 ?
+                      document.getElementById(menuItem.path) &&
+                      document
+                          .getElementById(menuItem.path)
+                          .scrollIntoView({ behavior: "smooth", block: "start",
+                          })
+                      :
+                      document.getElementById(menuItem.path) &&
+                      document
+                          .getElementById(menuItem.path)
+                          .scrollIntoView({ behavior: "smooth", block: "end",
+                          })
+              )
+            }, 100)
+          }}}
+      >
+        {menuItem.title}
+      </Link>
+    )
+  }
 
   return (
-    <>
+      <>
       <header
           className={`header left-0 top-0 z-40 flex w-full items-center fixed transition-all duration-600 ${
               isScrolled ? "bg-gradient-to-t from-transparent to-black/80 h-20" : "bg-transparent h-28"
@@ -114,93 +179,38 @@ const Header = () => {
                   >
                     {menuData.map((menuItem, index) => (
                         <li key={index} className="group relative max-w-1/8">
-                          {index === 4 ? (
-                              <span className={`flex py-2 text-base lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 ${
-                                isScrolled
-                                    ? "text-sky hover:text-sky"
-                                    : (window.innerWidth < 500 ? "text-sky hover:text-sky" : "text-brown-dark hover:text-brown-medium")
-                            }`}>
-                                {menuItem.title}
-                              </span>
-                          ) : (
-                              window.location.pathname === "/" || window.location.pathname === "/en" || window.location.pathname === "/nl" ? (
-                                  <NextLink href="/"
-                                        className={`flex py-2 text-base lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 ${
-                                            isScrolled
-                                                ? "text-sky hover:text-sky"
-                                                : (window.innerWidth < 500 ? "text-sky hover:text-sky" : "text-brown-dark hover:text-brown-medium")
-                                        }`}
-                                        onClick={(e) => {
-                                          {
-                                            e.preventDefault()
-                                            setTimeout(() => {
-                                              (window.innerWidth < 500 ?
-                                                      document.getElementById(menuItem.path) &&
-                                                      document
-                                                          .getElementById(menuItem.path)
-                                                          .scrollIntoView({ behavior: "smooth", block: "start",
-                                                          })
-                                                      :
-                                                      document.getElementById(menuItem.path) &&
-                                                      document
-                                                          .getElementById(menuItem.path)
-                                                          .scrollIntoView({ behavior: "smooth", block: "end",
-                                                          })
-                                              )
-                                            }, 50)
-                                          }}}
-                                  >
-                                    {menuItem.title}
-                                  </NextLink>
+                          {window.location.pathname === "/" || window.location.pathname === "/en" || window.location.pathname === "/nl" ? (
+                                  menuItem.path === "ploeg" ? (
+                                      <OtherPageScroll menuItem={menuItem} otherPageHref="/ploeg" />
+                                  ) : (
+                                      <SamePageScroll menuItem={menuItem} />
+                                  )
+                            ) : (
+                              menuItem.path === "ploeg" ? (
+                                  <SamePageScroll menuItem={menuItem} />
                               ) : (
-                                  <Link href="/"
-                                        className={`flex py-2 text-base lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 ${
-                                            isScrolled
-                                                ? "text-sky hover:text-sky"
-                                                : (window.innerWidth < 500 ? "text-sky hover:text-sky" : "text-brown-dark hover:text-brown-medium")
-                                        }`}
-                                        onClick={(e) => {
-                                          {
-                                            setTimeout(() => {
-                                              (window.innerWidth < 500 ?
-                                                      document.getElementById(menuItem.path) &&
-                                                      document
-                                                          .getElementById(menuItem.path)
-                                                          .scrollIntoView({ behavior: "smooth", block: "start",
-                                                          })
-                                                      :
-                                                      document.getElementById(menuItem.path) &&
-                                                      document
-                                                          .getElementById(menuItem.path)
-                                                          .scrollIntoView({ behavior: "smooth", block: "end",
-                                                          })
-                                              )
-                                            }, 100)
-                                          }}}
-                                  >
-                                    {menuItem.title}
-                                  </Link>
+                                  <OtherPageScroll menuItem={menuItem} otherPageHref="/" />
                               )
-                          )}
-                        </li>
-                    ))}
-                  </ul>
-                </nav>
-              </div>
-            </div>
-            <div className={`flex items-center justify-end pr-16 lg:pr-0 relative`}>
-              <LocaleSwitcher
-                  styling={`flex h-20 w-20 text-xl lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 uppercase hidden lg:block ${
-                      isScrolled
-                          ? "text-sky hover:text-sky"
-                          : "text-brown-dark hover:text-brown-medium"
-                  }`} />
+                    )}
+                  </li>
+                  ))}
+                </ul>
+              </nav>
             </div>
           </div>
+          <div className={`flex items-center justify-end pr-16 lg:pr-0 relative`}>
+            <LocaleSwitcher
+                styling={`flex h-20 w-20 text-xl lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 uppercase hidden lg:block ${
+                    isScrolled
+                        ? "text-sky hover:text-sky"
+                        : "text-brown-dark hover:text-brown-medium"
+                }`} />
+          </div>
         </div>
+      </div>
       </header>
-    </>
-  );
+</>
+);
 };
 
 export default Header;
