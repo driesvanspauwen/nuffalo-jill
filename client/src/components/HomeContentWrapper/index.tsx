@@ -1,4 +1,3 @@
-import Goals from "@/components/Goals";
 import EventViewer from "@/components/EventViewer";
 import Video from "@/components/Video";
 import styles from "@/components/HomeContentWrapper/styles.module.css";

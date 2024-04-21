@@ -2,10 +2,10 @@ import React, { Fragment, useState } from 'react'
 import { Dialog, Transition } from '@headlessui/react'
 import { ExclamationTriangleIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import {Goal, Subgoal} from "@/types/goals";
-import SubGoal from "@/components/Goals/SubGoal";
+import SubGoal from "@/components/GoalsV2/SubGoal";
 
 export default function GoalDialog({ goal, open, setOpen }: { goal: Goal; open: boolean; setOpen: (open: boolean) => void }) {
-    const { icon, title, subgoals } = goal;
+    const { title, subgoals } = goal;
 
     return (
         <Transition.Root show={open} as={Fragment}>

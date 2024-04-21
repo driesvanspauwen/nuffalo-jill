@@ -11,10 +11,8 @@ export type Subgoal = {
 
 export type Goal = {
     id: number;
-    icon: JSX.Element;
     title: string;
-    description: string;
-    paragraph?: string;
+    short: string;
     subgoals?: Subgoal[];
 };
   

@@ -1,4 +1,3 @@
-import SingleGoal from "@/components/Goals/SingleGoal";
 import {Subgoal, Subsubgoal} from "@/types/goals";
 import React from "react";
 
