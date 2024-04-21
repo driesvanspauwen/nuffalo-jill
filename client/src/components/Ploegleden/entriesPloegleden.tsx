@@ -1,7 +1,7 @@
 import { PloeglidEntry } from "@/types/ploeglidEntry";
 
 const entriesPloegleden: PloeglidEntry[] = [
-    // G5
+  // G5
   {
     id: 1,
     name: "Hugo Van Nuffel",
@@ -9,8 +9,7 @@ const entriesPloegleden: PloeglidEntry[] = [
     post: "Kandidaat Groep 5",
     g5: true,
     g5_post: "Kandidaat Praeses",
-    responsible: false
-
+    responsible: false,
   },
   {
     id: 2,
@@ -19,8 +18,7 @@ const entriesPloegleden: PloeglidEntry[] = [
     post: "Kandidaat Groep 5",
     g5: true,
     g5_post: "Kandidaat Vice-Praeses",
-    responsible: false
-
+    responsible: false,
   },
   {
     id: 3,
@@ -29,8 +27,7 @@ const entriesPloegleden: PloeglidEntry[] = [
     post: "Kandidaat Groep 5",
     g5: true,
     g5_post: "Kandidaat Beheerder",
-    responsible: false
-
+    responsible: false,
   },
   {
     id: 4,
@@ -39,8 +36,7 @@ const entriesPloegleden: PloeglidEntry[] = [
     post: "Kandidaat Groep 5",
     g5: true,
     g5_post: "Kandidaat Beheerder",
-    responsible: false
-
+    responsible: false,
   },
   {
     id: 5,
@@ -49,11 +45,10 @@ const entriesPloegleden: PloeglidEntry[] = [
     post: "Kandidaat Groep 5",
     g5: true,
     g5_post: "Kandidaat Secretaris",
-    responsible: false
-
+    responsible: false,
   },
 
-    // DIGITAAL
+  // DIGITAAL
   {
     id: 6,
     name: "Dries Vanspauwen",
@@ -61,7 +56,7 @@ const entriesPloegleden: PloeglidEntry[] = [
     post: "Digitaal",
     g5: false,
     g5_post: "",
-    responsible: true
+    responsible: true,
   },
   {
     id: 7,
@@ -70,8 +65,7 @@ const entriesPloegleden: PloeglidEntry[] = [
     post: "Digitaal",
     g5: false,
     g5_post: "",
-    responsible: false
-
+    responsible: false,
   },
   {
     id: 8,
@@ -80,8 +74,7 @@ const entriesPloegleden: PloeglidEntry[] = [
     post: "Digitaal",
     g5: false,
     g5_post: "",
-    responsible: false
-
+    responsible: false,
   },
   {
     id: 9,
@@ -90,7 +83,7 @@ const entriesPloegleden: PloeglidEntry[] = [
     post: "Digitaal",
     g5: false,
     g5_post: "",
-    responsible: false
+    responsible: false,
   },
   {
     id: 10,
@@ -99,8 +92,7 @@ const entriesPloegleden: PloeglidEntry[] = [
     post: "Digitaal",
     g5: false,
     g5_post: "",
-    responsible: false
-
+    responsible: false,
   },
   {
     id: 11,
@@ -109,20 +101,17 @@ const entriesPloegleden: PloeglidEntry[] = [
     post: "Digitaal",
     g5: false,
     g5_post: "",
-    responsible: false
-
+    responsible: false,
   },
   {
     id: 12,
     name: "Maarten Haine",
-    image: "/images/ploegleden/Maarten.jpg",
+    image: "/images/ploegleden/Maarten.jpeg",
     post: "Digitaal",
     g5: false,
     g5_post: "",
-    responsible: false
-
+    responsible: false,
   },
-
 
   //EVENEMENTEN
   {
@@ -132,8 +121,7 @@ const entriesPloegleden: PloeglidEntry[] = [
     post: "Evenementen",
     g5: false,
     g5_post: "",
-    responsible: true
-
+    responsible: true,
   },
   {
     id: 14,
@@ -142,8 +130,7 @@ const entriesPloegleden: PloeglidEntry[] = [
     post: "Evenementen",
     g5: false,
     g5_post: "",
-    responsible: false
-
+    responsible: false,
   },
   {
     id: 15,
@@ -152,8 +139,7 @@ const entriesPloegleden: PloeglidEntry[] = [
     post: "Evenementen",
     g5: false,
     g5_post: "",
-    responsible: false
-
+    responsible: false,
   },
   {
     id: 16,
@@ -162,8 +148,7 @@ const entriesPloegleden: PloeglidEntry[] = [
     post: "Evenementen",
     g5: false,
     g5_post: "",
-    responsible: false
-
+    responsible: false,
   },
   {
     id: 18,
@@ -172,8 +157,7 @@ const entriesPloegleden: PloeglidEntry[] = [
     post: "Evenementen",
     g5: false,
     g5_post: "",
-    responsible: false
-
+    responsible: false,
   },
   {
     id: 19,
@@ -182,8 +166,7 @@ const entriesPloegleden: PloeglidEntry[] = [
     post: "Evenementen",
     g5: false,
     g5_post: "",
-    responsible: false
-
+    responsible: false,
   },
   {
     id: 20,
@@ -192,8 +175,7 @@ const entriesPloegleden: PloeglidEntry[] = [
     post: "Evenementen",
     g5: false,
     g5_post: "",
-    responsible: false
-
+    responsible: false,
   },
   {
     id: 21,
@@ -202,8 +184,7 @@ const entriesPloegleden: PloeglidEntry[] = [
     post: "Evenementen",
     g5: false,
     g5_post: "",
-    responsible: false
-
+    responsible: false,
   },
   {
     id: 22,
@@ -212,8 +193,7 @@ const entriesPloegleden: PloeglidEntry[] = [
     post: "Evenementen",
     g5: false,
     g5_post: "",
-    responsible: false
-
+    responsible: false,
   },
   {
     id: 23,
@@ -221,12 +201,11 @@ const entriesPloegleden: PloeglidEntry[] = [
     image: "/images/ploegleden/PhelpsVandenBosch.jpeg",
     post: "Evenementen",
     g5: false,
-    g5_post: "",    
-    responsible: false
-
+    g5_post: "",
+    responsible: false,
   },
 
-    // CATERING
+  // CATERING
   {
     id: 24,
     name: "Sander Deroover",
@@ -234,8 +213,7 @@ const entriesPloegleden: PloeglidEntry[] = [
     post: "Catering",
     g5: false,
     g5_post: "",
-    responsible: true
-
+    responsible: true,
   },
   {
     id: 25,
@@ -244,8 +222,7 @@ const entriesPloegleden: PloeglidEntry[] = [
     post: "Catering",
     g5: false,
     g5_post: "",
-    responsible: false
-
+    responsible: false,
   },
   {
     id: 26,
@@ -254,8 +231,7 @@ const entriesPloegleden: PloeglidEntry[] = [
     post: "Catering",
     g5: false,
     g5_post: "",
-    responsible: false
-
+    responsible: false,
   },
   {
     id: 27,
@@ -264,8 +240,7 @@ const entriesPloegleden: PloeglidEntry[] = [
     post: "Catering",
     g5: false,
     g5_post: "",
-    responsible: false
-
+    responsible: false,
   },
   {
     id: 28,
@@ -274,8 +249,7 @@ const entriesPloegleden: PloeglidEntry[] = [
     post: "Catering",
     g5: false,
     g5_post: "",
-    responsible: false
-
+    responsible: false,
   },
   {
     id: 29,
@@ -284,8 +258,7 @@ const entriesPloegleden: PloeglidEntry[] = [
     post: "Catering",
     g5: false,
     g5_post: "",
-    responsible: false
-
+    responsible: false,
   },
   {
     id: 30,
@@ -294,8 +267,7 @@ const entriesPloegleden: PloeglidEntry[] = [
     post: "Catering",
     g5: false,
     g5_post: "",
-    responsible: false
-
+    responsible: false,
   },
   {
     id: 31,
@@ -304,8 +276,7 @@ const entriesPloegleden: PloeglidEntry[] = [
     post: "Catering",
     g5: false,
     g5_post: "",
-    responsible: false
-
+    responsible: false,
   },
   {
     id: 32,
@@ -314,7 +285,7 @@ const entriesPloegleden: PloeglidEntry[] = [
     post: "Catering",
     g5: false,
     g5_post: "",
-    responsible: false
+    responsible: false,
   },
   {
     id: 33,
@@ -323,7 +294,7 @@ const entriesPloegleden: PloeglidEntry[] = [
     post: "Catering",
     g5: false,
     g5_post: "",
-    responsible: false
+    responsible: false,
   },
   {
     id: 34,
@@ -332,11 +303,10 @@ const entriesPloegleden: PloeglidEntry[] = [
     post: "Catering",
     g5: false,
     g5_post: "",
-    responsible: false
+    responsible: false,
   },
 
-
-    // LOCATIE
+  // LOCATIE
 
   {
     id: 35,
@@ -345,8 +315,7 @@ const entriesPloegleden: PloeglidEntry[] = [
     post: "Locatie",
     g5: false,
     g5_post: "",
-    responsible: true
-
+    responsible: true,
   },
   {
     id: 36,
@@ -355,8 +324,7 @@ const entriesPloegleden: PloeglidEntry[] = [
     post: "Locatie",
     g5: false,
     g5_post: "",
-    responsible: false
-
+    responsible: false,
   },
   {
     id: 37,
@@ -365,8 +333,7 @@ const entriesPloegleden: PloeglidEntry[] = [
     post: "Locatie",
     g5: false,
     g5_post: "",
-    responsible: false
-
+    responsible: false,
   },
   {
     id: 38,
@@ -375,8 +342,7 @@ const entriesPloegleden: PloeglidEntry[] = [
     post: "Locatie",
     g5: false,
     g5_post: "",
-    responsible: false
-
+    responsible: false,
   },
   {
     id: 39,
@@ -385,8 +351,7 @@ const entriesPloegleden: PloeglidEntry[] = [
     post: "Locatie",
     g5: false,
     g5_post: "",
-    responsible: false
-
+    responsible: false,
   },
   {
     id: 40,
@@ -395,8 +360,7 @@ const entriesPloegleden: PloeglidEntry[] = [
     post: "Locatie",
     g5: false,
     g5_post: "",
-    responsible: false
-
+    responsible: false,
   },
   {
     id: 41,
@@ -405,8 +369,7 @@ const entriesPloegleden: PloeglidEntry[] = [
     post: "Locatie",
     g5: false,
     g5_post: "",
-    responsible: false
-
+    responsible: false,
   },
   {
     id: 42,
@@ -415,8 +378,7 @@ const entriesPloegleden: PloeglidEntry[] = [
     post: "Locatie",
     g5: false,
     g5_post: "",
-    responsible: false
-
+    responsible: false,
   },
   {
     id: 43,
@@ -425,147 +387,145 @@ const entriesPloegleden: PloeglidEntry[] = [
     post: "Locatie",
     g5: false,
     g5_post: "",
-    responsible: false
-
-  },{
+    responsible: false,
+  },
+  {
     id: 44,
     name: "Matti Boelen",
     image: "/images/ploegleden/MattiBoelen.PNG",
     post: "Locatie",
     g5: false,
     g5_post: "",
-    responsible: false
-
-  },{
+    responsible: false,
+  },
+  {
     id: 45,
     name: "Matthijs De Haeck",
     image: "/images/ploegleden/Matthijs.jpg",
     post: "Locatie",
     g5: false,
     g5_post: "",
-    responsible: false
-
-  },{
+    responsible: false,
+  },
+  {
     id: 46,
     name: "Kwinten Lowie",
     image: "/images/ploegleden/KwintenLowie.jpg",
     post: "Locatie",
     g5: false,
     g5_post: "",
-    responsible: false
-
-  },{
+    responsible: false,
+  },
+  {
     id: 47,
     name: "Lander De Veuster",
     image: "/images/ploegleden/Lander_DeVeuster.jpg",
     post: "Locatie",
     g5: false,
     g5_post: "",
-    responsible: false
-
-  },{
+    responsible: false,
+  },
+  {
     id: 48,
     name: "Sebastiaan Berendes",
     image: "/images/ploegleden/SebastiaanBerendes.jpg",
     post: "Locatie",
     g5: false,
     g5_post: "",
-    responsible: false
-
-  },{
+    responsible: false,
+  },
+  {
     id: 49,
     name: "Tom Moermans",
     image: "/images/ploegleden/Tom.jpg",
     post: "Locatie",
     g5: false,
     g5_post: "",
-    responsible: false
-
-  },{
+    responsible: false,
+  },
+  {
     id: 50,
     name: "Jussi Gysemans",
     image: "/images/ploegleden/JussiGysemans.JPG",
     post: "Locatie",
     g5: false,
     g5_post: "",
-    responsible: false
-
-  },{
+    responsible: false,
+  },
+  {
     id: 51,
     name: "Xander Depauw",
     image: "/images/ploegleden/Xander.jpg",
     post: "Locatie",
     g5: false,
     g5_post: "",
-    responsible: false
-
-  },{
+    responsible: false,
+  },
+  {
     id: 52,
     name: "Viktor Meekers",
     image: "/images/ploegleden/Viktor.jpg",
     post: "Locatie",
     g5: false,
     g5_post: "",
-    responsible: false
-
-  },{
+    responsible: false,
+  },
+  {
     id: 53,
     name: "Lander Verhoeven",
     image: "/images/ploegleden/Lander_Verhoeven.jpg",
     post: "Locatie",
     g5: false,
     g5_post: "",
-    responsible: false
-
-  },{
+    responsible: false,
+  },
+  {
     id: 54,
     name: "Timon Dries",
     image: "/images/ploegleden/Timon.jpg",
     post: "Locatie",
     g5: false,
     g5_post: "",
-    responsible: false
-
-  },{
+    responsible: false,
+  },
+  {
     id: 55,
     name: "Brent De Peuter",
     image: "/images/ploegleden/Brent.jpg",
     post: "Locatie",
     g5: false,
     g5_post: "",
-    responsible: false
-
-  },{
+    responsible: false,
+  },
+  {
     id: 56,
     name: "Tiemen Moeyersons",
     image: "/images/ploegleden/Tiemen.jpg",
     post: "Locatie",
     g5: false,
     g5_post: "",
-    responsible: false
-
-  },{
+    responsible: false,
+  },
+  {
     id: 57,
     name: "Nando De Rijck",
     image: "/images/ploegleden/NandoDeRijck.jpeg",
     post: "Locatie",
     g5: false,
     g5_post: "",
-    responsible: false
-
-  },{
+    responsible: false,
+  },
+  {
     id: 58,
     name: "Maarten Vansteenkiste",
     image: "/images/ploegleden/MaartenVansteenkiste.jpg",
     post: "Locatie",
     g5: false,
     g5_post: "",
-    responsible: false
-
+    responsible: false,
   },
 
-
-    // MARKETING
+  // MARKETING
   {
     id: 59,
     name: "Lucas Renard",
@@ -573,64 +533,62 @@ const entriesPloegleden: PloeglidEntry[] = [
     post: "Marketing",
     g5: false,
     g5_post: "",
-    responsible: true
-
-  },{
+    responsible: true,
+  },
+  {
     id: 60,
     name: "Willem Bormans",
     image: "/images/ploegleden/Willem.jpg",
     post: "Marketing",
     g5: false,
     g5_post: "",
-    responsible: false
-
-  },{
+    responsible: false,
+  },
+  {
     id: 62,
     name: "Bram Verbelen",
     image: "/images/ploegleden/Bram.jpg",
     post: "Marketing",
     g5: false,
     g5_post: "",
-    responsible: false
-
-  },{
+    responsible: false,
+  },
+  {
     id: 63,
     name: "Marie Lampaert",
     image: "/images/ploegleden/Marie.jpg",
     post: "Marketing",
     g5: false,
     g5_post: "",
-    responsible: false
-
-  },{
+    responsible: false,
+  },
+  {
     id: 64,
     name: "Emily Denys",
     image: "/images/ploegleden/Emily.jpg",
     post: "Marketing",
     g5: false,
     g5_post: "",
-    responsible: false
-
-  },{
+    responsible: false,
+  },
+  {
     id: 65,
     name: "Sepp Swinnen",
     image: "/images/ploegleden/Sepp.jpg",
     post: "Marketing",
     g5: false,
     g5_post: "",
-    responsible: false
-
-  },{
+    responsible: false,
+  },
+  {
     id: 66,
     name: "Robbe Mensch",
     image: "/images/ploegleden/Robbe_Mensch.jpg",
     post: "Marketing",
     g5: false,
     g5_post: "",
-    responsible: false
-
+    responsible: false,
   },
-
 
   // NATURA
   {
@@ -640,17 +598,16 @@ const entriesPloegleden: PloeglidEntry[] = [
     post: "Natura",
     g5: false,
     g5_post: "",
-    responsible: true
-
-  },{
+    responsible: true,
+  },
+  {
     id: 68,
     name: "Marte Maes",
     image: "/images/ploegleden/Marte.jpg",
     post: "Natura",
     g5: false,
     g5_post: "",
-    responsible: false
-
+    responsible: false,
   },
   {
     id: 69,
@@ -659,69 +616,64 @@ const entriesPloegleden: PloeglidEntry[] = [
     post: "Natura",
     g5: false,
     g5_post: "",
-    responsible: false
-
-  },{
+    responsible: false,
+  },
+  {
     id: 70,
     name: "Achille De Vriese",
     image: "/images/ploegleden/Achille.jpg",
     post: "Natura",
     g5: false,
     g5_post: "",
-    responsible: false
-
-  },{
+    responsible: false,
+  },
+  {
     id: 71,
     name: "Pierre Stavart",
     image: "/images/ploegleden/Pierre_stavard.jpg",
     post: "Natura",
     g5: false,
     g5_post: "",
-    responsible: false
-
-  },{
+    responsible: false,
+  },
+  {
     id: 72,
     name: "Driek Rediers",
     image: "/images/ploegleden/Driek.jpg",
     post: "Natura",
     g5: false,
     g5_post: "",
-    responsible: false
-
-  },{
+    responsible: false,
+  },
+  {
     id: 73,
     name: "Pierre Harmant",
     image: "/images/ploegleden/Pierre.jpg",
     post: "Natura",
     g5: false,
     g5_post: "",
-    responsible: false
-
-  },{
+    responsible: false,
+  },
+  {
     id: 74,
     name: "Lucy Vande Sande",
     image: "/images/ploegleden/LucyVDS.jpg",
     post: "Natura",
     g5: false,
     g5_post: "",
-    responsible: false
-
-  },{
+    responsible: false,
+  },
+  {
     id: 75,
     name: "Alexander Dubois",
     image: "/images/ploegleden/Alexander.jpg",
     post: "Natura",
     g5: false,
     g5_post: "",
-    responsible: false
-
+    responsible: false,
   },
 
-
-
-
-
-    // PRE
+  // PRE
   {
     id: 76,
     name: "Patryk Borzym",
@@ -729,65 +681,62 @@ const entriesPloegleden: PloeglidEntry[] = [
     post: "Pre",
     g5: false,
     g5_post: "",
-    responsible: true
-  },{
+    responsible: true,
+  },
+  {
     id: 77,
     name: "Dries Vandevoort",
     image: "/images/ploegleden/DriesVandevoort.jpg",
     post: "Pre",
     g5: false,
     g5_post: "",
-    responsible: false
-
-  },{
+    responsible: false,
+  },
+  {
     id: 78,
     name: "Thomas Billiet",
     image: "/images/ploegleden/Thomas.jpg",
     post: "Pre",
     g5: false,
     g5_post: "",
-    responsible: false
-
-  },{
+    responsible: false,
+  },
+  {
     id: 79,
     name: "Henri Mesman",
     image: "/images/ploegleden/Henri.jpg",
     post: "Pre",
     g5: false,
     g5_post: "",
-    responsible: false
-
-  },{
+    responsible: false,
+  },
+  {
     id: 80,
     name: "Emma Jans",
     image: "/images/ploegleden/EmmaJans.JPG",
     post: "Pre",
     g5: false,
     g5_post: "",
-    responsible: false
-
-  },{
+    responsible: false,
+  },
+  {
     id: 81,
     name: "Quinten Vande Reyde",
     image: "/images/ploegleden/Quinten.jpg",
     post: "Pre",
     g5: false,
     g5_post: "",
-    responsible: false
-
-  },{
+    responsible: false,
+  },
+  {
     id: 82,
     name: "Oscar Peersman",
     image: "/images/ploegleden/Oscar.jpg",
     post: "Pre",
     g5: false,
     g5_post: "",
-    responsible: false
+    responsible: false,
   },
-
-
-
-
 
   // SPONSORING
   {
@@ -797,104 +746,98 @@ const entriesPloegleden: PloeglidEntry[] = [
     post: "Sponsoring",
     g5: false,
     g5_post: "",
-    responsible: true
-
-  },{
+    responsible: true,
+  },
+  {
     id: 84,
     name: "Yana Possemiers",
     image: "/images/ploegleden/YanaPossemiers.jpg",
     post: "Sponsoring",
     g5: false,
     g5_post: "",
-    responsible: false
-
-  },{
+    responsible: false,
+  },
+  {
     id: 85,
     name: "Nando Quishpe Cahuasqui",
     image: "/images/ploegleden/Nando.jpg",
     post: "Sponsoring",
     g5: false,
     g5_post: "",
-    responsible: false
-
-  },{
+    responsible: false,
+  },
+  {
     id: 86,
     name: "Amélie Niesten",
     image: "/images/ploegleden/AmélieNiesten.jpeg",
     post: "Sponsoring",
     g5: false,
     g5_post: "",
-    responsible: false
-
-  },{
+    responsible: false,
+  },
+  {
     id: 87,
     name: "Vincent Ramharter",
     image: "/images/ploegleden/Vincent.jpg",
     post: "Sponsoring",
     g5: false,
     g5_post: "",
-    responsible: false
-
-  },{
+    responsible: false,
+  },
+  {
     id: 88,
     name: "Fien Servranckx",
     image: "/images/ploegleden/FienServranckx.jpg",
     post: "Sponsoring",
     g5: false,
     g5_post: "",
-    responsible: false
-
-  },{
+    responsible: false,
+  },
+  {
     id: 89,
     name: "Jakob De Meyere",
     image: "/images/ploegleden/JakobDeMeyere.jpg",
     post: "Sponsoring",
     g5: false,
     g5_post: "",
-    responsible: false
-
-  },{
+    responsible: false,
+  },
+  {
     id: 90,
     name: "Mauro Van Tichelen",
     image: "/images/ploegleden/MauroVanTichelen.jpg",
     post: "Sponsoring",
     g5: false,
     g5_post: "",
-    responsible: false
-
-  },{
+    responsible: false,
+  },
+  {
     id: 91,
     name: "Marie-Johanna Schillemans",
     image: "/images/ploegleden/MJ.jpg",
     post: "Sponsoring",
     g5: false,
     g5_post: "",
-    responsible: false
-
-  },{
+    responsible: false,
+  },
+  {
     id: 92,
     name: "Danai Proot",
     image: "/images/ploegleden/DanaiProot.jpg",
     post: "Sponsoring",
     g5: false,
     g5_post: "",
-    responsible: false
-
-  },{
+    responsible: false,
+  },
+  {
     id: 93,
     name: "Lars Lagauw",
     image: "/images/ploegleden/Lars.jpg",
     post: "Sponsoring",
     g5: false,
     g5_post: "",
-    responsible: false
-
+    responsible: false,
   },
-
-
-
-
-
 
   // STANDPUNTEN
   {
@@ -904,27 +847,27 @@ const entriesPloegleden: PloeglidEntry[] = [
     post: "Standpunten",
     g5: false,
     g5_post: "",
-    responsible: true
-
-  },{
+    responsible: true,
+  },
+  {
     id: 95,
     name: "Jerry Li",
     image: "/images/ploegleden/Jerry_Li.jpeg",
     post: "Standpunten",
     g5: false,
     g5_post: "",
-    responsible: false
-
-  },{
+    responsible: false,
+  },
+  {
     id: 96,
     name: "Seppe Van Der Biest",
     image: "/images/ploegleden/SeppeVanDerBiest.jpg",
     post: "Standpunten",
     g5: false,
     g5_post: "",
-    responsible: false
-
-  },{
+    responsible: false,
+  },
+  {
     id: 97,
     name: "Charles De Beir",
     image: "/images/ploegleden/CharlesDeBeir.JPG",
@@ -932,15 +875,15 @@ const entriesPloegleden: PloeglidEntry[] = [
     responsible: false,
     g5: false,
     g5_post: "",
-  },{
+  },
+  {
     id: 98,
     name: "Arno Beyers",
     image: "/images/ploegleden/Arno.jpg",
     post: "Standpunten",
     g5: false,
     g5_post: "",
-    responsible: false
-
+    responsible: false,
   },
 ];
 
