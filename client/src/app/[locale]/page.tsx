@@ -22,7 +22,7 @@ export default async function Home({ params: { locale } }) {
 
     return (
         <>
-            <meta name="google-site-verification" content="Nav6TjWrom0MGOZw-Ai5X-UFSxfMHMfifS1BMU38ge0"/>
+            <meta name="google-site-verification" content="TfGSaKMbypuNaXr-39j1v_wJJzS2K-jZ5fDxnWldx-4"/>
             <ScrollUp/>
             <Hero
                 title={hero('title')}
