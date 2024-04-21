@@ -17,7 +17,7 @@ return (
                     <h1 className={`${styles.buffaloFont} !leading-tight text-brown-medium text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl uppercase -mt-32`}>
                         {title}
                     </h1>
-                    <div className="flex flex-col items-center justify-center text-white">
+                    <div className="flex flex-col items-center justify-center text-brown-dark">
                         <p>{subtitle}</p>
                     </div>
                 </div>
