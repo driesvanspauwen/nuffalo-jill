@@ -28,7 +28,7 @@ const menuDataDutch: Menu[] = [
   {
     id: 3,
     title: "PLOEG",
-    path: "/ploeg",
+    path: "ploeg",
     newTab: false,
   },
 ];
@@ -61,7 +61,7 @@ const menuDataEnglish: Menu[] = [
   {
     id: 3,
     title: "TEAM",
-    path: "/ploeg",
+    path: "ploeg",
     newTab: false,
   },
 ];
