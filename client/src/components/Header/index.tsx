@@ -184,12 +184,19 @@ const Header = () => {
                                       <SamePageScroll menuItem={menuItem} />
                                   )
                             ) : (
+                              window.location.pathname === "/ploegboekje" || window.location.pathname === "/en/ploegboekje" || window.location.pathname === "/nl/ploegboekje" ? (
+                                  menuItem.path === "ploeg" ? (
+                                      <OtherPageScroll menuItem={menuItem} otherPageHref="/ploeg"/>
+                                  ) : (
+                                      <OtherPageScroll menuItem={menuItem} otherPageHref="/" />
+                                  )
+                              ) : (
                               menuItem.path === "ploeg" ? (
                                   <SamePageScroll menuItem={menuItem} />
                               ) : (
                                   <OtherPageScroll menuItem={menuItem} otherPageHref="/" />
-                              )
-                    )}
+                              ))
+                          )}
                   </li>
                   ))}
                 </ul>
