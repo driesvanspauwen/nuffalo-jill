@@ -1,4 +1,4 @@
-import { Catering, CateringElement } from "@/types/catering";
+import { Catering } from "@/types/catering";
 
 const cateringDataDutch: Catering[] = [
     {

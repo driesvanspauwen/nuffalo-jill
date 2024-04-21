@@ -1,4 +1,4 @@
-import {Subgoal, Subsubgoal} from "@/types/goals";
+import { Subsubgoal } from "@/types/goals";
 import React from "react";
 
 const checkIcon = (

@@ -2,8 +2,6 @@
 
 import { PloeglidEntry } from "@/types/ploeglidEntry";
 import Image from "next/image";
-import Link from "next/link";
-import {getTranslations} from 'next-intl/server';
 
 export default function SinglePloeglid({ ploeglid, singlePloegLidTranslations }: { ploeglid: PloeglidEntry, singlePloegLidTranslations: any }) {
   const { name, image, post, g5, g5_post, responsible} = ploeglid;

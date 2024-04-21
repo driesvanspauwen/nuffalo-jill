@@ -1,7 +1,5 @@
 'use client'
-import Link from "next/link";
 import styles from './styles.module.css';
-import { Element, scroller } from 'react-scroll';
 
 
 const Hero = ({title, subtitle, backgroundImage}) => {
@@ -13,10 +11,10 @@ return (
             style={{backgroundImage: `url(${backgroundImage})`}}
         >
         <div className="container">
-            <div className="-mx-4 flex flex-wrap">
-                <div className="w-full px-4">
+            <div className="flex flex-wrap">
+                <div className="w-full">
                 <div className="text-center space-y-8">
-                    <h1 className={`${styles.buffaloFont} text-brown-medium -mt-32 leading-tight sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl`}>
+                    <h1 className={`${styles.buffaloFont} !leading-tight text-brown-medium text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl uppercase -mt-32`}>
                         {title}
                     </h1>
                     <div className="flex flex-col items-center justify-center">

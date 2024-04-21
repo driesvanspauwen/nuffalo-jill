@@ -1,5 +1,4 @@
-import React from 'react';
-import { Goal, Subgoal } from "@/types/goals";
+import { Goal } from "@/types/goals";
 
 const goalsDataDutch: Goal[] = [
   {

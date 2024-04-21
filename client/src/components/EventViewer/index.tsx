@@ -1,11 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import DayBox from "./DayBox";
-import { fetcher } from "../../lib/api";
-import Image from "next/image";
-import Link from "next/link";
 import SectionTitle from "../Common/SectionTitle";
-import EventBanner from "@/components/EventViewer/EventBanner";
 
 const Schedule = ({title, dag1, dag2, dag3}) => {
   const [isMonthly, setIsMonthly] = useState(true);
@@ -51,15 +47,3 @@ const Schedule = ({title, dag1, dag2, dag3}) => {
 };
 
 export default Schedule;
-
-export async function getStaticProps() {
-  const eventsResponse = await fetcher(
-      "$(process.env.NEXT_PUBLIC_STRAPI_URL)/event",
-  );
-  console.log(eventsResponse);
-  return {
-    props: {
-      events: eventsResponse,
-    },
-  };
-}

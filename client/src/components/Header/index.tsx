@@ -1,11 +1,9 @@
 import { Link } from "@/navigation"
-import { useRouter } from 'next/router';
 import NextLink from "next/link"
 import Image from "next/image";
 import {usePathname} from "next/navigation";
 import {useEffect, useState} from "react";
 import { menuDataDutch, menuDataEnglish } from "./menuData";
-import styles from './styles.module.css';
 import LocaleSwitcher from "@/components/LocaleSwitcher/LocaleSwitcher";
 
 const Header = () => {

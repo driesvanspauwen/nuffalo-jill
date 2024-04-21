@@ -1,6 +1,4 @@
 import EventViewer from "@/components/EventViewer";
-import Video from "@/components/Video";
-import styles from "@/components/HomeContentWrapper/styles.module.css";
 import Catering from "@/components/Catering";
 import {getTranslations} from 'next-intl/server';
 import GoalsV2 from "@/components/GoalsV2";

@@ -1,5 +1,4 @@
 import React from "react";
-import SectionTitle from "@/components/Common/SectionTitle";
 
 const FindUs = ({email, locatieTitel, locatieOmschrijving, socials}) => {
     return (
@@ -44,7 +43,7 @@ const FindUs = ({email, locatieTitel, locatieOmschrijving, socials}) => {
                                     {socials}
                                 </h1>
                                 <div className="flex space-x-4">
-                                    <a href="https://www.facebook.com/profile.php?id=61558303876976" target="_blank" rel="noopener noreferrer">
+                                    <a href="https://www.facebook.com/nuffalojill/" target="_blank" rel="noopener noreferrer">
                                         <svg className="w-6 h-6 text-offwhite" fill="currentColor" viewBox="0 0 24 24">
                                             <path d="M22.675 0H1.325C.594 0 0 .594 0 1.325v21.35C0 23.406.594 24 1.325 24h11.49V14.708H9.34v-3.63h3.473V8.41c0-3.443 2.1-5.317 5.172-5.317 1.473 0 2.737.11 3.104.158v3.6h-2.13c-1.673 0-1.995.794-1.995 1.96v2.57h3.99l-.522 3.63h-3.468V24h6.803c.73 0 1.325-.594 1.325-1.325V1.325C24 .594 23.406 0 22.675 0z"></path>
                                         </svg>
