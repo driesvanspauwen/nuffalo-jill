@@ -8,7 +8,7 @@ export default function SinglePloeglid({ ploeglid, singlePloegLidTranslations }:
   console.log(g5_post)
   return (
     <>
-      <div className="group relative overflow-hidden rounded-md bg-white shadow-one duration-300 hover:shadow-two dark:bg-brown-dark dark:hover:shadow-gray-dark text-center">
+      <div className="group relative overflow-hidden rounded-md duration-300 bg-brown-dark hover:shadow-gray-dark text-center">
           <div className="relative block aspect-[4/5] w-full">
               <Image src={image} alt="image" fill objectFit="cover"/>
           </div>

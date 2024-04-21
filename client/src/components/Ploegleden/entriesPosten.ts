@@ -26,23 +26,28 @@ const entriesPosten: Post[] = [
         id: "locatie",
         name: "Locatie"
     },
+    { 
+        key: 6, 
+        id: "marketing",
+        name: "Marketing",
+    },
     {
-        key: 6,
+        key: 7,
         id: "natura",
         name: "Natura"
     },
     {
-        key: 7,
+        key: 8,
         id: "pre",
         name: "Pre"
     },
     {
-        key: 8,
+        key: 9,
         id: "sponsoring",
         name: "Sponsoring"
     },
     {
-        key: 9,
+        key: 10,
         id: "standpunten",
         name: "Standpunten"
     },
