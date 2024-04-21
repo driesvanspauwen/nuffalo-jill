@@ -3,7 +3,7 @@ import { Catering, CateringElement } from "@/types/catering";
 const cateringDataDutch: Catering[] = [
     {
       id: 1,
-      date: "Toog",
+      date: "Toog (Altijd)",
       cateringelements: [
         { id: 1, content: "Frisdrank/Bier/Redbull", price: 1 },
         { id: 2, content: "Karmeliet/Watermelon Spritz", price: 1.50 },
@@ -12,7 +12,7 @@ const cateringDataDutch: Catering[] = [
     },
     {
         id: 2,
-        date: "Frituur",
+        date: "Frituur (Altijd)",
         cateringelements: [
           { id: 1, content: "Frietjes", price: 1.2 },
           { id: 2, content: "Vlees/Kaaskroket", price: 1.2 },
@@ -51,7 +51,7 @@ const cateringDataDutch: Catering[] = [
 const cateringDataEnglish: Catering[] = [
   {
     id: 1,
-    date: "Bar",
+    date: "Bar (All the time)",
     cateringelements: [
       { id: 1, content: "Soda/Beer/Redbull", price: 1 },
       { id: 2, content: "Karmeliet/Watermelon Spritz", price: 1.50 },
@@ -60,7 +60,7 @@ const cateringDataEnglish: Catering[] = [
   },
   {
       id: 2,
-      date: "French fry stand",
+      date: "Fries stand (All the time)",
       cateringelements: [
         { id: 1, content: "Fries", price: 1.2 },
         { id: 2, content: "Meat/Cheese croquette", price: 1.2 },
