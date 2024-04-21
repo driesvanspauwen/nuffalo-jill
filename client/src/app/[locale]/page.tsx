@@ -9,8 +9,8 @@ import FindUs from "@/components/FindUs";
 
 
 export const metadata: Metadata = {
-    title: "google-site-verification",
-    description: "TfGSaKMbypuNaXr-39j1v_wJJzS2K-jZ5fDxnWldx-4",
+    title: "Electoral Team Nuffalo Jill",
+    description: "This is the website for Nuffalo Jill, an electoral team for Vlaamse Technische Kring Leuven",
 };
 
 export default async function Home({ params: { locale } }) {
