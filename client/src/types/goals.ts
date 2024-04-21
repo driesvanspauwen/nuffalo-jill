@@ -13,6 +13,7 @@ export type Goal = {
     id: number;
     icon: JSX.Element;
     title: string;
+    description: string;
     paragraph?: string;
     subgoals?: Subgoal[];
 };

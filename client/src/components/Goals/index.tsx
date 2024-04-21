@@ -59,13 +59,6 @@ const Goals = ({title}) => {
                             titleColor="brown-dark"
                         />
                     </div>
-
-                    {/* Center the grid of three columns and spread out over the whole width */}
-                    <div className="">
-                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-14 w-full max-w-7xl">
-
-                        </div>
-                    </div>
                 </div>
 
                 <Swiper
