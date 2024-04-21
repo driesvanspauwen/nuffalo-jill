@@ -37,12 +37,6 @@ const menuDataDutch: Menu[] = [
     path: "/ploeg",
     newTab: false,
   },
-  {
-    id: 6,
-    title: "PLOEGBOEKJE",
-    path: "/ploegboekje",
-    newTab: false,
-  },
 ];
 
 const menuDataEnglish: Menu[] = [
@@ -80,12 +74,6 @@ const menuDataEnglish: Menu[] = [
     id: 5,
     title: "TEAM",
     path: "/ploeg",
-    newTab: false,
-  },
-  {
-    id: 6,
-    title: "TEAM MAGAZINE",
-    path: "/ploegboekje",
     newTab: false,
   },
 ];
