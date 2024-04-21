@@ -222,7 +222,7 @@ const entriesPloegleden: PloeglidEntry[] = [
     post: "Catering",
     g5: false,
     g5_post: "",
-    responsible: false,
+    responsible: true,
   },
   {
     id: 26,
