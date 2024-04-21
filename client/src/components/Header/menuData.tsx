@@ -61,11 +61,7 @@ const menuDataEnglish: Menu[] = [
   {
     id: 3,
     title: "TEAM",
-<<<<<<< HEAD
     path: "/ploeg",
-=======
-    path: "ploeg",
->>>>>>> 41208b770f85b1b96cc73e37d3bf2a2bb38f8dc1
     newTab: false,
   },
 ];
