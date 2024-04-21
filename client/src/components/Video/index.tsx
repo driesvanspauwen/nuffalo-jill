@@ -24,14 +24,15 @@ const Video = ({title, ploeg, ploegboekje}) => {
                 titleColor="sky"
             />
 
-            <div className="-mx-4 flex flex-wrap mt-10">
+            <div className="-mx-4 flex-wrap mt-10 flex items-center justify-center">
+              <p className="mb-8 text-xl text-orange-400 text-center">VIDEO COMING SOON</p>
               <div className="w-full px-4">
                 <div
                     className="mx-auto max-w-[770px] overflow-hidden rounded-md"
                     data-wow-delay=".15s"
                 >
                   <div className="relative aspect-[77/40] items-center justify-center">
-                    <Image src="/images/video/temporary_video_thumbnail.jpeg" alt="video image" fill/>
+                    <Image src="/images/video/temporary_video_thumbnail.png" alt="video image" fill/>
                     <div className="absolute right-0 top-0 flex h-full w-full items-center justify-center">
                       <button
                           aria-label="video play button"
@@ -55,7 +56,7 @@ const Video = ({title, ploeg, ploegboekje}) => {
             </div>
 
             <div className="mb-2 mt-10 mx-auto text-center">
-              <div className="flex justify-center items-center">
+            <div className="flex justify-center items-center">
                 <Link href="/ploeg"
                       className="bg-sky mb-3 mr-3 inline-flex items-center justify-center rounded-md px-4 py-2 text-lg text-black duration-300 hover:bg-primary hover:text-sky">
                   {ploeg}</Link>
@@ -72,7 +73,7 @@ const Video = ({title, ploeg, ploegboekje}) => {
               autoplay={true}
               start={true}
               isOpen={isOpen}
-              videoId="TzkdiitBEhk" // https://www.youtube.com/watch?v=TzkdiitBEhk&ab_channel=VlaamseTechnischeKring -> TzkdiitBEhk
+              videoId="" // https://www.youtube.com/watch?v=TzkdiitBEhk&ab_channel=VlaamseTechnischeKring -> TzkdiitBEhk
               onClose={() => setOpen(false)}
           />
 

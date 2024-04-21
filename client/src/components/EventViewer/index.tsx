@@ -23,35 +23,25 @@ const Schedule = ({title, dag1, dag2, dag3}) => {
             />
           </div>
 
-          <div className="grid grid-cols-1 gap-x-8 md:grid-cols-2 lg:grid-cols-3 mt-0 md:mt-20">
+          <p className="text-xl text-orange-600 text-center">MORE EVENTS COMING SOON</p>
+
+          <div className="grid grid-cols-1 gap-x-8 md:grid-cols-2 lg:grid-cols-3 mt-0 md:mt-10">
             <DayBox packageName={dag1}>
               <div className="mb-8">
-                <EventBanner link="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUIcmlja3JvbGw%3D"
-                             image="/images/banners/Fakfeestje.png"></EventBanner>
-              </div>
-              <div className="mb-8">
-                <EventBanner link="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUIcmlja3JvbGw%3D"
-                             image="/images/banners/Fakfeestje.png"></EventBanner>
+                {/*<EventBanner link="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUIcmlja3JvbGw%3D"
+                             image="/images/banners/Fakfeestje.png"></EventBanner>*/}
               </div>
             </DayBox>
             <DayBox packageName={dag2}>
               <div className="mb-8">
-                <EventBanner link="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUIcmlja3JvbGw%3D"
-                             image="/images/banners/Fakfeestje.png"></EventBanner>
-              </div>
-              <div className="mb-8">
-                <EventBanner link="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUIcmlja3JvbGw%3D"
-                             image="/images/banners/Fakfeestje.png"></EventBanner>
+                {/*<EventBanner link="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUIcmlja3JvbGw%3D"
+                             image="/images/banners/Fakfeestje.png"></EventBanner>*/}
               </div>
             </DayBox>
             <DayBox packageName={dag3}>
               <div className="mb-8">
-                <EventBanner link="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUIcmlja3JvbGw%3D"
-                             image="/images/banners/Fakfeestje.png"></EventBanner>
-              </div>
-              <div className="mb-8">
-                <EventBanner link="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUIcmlja3JvbGw%3D"
-                             image="/images/banners/Fakfeestje.png"></EventBanner>
+                {/*<EventBanner link="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUIcmlja3JvbGw%3D"
+                             image="/images/banners/Fakfeestje.png"></EventBanner>*/}
               </div>
             </DayBox>
           </div>

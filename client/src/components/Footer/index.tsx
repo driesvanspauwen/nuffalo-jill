@@ -14,7 +14,7 @@ const SingleBrand = ({ brand }: { brand: Brand }) => {
         rel="nofollow noreferrer"
         className="relative w-full opacity-70 transition hover:opacity-100"
       >
-        <Image src={image} alt={name} width={500} height={500} className="block max-w-200 max-h-100 m-4" />
+        <Image src={image} alt={name} width={500} height={500} className="block max-w-200 max-h-100" />
       </a>
     </div>
   );
@@ -26,8 +26,8 @@ const Footer = () => {
       <footer className="relative z-10 bg-brown-dark">
         <div className="container">
           <div className="container">
-            <div className="-mx-4 flex flex-wrap">
-              <div className="w-full px-4">
+            <div className="flex flex-wrap">
+              <div className="w-full ">
                 <div className="flex flex-wrap items-center justify-center rounded-sm  px-8 py-8 sm:px-10 md:px-[50px] md:py-[40px] xl:p-[50px] 2xl:px-[70px] 2xl:py-[60px]">
                   {brandsData.map((brand) => (
                     <SingleBrand key={brand.id} brand={brand} />
