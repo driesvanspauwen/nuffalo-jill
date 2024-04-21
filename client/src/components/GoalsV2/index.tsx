@@ -59,7 +59,7 @@ export default function GoalsV2({ title }) {
                                 </button>
                             </h3>
                             <p className="mt-2 text-xl text-offwhite">
-                                {goal.description}
+                                {goal.short}
                             </p>
                         </div>
                         <span
