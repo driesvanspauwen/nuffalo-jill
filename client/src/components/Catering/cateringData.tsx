@@ -14,9 +14,8 @@ const cateringDataDutch: Catering[] = [
         id: 2,
         date: "Frituur (Altijd)",
         cateringelements: [
-          { id: 1, content: "Frietjes", price: 1.2 },
-          { id: 2, content: "Vlees/Kaaskroket", price: 1.2 },
-          { id: 3, content: "Frikandel/Kipcorn/Bamischijf", price: 1.2 }
+          { id: 1, content: "Frietjes", price: 1.5 },
+          { id: 2, content: "Snacks", price: 1.5 },
         ]
     },
     {
@@ -62,9 +61,8 @@ const cateringDataEnglish: Catering[] = [
       id: 2,
       date: "Fries stand (All the time)",
       cateringelements: [
-        { id: 1, content: "Fries", price: 1.2 },
-        { id: 2, content: "Meat/Cheese croquette", price: 1.2 },
-        { id: 3, content: "Frikandel/Kipcorn/Bamischijf", price: 1.2 }
+        { id: 1, content: "Fries", price: 1.5 },
+        { id: 2, content: "Snacks", price: 1.5 },
       ]
   },
   {
