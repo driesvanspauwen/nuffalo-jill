@@ -25,14 +25,13 @@ const Video = ({title, ploeg, ploegboekje}) => {
             />
 
             <div className="-mx-4 flex-wrap mt-10 flex items-center justify-center">
-              <p className="mb-8 text-xl text-orange-400 text-center">VIDEO COMING SOON</p>
               <div className="w-full px-4">
                 <div
                     className="mx-auto max-w-[770px] overflow-hidden rounded-md"
                     data-wow-delay=".15s"
                 >
                   <div className="relative aspect-[77/40] items-center justify-center">
-                    <Image src="/images/video/temporary_video_thumbnail.png" alt="video image" fill/>
+                    <Image src="/images/video/PromovideoNuffaloJill.jpg" alt="video image" fill objectFit="cover"/>
                     <div className="absolute right-0 top-0 flex h-full w-full items-center justify-center">
                       <button
                           aria-label="video play button"
@@ -73,7 +72,7 @@ const Video = ({title, ploeg, ploegboekje}) => {
               autoplay={true}
               start={true}
               isOpen={isOpen}
-              videoId="" // https://www.youtube.com/watch?v=TzkdiitBEhk&ab_channel=VlaamseTechnischeKring -> TzkdiitBEhk
+              videoId="IL3-78I-XYY" // https://youtu.be/IL3-78I-XYY?si=IbgX0SawBGZBM9DQ -> IL3-78I-XYY
               onClose={() => setOpen(false)}
           />
 
