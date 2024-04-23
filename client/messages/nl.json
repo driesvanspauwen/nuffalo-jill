@@ -23,9 +23,10 @@
 
   "EventViewer": {
     "title": "KIESWEEK",
-    "dag1": "MAANDAG 29/04",
-    "dag2": "DINSDAG 30/04",
-    "dag3": "WOENSDAG 01/05"
+    "dag1": "ZONDAG 28/04",
+    "dag2": "MAANDAG 29/04",
+    "dag3": "DINSDAG 30/04",
+    "dag4": "WOENSDAG 01/05"
   },
 
   "Ploeg": {

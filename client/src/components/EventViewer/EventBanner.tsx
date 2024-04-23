@@ -5,7 +5,7 @@ import React from "react";
 const EventBanner = ({link, image}) => {
     return (
         <>
-            <Link href={link} className="block aspect-w-16 aspect-h-9 rounded-lg overflow-hidden">
+            <a target="_blank" href={link} rel="noopener noreferrer" className="block aspect-w-16 aspect-h-9 rounded-lg overflow-hidden">
                 <Image
                     src={image}
                     width={1000}
@@ -13,9 +13,9 @@ const EventBanner = ({link, image}) => {
                     className="relative mt-8"
                     alt="Screenshots of the dashboard project showing desktop version"
                 />
-            </Link>
+            </a>
         </>
-);
+    );
 }
 
 export default EventBanner;

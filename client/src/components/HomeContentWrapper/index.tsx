@@ -24,6 +24,7 @@ export default async function HomeContentWrapper() {
                     dag1 = {kiesweek('dag1')}
                     dag2 = {kiesweek('dag2')}
                     dag3 = {kiesweek('dag3')}
+                    dag4 = {kiesweek('dag4')}
                 />
                 <Catering/>
             </div>
