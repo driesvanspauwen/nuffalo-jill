@@ -30,8 +30,8 @@ const Schedule = ({title, dag1, dag2, dag3, dag4}) => {
             </DayBox>
             <DayBox packageName={dag2}>
               <div className="mb-8">
-                {/*<EventBanner link="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUIcmlja3JvbGw%3D"
-                             image="/images/banners/Fakfeestje.png"></EventBanner>*/}
+                <EventBanner link="https://fb.me/e/1PlwE1afy"
+                             image="/images/banners/cocktailworkshop.jpg"></EventBanner>
               </div>
             </DayBox>
             <DayBox packageName={dag3}>
