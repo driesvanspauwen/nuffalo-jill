@@ -21,7 +21,7 @@ const Schedule = ({title, dag1, dag2, dag3, dag4}) => {
 
           <p className="text-xl text-orange-600 text-center">MORE EVENTS COMING SOON</p>
 
-          <div className="grid w-3/4 m-auto grid-cols-1 gap-x-8 md:grid-cols-2 lg:grid-cols-2 mt-0 md:mt-10 px-8">
+          <div className="grid lg:w-3/4 m-auto grid-cols-1 gap-x-8 md:grid-cols-2 lg:grid-cols-2 mt-0 md:mt-10 px-8">
             <DayBox packageName={dag1}>
               <div className="mb-8">
                 <EventBanner link="https://fb.me/e/8b6nklVyf"
