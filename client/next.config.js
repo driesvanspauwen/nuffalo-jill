@@ -17,6 +17,9 @@ const nextConfig = {
     config.resolve.alias.canvas = false;
     return config;
   },
+  experimental: {
+    isrMemoryCacheSize: 0,
+  },
 };
 
 module.exports = withNextIntl(nextConfig);
