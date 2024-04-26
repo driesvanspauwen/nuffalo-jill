@@ -2,8 +2,9 @@
 import React, { useState } from "react";
 import DayBox from "./DayBox";
 import SectionTitle from "../Common/SectionTitle";
+import EventBanner from "@/components/EventViewer/EventBanner";
 
-const Schedule = ({title, dag1, dag2, dag3}) => {
+const Schedule = ({title, dag1, dag2, dag3, dag4}) => {
   const [isMonthly, setIsMonthly] = useState(true);
 
   return (
@@ -20,20 +21,26 @@ const Schedule = ({title, dag1, dag2, dag3}) => {
 
           <p className="text-xl text-orange-600 text-center">MORE EVENTS COMING SOON</p>
 
-          <div className="grid grid-cols-1 gap-x-8 md:grid-cols-2 lg:grid-cols-3 mt-0 md:mt-10 px-8">
+          <div className="grid lg:w-3/4 m-auto grid-cols-1 gap-x-8 md:grid-cols-2 lg:grid-cols-2 mt-0 md:mt-10 px-8">
             <DayBox packageName={dag1}>
               <div className="mb-8">
-                {/*<EventBanner link="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUIcmlja3JvbGw%3D"
-                             image="/images/banners/Fakfeestje.png"></EventBanner>*/}
+                <EventBanner link="https://fb.me/e/8b6nklVyf"
+                             image="/images/banners/Receptie.jpg"></EventBanner>
               </div>
             </DayBox>
             <DayBox packageName={dag2}>
               <div className="mb-8">
-                {/*<EventBanner link="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUIcmlja3JvbGw%3D"
-                             image="/images/banners/Fakfeestje.png"></EventBanner>*/}
+                <EventBanner link="https://fb.me/e/1PlwE1afy"
+                             image="/images/banners/cocktailworkshop.jpg"></EventBanner>
               </div>
             </DayBox>
             <DayBox packageName={dag3}>
+              <div className="mb-8">
+                <EventBanner link="https://fb.me/e/3GvhzAU7n"
+                             image="/images/banners/Westerncantus.jpg"></EventBanner>
+              </div>
+            </DayBox>
+            <DayBox packageName={dag4}>
               <div className="mb-8">
                 {/*<EventBanner link="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUIcmlja3JvbGw%3D"
                              image="/images/banners/Fakfeestje.png"></EventBanner>*/}
