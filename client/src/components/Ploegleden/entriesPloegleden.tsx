@@ -180,7 +180,7 @@ const entriesPloegleden: PloeglidEntry[] = [
   {
     id: 21,
     name: "Milo Van Aelst",
-    image: "/images/ploegleden/Milo.VanAelst.JPG",
+    image: "/images/ploegleden/Milo.jpg",
     post: "Evenementen",
     g5: false,
     g5_post: "",
