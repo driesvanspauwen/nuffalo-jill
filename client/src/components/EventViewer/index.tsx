@@ -31,7 +31,9 @@ const Schedule = ({title, dag1, dag2, dag3, dag4}) => {
             <DayBox packageName={dag2}>
               <div className="mb-8">
                 <EventBanner link="https://fb.me/e/1PlwE1afy"
-                             image="/images/banners/cocktailworkshop.jpg"></EventBanner>
+                             image="/images/banners/cocktailworkshop_theokot.png"></EventBanner>
+                <EventBanner link="https://fb.me/e/7dJtCXF5L"
+                             image="/images/banners/western_casino.jpg"></EventBanner>
               </div>
             </DayBox>
             <DayBox packageName={dag3}>
