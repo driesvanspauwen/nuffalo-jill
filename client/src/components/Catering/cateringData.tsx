@@ -24,7 +24,7 @@ const cateringDataDutch: Catering[] = [
         cateringelements: [
           { id: 1, content: "Croque monsieur", price: 1 },
           { id: 2, content: "Panini", price: 1.5 },
-          { id: 3, content: "Paella", price: 4 }
+          { id: 3, content: "Paella", price: 3 }
         ]
     },
     {
