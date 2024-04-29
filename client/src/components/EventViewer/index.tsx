@@ -19,8 +19,6 @@ const Schedule = ({title, dag1, dag2, dag3, dag4}) => {
             />
           </div>
 
-          <p className="text-xl text-orange-600 text-center">MORE EVENTS COMING SOON</p>
-
           <div className="grid lg:w-3/4 m-auto grid-cols-1 gap-x-8 md:grid-cols-2 lg:grid-cols-2 mt-0 md:mt-10 px-8">
             <DayBox packageName={dag1}>
               <div className="mb-8">
@@ -44,6 +42,10 @@ const Schedule = ({title, dag1, dag2, dag3, dag4}) => {
               <div className="mb-8">
                 <EventBanner link="https://fb.me/e/1PlwE1afy"
                              image="/images/banners/cocktailworkshop_theokot.jpg"></EventBanner>
+              </div>
+              <div className="mb-8">
+                <EventBanner link="https://www.facebook.com/nuffalojill"
+                             image="/images/banners/Fakfeest.jpg"></EventBanner>
               </div>
             </DayBox>
           </div>
