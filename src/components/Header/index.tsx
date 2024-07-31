@@ -122,7 +122,7 @@ const Header = () => {
           <div className={`relative flex items-center justify-between`}>
 
             <div className={`w-1/8 brown-dark block relative transition-all duration-600 ${isScrolled ? 'scale-50' : 'scale-100'}`}>
-              <Link href="/public" className="header-logo block">
+              <Link href="/" className="header-logo block">
                 <Image
                     src={isScrolled ? "/images/header/nuffalo-jill-logo-sky.png" : "/images/header/nuffalo-jill-logo-brown.png"}
                     alt="logo"
